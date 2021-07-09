@@ -7,10 +7,10 @@ os.system('cls') # Clear the screen on Windows
 
 account = pickle.load(open("account1.dat", "rb")) # Load account1.dat file with stored values #rb=read binary
 if type(account) == int: # Checking is var<account> is already created and equals integer
-    print("Account found")
+    print("Account found, previously created.")
 else:
     # Create the account if the account is not created
-    print("Account is not created")
+    print("Account is not created.")
     print("How much money would you like to put in? Type an amount:")
     account = input("> ")
     print("Creating a new account for Grigory")
