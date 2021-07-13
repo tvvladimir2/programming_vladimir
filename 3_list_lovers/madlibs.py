@@ -34,8 +34,6 @@ phrase4 = f"Another day, I've heard in the corridor that {A} really likes {A}."
 phrase5 = f"I saw {A} kiss {A}, another day {A} kissed {A}, and that is why {A} slapped {A}."
 phrase6 = f"{M} is in love with {F}. I also think, that she is awesome."
 
-print(all_list)
-
 print(phrase3)
 print(phrase4)
 print(phrase5)
