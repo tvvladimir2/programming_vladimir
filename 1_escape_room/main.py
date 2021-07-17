@@ -9,7 +9,7 @@ while True:
     direction = input("> ").lower()
     if direction == 'r':
         if dresserOpened:
-            print(images.dresserOpened)
+            print(images.dresserOpened) #
             input("> ")
         else:
             while True:
