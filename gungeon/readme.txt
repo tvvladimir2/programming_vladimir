@@ -1,5 +1,5 @@
 Resources:
-# Recoded-6 directional movment and Dodgeroll like enter the gungeon (Unity)
+# Recoded-6 directional movement and Dodgeroll like enter the gungeon (Unity)
 https://www.youtube.com/watch?v=Go9WWSCReLU
 
 # Unity Tutorial | Rotate Player's Arm to Mouse

