@@ -10,31 +10,26 @@ import random
 # print (phrase)
 # print (phrase2)
 
-male_list = ['Petko',
-             'Mike',
-             'Grisa',
-             'Niki',
-             'Kiko',
-             'Luigi'
-             ]
+male_list = ['Petko', 'Mike', 'Grisa', 'Niki', 'Kiko', 'Luigi']
 
-female_list = ['Sarah',
-             'Luiza',
-             'Eliza',
-             ]
+female_list = ['Sarah', 'Lujza', 'Elisa', 'Sara', 'Simona']
 
 all_list = male_list + female_list
 
-A = {random.choice(all_list)}
-F = {random.choice(female_list)}
-M = {random.choice(male_list)}
+# A = {random.choice(all_list)}
+# F = {random.choice(female_list)}
+# M = {random.choice(male_list)}
 
-phrase3 = f"{A} told me that {A} is in love with {A}."
-phrase4 = f"Another day, I've heard in the corridor that {A} really likes {A}."
-phrase5 = f"I saw {A} kiss {A}, another day {A} kissed {A}, and that is why {A} slapped {A}."
-phrase6 = f"{M} is in love with {F}. I also think, that she is awesome."
+phrase3 = f"{random.choice(all_list)} told me that {random.choice(all_list)} is in love with {random.choice(all_list)}."
+phrase4 = f"Another day, I've heard in the corridor that {random.choice(all_list)} really likes {random.choice(all_list)}."
+phrase5 = f"I saw {random.choice(all_list)} kiss {random.choice(all_list)}, another day {random.choice(all_list)} kissed {random.choice(all_list)}, and that is why {random.choice(all_list)} slapped {random.choice(all_list)}."
+phrase6 = f"{random.choice(male_list)} is in love with {random.choice(female_list)}. I also think, that she is awesome."
 
 print(phrase3)
 print(phrase4)
 print(phrase5)
 print(phrase6)
+
+
+# x = (random.randint(0,100))
+# print(str(x) + "% love")
