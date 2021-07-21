@@ -6,14 +6,15 @@ import sys
 
 pygame.init() # initialize pygame
 
-display = pygame.display.set_mode((800,600)) # set up a screen / display
+display = pygame.display.set_mode((1800,600)) # set up a screen / display
 clock = pygame.time.Clock()
 
-class Player: # Didn't study classes yet, stopped the tutorial at 3m:47s
+# class Player: # Didn't study classes yet, stopped the tutorial at 3m:47s
 
 while True:
     display.fill((0,0,0)) # RGB fill color
 
+while True:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             sys.exit() # import sys # quit from python script
