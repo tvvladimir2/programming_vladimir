@@ -6,10 +6,11 @@ import sys
 
 pygame.init() # initialize pygame
 
-display = pygame.display.set_mode((800,600)) # set up a screen / display
+# Surface
+gameDisplay = pygame.display.set_mode((800,600)) # set up a screen / display # Tuple collection variable
 clock = pygame.time.Clock()
 
-class Player: # Didn't study classes yet, stopped the tutorial at 3m:47s
+# class Player: # Didn't study classes yet, stopped the tutorial at 3m:47s
 
 while True:
     display.fill((0,0,0)) # RGB fill color
