@@ -6,8 +6,12 @@ import sys
 
 pygame.init() # initialize pygame
 
+<<<<<<< HEAD
 # Surface
 gameDisplay = pygame.display.set_mode((800,600)) # set up a screen / display # Tuple collection variable
+=======
+display = pygame.display.set_mode((1800,600)) # set up a screen / display
+>>>>>>> 99bc0d6c583e112658686ae55fb71e37959eeae5
 clock = pygame.time.Clock()
 
 # class Player: # Didn't study classes yet, stopped the tutorial at 3m:47s
@@ -15,6 +19,7 @@ clock = pygame.time.Clock()
 while True:
     display.fill((0,0,0)) # RGB fill color
 
+while True:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             sys.exit() # import sys # quit from python script
