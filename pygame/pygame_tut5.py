@@ -10,6 +10,7 @@ pygame.init() # initialize pygame
 white = (255,255,255)
 black = (0,0,0)
 red=(255,0,0)
+salat=(50,231,231)
 
 # Surface
 gameDisplay = pygame.display.set_mode((800,600)) # set up a screen / display # Tuple collection variable
@@ -24,7 +25,7 @@ while not gameExit:
             gameExit = True
         print (event) #print every event handling happening
 
-    gameDisplay.fill(red) # RGB fill color
+    gameDisplay.fill(salat) # RGB fill color
     pygame.display.update()
 
 pygame.quit() # uninitialize pygame

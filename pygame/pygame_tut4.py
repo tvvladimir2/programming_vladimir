@@ -17,7 +17,10 @@ while not gameExit:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             gameExit = True
+        # if event.type == pygame.KEYDOWN:
+        #     if event.key == pygame.K_w:
+        #         print("Griska is not Mishka! Grishka can be Bishka! Boo Boo, kiki")
         print (event) #print every event handling happening
 
 pygame.quit() # uninitialize pygame
-quit()
+quit() # import sys

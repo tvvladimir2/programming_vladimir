@@ -10,6 +10,9 @@ pygame.init() # initialize pygame
 white = (255,255,255)
 black = (0,0,0)
 red=(255,0,0)
+salat=(50,231,231)
+green=(52,218,68)
+greendark=(179,235,35)
 
 # Surface
 gameDisplay = pygame.display.set_mode((800,600)) # set up a screen / display # Tuple collection variable
@@ -33,24 +36,24 @@ while not gameExit:
             gameExit = True
         print (event) #print every event handling happening
         if event.type == pygame.KEYDOWN:
-            if event.key == pygame.K_LEFT:
+            if event.key == pygame.K_a:
                 lead_x_change = -2
-            if event.key == pygame.K_RIGHT:
+            if event.key == pygame.K_d:
                 lead_x_change = +2
-            # if event.key == pygame.K_UP:
-            #     lead_y_change = -10
-            # if event.key == pygame.K_DOWN:
-            #     lead_y_change = +10
+            if event.key == pygame.K_w:
+                lead_y_change = -2
+            if event.key == pygame.K_s:
+                lead_y_change = +2
 
     # logic loop
     lead_x += lead_x_change
     lead_y += lead_y_change
 
-    gameDisplay.fill(red) # RGB fill color
-    pygame.draw.rect(gameDisplay, black, [lead_x, lead_y, 10,10])
+    gameDisplay.fill(green) # RGB fill color
+    pygame.draw.rect(gameDisplay, salat, [lead_x, lead_y, 10,10])
     pygame.display.update()
 
-    clock.tick(60) # Define frames per second #
+    clock.tick(30) # Define frames per second #
 
 pygame.quit() # uninitialize pygame
 quit()

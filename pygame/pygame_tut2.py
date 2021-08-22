@@ -4,6 +4,9 @@
 import pygame # import pygame
 import sys
 
+# x = pygame.init() # initialize pygame
+# print(x)
+
 pygame.init() # initialize pygame
 
 # Surface

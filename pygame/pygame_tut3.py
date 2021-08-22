@@ -13,9 +13,11 @@ pygame.display.set_caption('Slither')
 pygame.display.update()
 gameExit = False # specify a constant variable
 
+# main game loop
 while not gameExit:
     for event in pygame.event.get():
         print (event) #print every event handling happening
+    # gameExit = True
 
 pygame.quit() # uninitialize pygame
 quit()
