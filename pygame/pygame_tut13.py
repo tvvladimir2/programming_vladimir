@@ -95,7 +95,7 @@ while not gameExit:
     lead_y += lead_y_change
 
     gameDisplay.fill(green) # RGB fill color
-    pygame.draw.rect(gameDisplay, salat, [lead_x, lead_y, block_size, block_size])
+    pygame.draw.rect(gameDisplay, red, [lead_x, lead_y, block_size, block_size])
     pygame.display.update()
 
     clock.tick(frameRate) # Define frames per second #
