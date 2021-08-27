@@ -17,6 +17,7 @@ greendark=(179,235,35)
 # Display Variables
 display_width = 800
 display_height = 600
+# bla bla
 
 # Variables
 gameExit = False # specify a constant variable
@@ -31,6 +32,8 @@ block_size = 10
 clock = pygame.time.Clock() # initiate a sleep function that forces our game to be exactly frames per second
 
 frameRate = 60
+
+gameDisplay = pygame.display.set_gamma_ramp(red, green, blue)
 
 # Surface
 gameDisplay = pygame.display.set_mode((display_width, display_height)) # set up a screen / display # Tuple collection variable
