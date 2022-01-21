@@ -4,8 +4,10 @@
 import pygame # import pygame
 import sys
 import math
+from pygame_functions import *
 
 pygame.init() # initialize pygame
+pygame.font.init() # initialize pygame fonts
 
 # Define colors
 white = (255,255,255)
@@ -18,6 +20,12 @@ greendark=(179,235,35)
 # Surface
 gameDisplay = pygame.display.set_mode((1000,1000)) # set up a screen / display # Tuple collection variable
 pygame.display.set_caption('Slither')
+
+font = pygame.font.SysFont("Arial", 30 ) # load fonts from the system (name, size, bold=False, italic=False)
+
+testSprite = makeSprite("images/links.gif", 32)
+moveSprite(testSprite,300,300,True)
+showSprite(testSprite)
 
 # Variables
 gameExit = False # specify a constant variable
@@ -44,7 +52,7 @@ while not gameExit:
         if event.type == pygame.QUIT:
             gameExit = True
 
-        print (event) #print every event handling happening
+        print (event) #print every event handling happening #обработка событий
                    # PLAYER 1
         if event.type == pygame.KEYDOWN:
             #player1
@@ -87,8 +95,20 @@ while not gameExit:
     lead_y2 += lead_y2_change
 
     gameDisplay.fill(green) # RGB fill color
-    pygame.draw.rect(gameDisplay, salat, [lead_x, lead_y, 10,10]) #spawn player1
+    pygame.draw.rect(gameDisplay, salat, [lead_x, lead_y, 10,10]) #spawn player1 (surface, color, (x_pos, y_pos, width, height))
     pygame.draw.rect(gameDisplay, red, [lead_x2, lead_y2, 10,10]) #spawn player2
+    pygame.draw.line(gameDisplay, white, (lead_x  + 5, lead_y + 5), (lead_x2 + 5, lead_y2 + 5), (1))
+
+    AB = math.sqrt((lead_x - lead_x2)**2 + (lead_y - lead_y2)**2) # This is distnace between two points # this is farta
+    pygame.display.set_caption('This is SPARTA: ' + str(AB))
+
+    text1 = font.render(str(AB), True, black)  # Text to display #(text, antialias, color)
+    # text2 = pygame.font.Font.render(AB, True, black, background=None)    #(text, antialias, color, background=None)
+    gameDisplay.blit(text1, (30,30) )  # blit(source, dest, area=None, special_flags=0) -> Rect
+
+    if AB <= 10:#makes the game close when cubes touch together
+        gameExit = True
+
     pygame.display.update()
 
     clock.tick(60) # Define frames per second #

@@ -18,7 +18,39 @@ greendark=(179,235,35)
 # Surface
 gameDisplay = pygame.display.set_mode((1000,1000)) # set up a screen / display # Tuple collection variable
 pygame.display.set_caption('Slither')
+#character animation
+from pygame_functions import *
 
+testSprite = makeSprite("images/links.gif", 32)
+moveSprite(testSprite,300,300,True)
+showSprite(testSprite)
+
+nextFrame = clock()
+
+frame = 0
+
+while True:
+    if clock() > nextFrame:
+        frame = (frame+1)%8
+        nextFrame += 80
+    if keypressed("right"):
+        changeSpriteImage(testSprite, 0*8 + frame)
+
+    elif keypressed("down"):
+        changeSpriteImage(testSprite, 1*8 + frame)
+
+    elif keypressed("left"):
+        changeSpriteImage(testSprite, 2*8 + frame)
+
+    elif keypressed("up"):
+        changeSpriteImage(testSprite, 3*8 + frame)
+
+    else:
+        changeSpriteImage(testSprite, 1 * 8 + 5)
+
+    tick(120)
+
+endWait()
 # Variables
 gameExit = False # specify a constant variable
 # gameWin = False # win condition
@@ -89,7 +121,14 @@ while not gameExit:
     gameDisplay.fill(green) # RGB fill color
     pygame.draw.rect(gameDisplay, salat, [lead_x, lead_y, 10,10]) #spawn player1
     pygame.draw.rect(gameDisplay, red, [lead_x2, lead_y2, 10,10]) #spawn player2
+    pygame.draw.line(Surface, color, start_pos, end_pos, width) # draw a line between them
     pygame.display.update()
+
+    # ab = math.sqrt((lead_x-lead_x2)**2 + (lead_y-lead_y2)**2)
+    # if ab <= 10:
+    if abs(lead_x-lead_x2)<10 and abs(lead_y-lead_y2)<10:
+        gameExit = True
+
 
     clock.tick(60) # Define frames per second #
 

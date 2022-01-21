@@ -16,16 +16,7 @@ red = (255,0,0)
 display_width = 800
 display_height = 600
 
-# Variables
-gameExit = False # the variable specifies if the game window should close
-gameOver = False # the variable specifies if the game is over
-
-lead_x = display_width / 2
-lead_y = display_height / 2
-lead_x_change = 0
-lead_y_change = 0
-
-block_size = 10
+block_size = 10 # snake size
 
 clock = pygame.time.Clock() # initiate a sleep function that forces our game to be exactly frames per second
 
@@ -42,10 +33,19 @@ def message_to_screen (message, color):
     gameDisplay.blit(source = screen_text, dest = [display_width/2, display_height/2])
 
 def gameLoop():
+    # Variables
+    gameExit = False # the variable specifies if the game window should close
+    gameOver = False # the variable specifies if the game is over
+
+    lead_x = display_width / 2  # starting coordinate point for the snake (cube)
+    lead_y = display_height / 2
+    lead_x_change = 0   # by how much the snake moves
+    lead_y_change = 0
+
     # Loop
     while not gameExit:
 
-        while gameOver ==True:
+        while gameOver == True:
             gameDisplay.fill(white)
             message_to_screen("Game over, press C to start over, or Q to quite.", red)
             pygame.display.update()
@@ -106,3 +106,5 @@ def gameLoop():
     time.sleep(5)
     pygame.quit() # uninitialize pygame
     quit()
+
+gameLoop()

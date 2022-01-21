@@ -1,0 +1,27 @@
+Check even / odd using modulus operator:
+
+    #Even Odd Program using Modulus Operator
+    a=int(input("Please Enter a Number : "));
+    if(a%2==0):
+        print("This Number is Even")
+    else:
+        print("This Number is Odd")
+---------------------------------------------------------
+Check even / odd using bitwise operator:
+
+    #Even Odd Program using Bitwise Operator
+    a=int(input("Please Enter a Number : "));
+    if(a&1==1):
+        print("This Number is Odd")
+    else:
+        print("This Number is Even")
+---------------------------------------------------------
+Check Even / Odd without using modulus or bitwise operator:
+
+    #Even Odd Program using Modulus Operator
+    number=int(input("Please Enter a Number : "));
+    x=int(number/2)*2;
+    if(x==number):
+        print("This Number is Even")
+    else:
+        print("This Number is Odd")

@@ -1,0 +1,7 @@
+import turtle
+
+t = turtle.Pen()
+sides = 3
+colors = ["red", "yellow", "blue", "green"]
+for x in range:
+    t.pencolor(colors[x%sides])
