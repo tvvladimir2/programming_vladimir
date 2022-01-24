@@ -1,5 +1,7 @@
-# Strings
+# STRINGS
 
+# Strings are also lists
+# Each letter has an index [0], [1], [2] ...
 
 #Strings in python are surrounded by either single quotation marks, or double quotation marks.
 print("Hello")
@@ -80,14 +82,8 @@ txt = "We are the so-called \"Vikings\" from the north."    #use the escape char
 \ooo 	Octal value
 \xhh 	Hex value
 
-# METHODS
-txt = "Hello, World!"
-print(txt.upper())  # upper() method returns the string in upper case
-print(txt.lower())  # lower() method returns the string in lower case:
-print(txt.strip())    # strip() method removes any whitespace from the beginning or the end:
-print(txt.replace("l", "b")) # Replaces all 'l' to 'b' letters
-print(a.split(",")) # split() method splits the string into substrings if it finds instances of the separator ','
-#returns ['Hello', ' World!']
+# STRING METHODS
+# --------------------------------------------------------
 
 # All string methods
 # https://www.w3schools.com/python/python_ref_string.asp
@@ -136,3 +132,48 @@ title()	Converts the first character of each word to upper case
 translate()	Returns a translated string
 upper()	Converts a string into upper case
 zfill()	Fills the string with a specified number of 0 values at the beginning
+
+# UPPER STRING METHOD
+txt = "Hello, World!"
+print(txt.upper())  # upper() method returns the string in upper case
+print("This is a sentence.".upper()) # returns: THIS IS A SENTENCE.
+
+# LOWER STRING METHOD
+print(txt.lower())  # lower() method returns the string in lower case:
+print("AN ALL CAPS SENTENCE".lower()) # returns: an all caps sentence
+
+
+# REPLACE METHOD
+txt = "Hello, World!"
+print(txt.replace("l", "b")) # Replaces all 'l' to 'b' letters
+print(x.replace("Hello", "Good morning"))
+
+# SPLIT METHOD
+# split string into strings, turns it into a list
+# "string1" >> list
+txt = "Hello, World!"
+print(a.split(",")) # split() method splits the string into substrings if it finds instances of the separator ','
+#returns ['Hello', ' World!']
+
+# JOIN METHOD
+# joins a list of strings with another string as a separator
+# x = string1 + string2 + string3 = "string1, string2, string 3"
+x = ", ".join(["spam", "eggs", "ham"])
+print(x)
+# prints "spam, eggs, ham"
+
+# STRIP METHOD - REMOVE DELETE WHITESPACE
+txt = "Hello, World!"
+print(txt.strip())    # strip() method removes any whitespace from the beginning or the end:
+
+# MAX ITEM IN A LIST
+# string is also a list, we use a list method
+# outputs the max number in a list
+# alphabet: "a" is min, "z" is max
+msg = "Hello"
+print(msg.max()) # returns "o"
+
+# COUNT STRING METHOD
+# The count() method returns the number of occurrences of a substring in the given string.
+message = 'python is popular programming language'
+print('Number of occurrence of p:', message.count('p')) # Output: Number of occurrence of p: 4

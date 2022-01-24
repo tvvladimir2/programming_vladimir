@@ -44,6 +44,12 @@ thislist[1:2] = ["blackcurrant", "watermelon"]  # Replace one value with two val
 thislist[1:3] = ["watermelon"]                  # Replace two values with only one value
 print(thislist)
 
+# DELETE LIST OR LIST ITEM
+# del keyword deletes item or variable
+my_list = ["a", "b", "c"]
+del my_list         # deletes the list
+del my_list[3:5]    # deletes items in the list
+
 # PYTHON BUILT-IN FUNCTIONS ===================================================
 
 # len() - LIST LENGTH

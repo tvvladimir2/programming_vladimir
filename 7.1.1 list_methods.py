@@ -13,6 +13,17 @@ remove()	# Removes the item with the specified value
 reverse()	# Reverses the order of the list
 sort()	    # Sorts the list
 
+# MAX ITEM IN A LIST
+# outputs the max number in a list
+data = [7, 5, 6.9, 1, 8, 42, 33]
+print(max(data)) # prints 42
+print(min(data)) # prints 1
+data.remove(max(data)) # removes 42
+data.remove(min(data)) # removes 1
+
+# COUNT NUMBER OF TIMES THE ITEM IS IN A LIST
+numbers = [2, 3, 5, 2, 11, 2, 7]
+print(number.count(numbers(2))) # returns 3 times number 2 is in a list
 
 # INSERT ITEMS
 # ----------------------------------------------------------------------------

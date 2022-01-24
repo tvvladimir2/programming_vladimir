@@ -19,8 +19,8 @@ Operator 	Example 	Same As
 -= 	        x -= 3 	    x = x - 3
 *= 	        x *= 3 	    x = x * 3
 /= 	        x /= 3 	    x = x / 3
-%= 	        x %= 3 	    x = x % 3    # x = the whole reminder, остаток
-//= 	    x //= 3 	x = x // 3   # x = the whole number after devision
+%= 	        x %= 3 	    x = x % 3    # x = the whole reminder, остаток # 10%3 = 1, остаток
+//= 	    x //= 3 	x = x // 3   # x = the whole number after devision # 10//3 = 3, целочисленное деление
 **= 	    x **= 3 	x = x ** 3   # x = 5**3 = 100
 <<== Don't know these yet, return back to study
 &= 	        x &= 3 	    x = x & 3    # returns 1
