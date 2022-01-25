@@ -3,11 +3,19 @@
 # Booleans represent one of two values: True or False.
 a = 200
 b = 33
-
 if b > a:   # If this is True
   print("b is greater than a")
 else:
   print("b is not greater than a")
+
+# Create a Boolean
+my_boolean = True          # Set a variable to a boolean
+my_boolean = False
+print(2 == 3)              # Created by comparing variables # returns False
+print(2 != 10)             # returns True
+print("hello" == "hello")  # Created by comparing strings # returns True
+print("eleven" != "seven") # returns True
+print(7 <= 8)              # returns True
 
 # EVALUATE VALUE AND VARIABLE
 # - Almost any value is evaluated to True if it has some sort of content.

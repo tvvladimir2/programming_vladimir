@@ -12,10 +12,10 @@ Operator 	Name 	            Example
 ** 	        Exponentiation 	    x ** y 	# 2**3 = 2 to the power of 3, степень
 // 	        Floor division 	    x // y  # 7 // 2 = 3 whole number, целое деление
 
-# PYTHON ASSIGNMENT OPERATORS
+# PYTHON ASSIGNMENT OPERATORS, IN-PLACE OPERATORS
 Operator 	Example 	Same As
 = 	        x = 5 	    x = 5
-+= 	        x += 3 	    x = x + 3
++= 	        x += 3 	    x = x + 3 # In-place operator for +
 -= 	        x -= 3 	    x = x - 3
 *= 	        x *= 3 	    x = x * 3
 /= 	        x /= 3 	    x = x / 3
@@ -28,14 +28,19 @@ Operator 	Example 	Same As
 ^= 	        x ^= 3 	    x = x ^ 3
 >>= 	    x >>= 3 	x = x >> 3
 <<= 	    x <<= 3 	x = x << 3
+:= 	        x=1, y=2    x = y        # Walrus operator assigns values to variables within an expression, including variables that do not exist yet.
+# num = int(input())
+# print(num)
+# is the same as:
+# print(num:=int(input()))
 
-# COMPARISON OPERATORS
+# COMPARISON OPERATORS - RATIONAL OPERATORS
 Operator 	Name 	                    Example
-== 	        Equal 	                    x == y
-!= 	        Not equal 	                x != y
+== 	        Equal 	                    x == y   # evaluates to True if the items being compared are equal, and False if they are not
+!= 	        Not equal 	                x != y   # evaluates to True if the items being compared aren't equal, and False if they are
 > 	        Greater than 	            x > y
 < 	        Less than 	                x < y
->= 	        Greater than or equal to 	x >= y
+>= 	        Greater than or equal to 	x >= y   # print("Annie" > "Andy") # returns True because n > d lexologically
 <=          Less than or equal to 	    x <= y
 
 # LOGICAL OPERATOR
