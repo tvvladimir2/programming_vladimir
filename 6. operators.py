@@ -1,8 +1,9 @@
-# OPERATORS
+# OPERATORS #
+#############
 
 # Operators are used to perform operations on variables and values.
 
-# Arithmetic operators
+# ARITHMETIC OPERATORS
 Operator 	Name 	            Example
 + 	        Addition 	        x + y
 - 	        Subtraction 	    x - y
@@ -62,3 +63,19 @@ Operator 	Name 	                Description
 ~  	        NOT 	                Inverts all the bits
 << 	        Zero fill left shift 	Shift left by pushing zeros in from the right and let the leftmost bits fall off
 >> 	        Signed right shift 	    Shift right by pushing copies of the leftmost bit in from the left, and let the rightmost bits fall off
+
+# OPERATOR PRECEDENCE
+Operators                                       Meaning
+()                                              Parentheses
+**                                              Exponent
++x, -x, ~x                                      Unary plus, Unary minus, Bitwise NOT
+*, /, //, %                                     Multiplication, Division, Floor division, Modulus
++, -                                            Addition, Subtraction
+<<, >>                                          Bitwise shift operators
+&                                               Bitwise AND
+^                                               Bitwise XOR
+|                                               Bitwise OR
+==, !=, >, >=, <, <=, is, is not, in, not in    Comparisons, Identity, Membership operators
+not                                             Logical NOT
+and                                             Logical AND
+or                                              Logical OR

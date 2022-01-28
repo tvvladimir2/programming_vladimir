@@ -4,6 +4,7 @@
 # You can use if statements to run code if a certain condition holds.
 # If an expression evaluates to True, some statements are carried out. Otherwise, they aren't carried out.
 
+# STRUCTURE
 # An if statement looks like this:
 if condition:   # first condition, expression leading to True or False
     statement   # always indented, mandatory indentation or a white spasce
@@ -15,6 +16,7 @@ else:           # Else statement can be used to run some statements when the con
     statement   # False branch
     statement   # executed if no conditions are True
 
+# NESTED IF STATEMENTS
 # if statements can be nested, one inside the other:
 num = 12
 if num > 5:
@@ -29,3 +31,10 @@ else:   # Every if condition block can have only one else statement.
             print("Three")
         else:
             print("Something else")
+
+# MULTIPLE CONDITIONS
+a = 200
+b = 33
+c = 500
+if a > b and c > a: # The AND keyword is a logical operator used to combine conditional statements:
+  print("Both conditions are True")

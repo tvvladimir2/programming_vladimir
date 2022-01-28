@@ -17,6 +17,10 @@ print("hello" == "hello")  # Created by comparing strings # returns True
 print("eleven" != "seven") # returns True
 print(7 <= 8)              # returns True
 
+# BOOLEAN NOT
+# The result of not True is False, and not False goes to True
+my_boolean = not True      # not only takes one argument, and inverts it.
+
 # EVALUATE VALUE AND VARIABLE
 # - Almost any value is evaluated to True if it has some sort of content.
 # - Any string is True, except empty strings.
