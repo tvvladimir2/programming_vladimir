@@ -10,6 +10,14 @@ thislist = ["apple", "banana", "cherry"]    # order [[0],[1],[2]], [[-3],[-2],[-
 thislist = ["apple", "apple", "apple"]      # Items can be the same
 print(thislist)
 
+# NESTED LISTS
+# Lists inside lists
+L = ['a', 'b', ['cc', 'dd', ['eee', 'fff']], 'g', 'h']
+print(L[2])         # Prints ['cc', 'dd', ['eee', 'fff']]
+print(L[2])         # Prints ['cc', 'dd', ['eee', 'fff']]
+print(L[2][2])      # Prints ['eee', 'fff']
+print(L[2][2][0])   # Prints eee
+
 # LIST PROPERTIES =============================================================
 
 # CONCATENATE LISTS -----------------------------------------------------------
