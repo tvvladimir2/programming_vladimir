@@ -18,13 +18,22 @@ print(L[2])         # Prints ['cc', 'dd', ['eee', 'fff']]
 print(L[2][2])      # Prints ['eee', 'fff']
 print(L[2][2][0])   # Prints eee
 
-# LIST PROPERTIES =============================================================
+# NESTED LISTS 2D GRIDS, MATRICES
+m = [
+    [1,2,3],
+    [4,5,6]
+    ]
+print(m[1][2])
+
+# LIST PROPERTIES - OPERATIONS==================================================
 
 # CONCATENATE LISTS -----------------------------------------------------------
 list1 = ["a", "b", "c"]
 list2 = [1, 2, 3]
 list3 = list1 + list2 # adds lists together, list2 is added at the end
 print(list3)
+print(list1 + [4, 5, 6])    # returns a,b,c,4,5,6
+print(nums * 3)             # returns abcabcabc
 # See also 'append' & "extend' method
 
 # ACCESS ITEMS - ORDER --------------------------------------------------------
@@ -38,15 +47,20 @@ print(thislist[:4])    # returns [0], [1], [2], [3];  number [4] is not included
 print(thislist[2:])    # returns from [2] to the end
 print(thislist[-4:-1]) # returns from "orange" to "mango", "mango" is not included
 
-# CHECK IF ITEM EXISTS --------------------------------------------------------
+# IN/NOT OPERATORS --- CHECK IF ITEM IN LIST ----------------------------------
 # Check if "apple" is present in the list:
 thislist = ["apple", "banana", "cherry"]
 if "apple" in thislist:
   print("Yes, 'apple' is in the fruits list")
+print("banana" in thislist) # returns True
+print(not apple in thislist)    # retruns False
+print(not potato in thislist)    # retruns True
 
-# CHANGE ITEM VALUE
+# REASSIGN INDEXES - CHANGE ITEM VALUE
 thislist = ["apple", "banana", "cherry"]
 thislist[1] = "blackcurrant"                    # Change one value
+nums[2] = 5                                     # certain index in a list can be reassigned.
+nums[0] = nums[1] - 5
 thislist[1:3] = ["blackcurrant", "watermelon"]  # Change two values with two values
 thislist[1:2] = ["blackcurrant", "watermelon"]  # Replace one value with two values
 thislist[1:3] = ["watermelon"]                  # Replace two values with only one value
@@ -60,8 +74,8 @@ del my_list[3:5]    # deletes items in the list
 
 # PYTHON BUILT-IN FUNCTIONS ===================================================
 
-# len() - LIST LENGTH
-# -------------------
+# len() FUNCTION - LIST LENGTH
+# len is written before the list it is being called on, without a dot.
 thislist = ["apple", "banana", "cherry"]
 print(len(thislist))                        # returns 3
 

@@ -55,3 +55,6 @@ class myclass():
 
 myobj = myclass()
 print(bool(myobj))
+
+# PRECEDENCE
+# See file operators.py

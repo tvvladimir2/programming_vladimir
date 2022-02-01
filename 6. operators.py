@@ -65,17 +65,39 @@ Operator 	Name 	                Description
 >> 	        Signed right shift 	    Shift right by pushing copies of the leftmost bit in from the left, and let the rightmost bits fall off
 
 # OPERATOR PRECEDENCE
-Operators                                       Meaning
-()                                              Parentheses
-**                                              Exponent
-+x, -x, ~x                                      Unary plus, Unary minus, Bitwise NOT
-*, /, //, %                                     Multiplication, Division, Floor division, Modulus
-+, -                                            Addition, Subtraction
-<<, >>                                          Bitwise shift operators
-&                                               Bitwise AND
-^                                               Bitwise XOR
-|                                               Bitwise OR
-==, !=, >, >=, <, <=, is, is not, in, not in    Comparisons, Identity, Membership operators
-not                                             Logical NOT
-and                                             Logical AND
-or                                              Logical OR
+# Highest precedence at top, lowest at bottom.
+# Operators in the same box evaluate left to right.
+Operators                                                   Meaning
+(expressions...), [expressions...],
+{key: value...}, {expressions...}                           Binding or parenthesized expression, list display, dictionary display, set display
+x[index], x[index:index], x(arguments...), x.attribute      Subscription, slicing, call, attribute reference
+await x                                                     Await expression
+()                                                          Parentheses
+**                                                          Exponent
++x, -x, ~x                                                  Unary plus, Unary minus, Bitwise NOT
+*, /, //, %                                                 Multiplication, Division, Floor division, Modulus
++, -                                                        Addition, Subtraction
+<<, >>                                                      Bitwise shift operators
+&                                                           Bitwise AND
+^                                                           Bitwise XOR
+|                                                           Bitwise OR
+==, !=, >, >=, <, <=, is, is not, in, not in                Comparisons, Identity, Membership operators
+not                                                         Logical NOT
+and                                                         Logical AND
+or                                                          Logical OR
+if – else                                                   Conditional expression
+lambda                                                      Lambda expression
+:=                                                          Assignment expression
+
+# IF STATEMENTS LOGIC OPERATIONS
+value1      operator    value2      result
+True        and         True        v2 (True)
+True        and         False       v2 (False)
+False       and         True        v1 (False)
+False       and         False       v1 (False)
+
+value1      operator    value2      result
+True        or          True        v1 (True)
+True        or          False       v1 (True)
+False       or          True        v2 (True)
+False       or          False       v2 (False)
