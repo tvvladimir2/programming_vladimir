@@ -8,6 +8,7 @@
 # If you add new items to a list, the new items will be placed at the end of the list.
 thislist = ["apple", "banana", "cherry"]    # order [[0],[1],[2]], [[-3],[-2],[-1]]
 thislist = ["apple", "apple", "apple"]      # Items can be the same
+thislist = list(range(10))                  # generates a list containing all of the integers, 0 to 9.
 print(thislist)
 
 # NESTED LISTS

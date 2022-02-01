@@ -1,6 +1,8 @@
 # WHILE LOOPS
 
+# A loop is a construct.
 # A while loop is used to repeat a block of code multiple times.
+# The while loop is used in cases when the number of iterations is not known and depends on some calculations and conditions in the code block of the loop.
 
 # SYNTAX STRUCTURE
 while Condition:    # expression that returns True or False

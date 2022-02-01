@@ -68,3 +68,12 @@ tuple()	        # Returns a tuple
 type()	        # Returns the type of an object
 vars()	        # Returns the __dict__ property of an object
 zip()	        # Returns an iterator, from two or more iterators
+
+
+range()
+#------------------------------------------------------------------------------
+# The range() function returns a sequence of numbers.
+# By default, it starts from 0, increments by 1 and stops before the specified number.
+thislist = list(range(10))      # generates a list containing all of the integers, 0 to 9.
+numbers = list(range(3, 8))     # generates a list from 3 to 7
+numbers = list(range(5, 11, 2)) # third argument determines the interval of the sequence produced, also called the step. # returns 5,7,9
