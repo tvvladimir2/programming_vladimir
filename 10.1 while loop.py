@@ -16,7 +16,7 @@ while True:
     if x == 0:
         break       # break a while loop prematurely
     else:
-        continue
+        continue    # jumps back to the top of the loop to the next itteration
 
 # INFINITE LOOPS
 while True:
