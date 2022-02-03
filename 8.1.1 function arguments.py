@@ -50,6 +50,7 @@ func('Bob')             # Prints Bob is a developer
 #------------------------------------------------------------------------------
 # For creating functions that take unlimited number of arguments
 # Unknow number of arguments before passing them to your function.
+#
 # *args
 #--------------------
 # A parameter prefixed with an asterisk * collects all the unmatched positional arguments into a tuple.
@@ -57,3 +58,12 @@ func('Bob')             # Prints Bob is a developer
 def print_arguments(*args):
     print(args)
 print_arguments(1, 54, 60, 8, 98, 12)   # Prints (1, 54, 60, 8, 98, 12)
+
+#
+# *kwargs
+#--------------------
+# ** syntax is similar to *args, but it only works for keyword arguments.
+# It collects them into a new dictionary, where the argument names are the keys, and their values are the corresponding dictionary values.
+def print_arguments(**kwargs):
+    print(kwargs)
+print_arguments(name='Bob', age=25, job='dev')  # Prints {'name': 'Bob', 'age': 25, 'job': 'dev'}
