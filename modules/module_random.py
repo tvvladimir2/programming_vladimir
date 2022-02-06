@@ -2,8 +2,17 @@
 import random
 
 # random.randrange(start, stop, step)
+#------------------------------------------------------------------------------
 print(random.randrange(1, 10))
 
-# select an item from a list?
+# RANDOM LIST ITEM
+#------------------------------------------------------------------------------
 colors = ['a', 'b', 'c', 'd', 'e']
 print(random.choice(colors))
+
+
+# EXAMPLE
+#------------------------------------------------------------------------------
+import random               # import module
+random.seed(int(input()))   # initializes the pseudorandom number generator and, in this case, ensures functionality of test cases.
+print(random.randint(1,6))  # generate random values in the range of 1 to 6
