@@ -1,6 +1,20 @@
 '''
-Built-in modules in Python are written in C and interpreted using the Python interpreter.
-Pieces of code written by someone else.
+Modules in Python are written in:
+- Python
+- in C and interpreted using the Python interpreter.
+
+Pieces of code written by:
+- someone else
+- yourself
+- preinstalled with Python (standard library)
+
+Platforms:
+- Windows
+- Unix
+- All
+
+Many third-party Python modules are stored on the Python Package Index (PyPI).
+The best way to install these is using a program called pip. >> see doc_file python_vladimir/packages/pip_package.py
 '''
 
 
