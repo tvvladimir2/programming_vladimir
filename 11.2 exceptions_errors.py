@@ -1,8 +1,5 @@
-# EXCEPTIONS - ERRORS
+# EXCEPTIONS (ERRORS)
 #
-
-# CALL EXCEPTIONS
-#------------------------------------------------------------------------------
 
 
 # COMMON EXCEPTIONS
@@ -48,6 +45,7 @@ try:                                # 'try' block contains code that might throw
 except ZeroDivisionError:           # The except statement defines the type of exception to handle (in our case, the ZeroDivisionError).
     print("An error occurred")      # If exception occurs, the code in the except block is run
     print("due to zero division")   # If no error occurs, the code in the except block doesn't run.
+    raise ValueError                # raise exceptions
 except (ValueError, TypeError):     # 'try' statement can have multiple different except blocks to handle different exceptions.
     print("Error occurred")         # Multiple exceptions can also be put into a single except block using parentheses, to have the except block handle all of them.
 except:                             # An except statement without any exception specified will catch all errors.
@@ -62,3 +60,26 @@ try:
 	print("PIN code is created")   # if pin is a number
 except ValueError:
 	print("Please enter a number") # if pin is string
+
+
+# RAISE EXCEPTIONS
+#------------------------------------------------------------------------------
+# Raise exceptions by using the raise statement.
+print(1)
+raise ValueError                    # Specify the type of the exception raised.
+raise NameError("Invalid name!")    # Raise exception with arguments that give detail about them.
+raise                               # raise whatever value error
+
+
+# ASSERTIONS
+#------------------------------------------------------------------------------
+# A sanity-check that you can turn on or turn off when you have finished testing the program.
+# Programmers often place assertions at the start of a function to check for valid input, and after a function call to check for valid output.
+# AssertionError exceptions can be caught and handled like any other exception using the try-except statement, but if not handled, this type of exception will terminate the program.
+print(1)
+assert 2 + 2 == 4   # An expression is tested, and if the result comes up false, an exception is raised.
+assert 2 + 1 == 3   # Assert statement
+assert "h" != "w"   # returns: True
+assert False        # returns: False >> AssertionError
+print('1')          # This line does not print because privious line gives AssertionError
+assert True         # returns: True >> no error
