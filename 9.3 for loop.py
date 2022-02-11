@@ -5,7 +5,7 @@
 # Both, for and while loops can be used to achieve the same results, however, the for loop has cleaner and shorter syntax, making it a better choice in most cases.
 
 # SYNTAX STRUCTURE
-for i in range (5):    # definitive iteration (total 5)
+for i in range (5):    # definitive iteration (total 5) (i from 0 to 4)
     statement 1     # /Body starts. Execute till last item in sequence.
     statement 2     # loop statement must be properly indented
     ...
