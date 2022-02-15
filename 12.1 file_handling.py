@@ -22,13 +22,15 @@ MAIN PARTS:
 # PARTS:
 #   - 1. Folder Path: the file folder location on the file system, folders are separated by a forward slash / (Unix) or backslash \ (Windows)
 myfile = open("filename.txt", "w")  # relative path, same directory
-myfile = open("\\folder\\filename.txt", "w")  # relative path, another directory
-myfile = open("F:\\OneDrive - Vutlan s.r.o\\Backups\\GitHub repositories\\pythonLython\\tests\\text.txt (Windows)") # absolute path
+myfile = open("\\folder\\filename.txt", "w")  # relative path, another folder/directory
+myfile = open("..\\..\\animals.csv", "w")  # relative path, previous-previous directory
+myfile = open("F:\\OneDrive - Vutlan s.r.o\\Backups\\GitHub repositories\\pythonLython\\tests\\text.txt") # absolute path for (Windows)
 #   - 2. File Name: the actual name of the file
 #   - 3. Extension: the end of the file path pre-pended with a period (.) used to indicate the file type
 
 
 # FOLDER STRUCTURE
+#------------------------------------------------------------------------------
 /
 │
 ├── path/
@@ -41,27 +43,93 @@ myfile = open("F:\\OneDrive - Vutlan s.r.o\\Backups\\GitHub repositories\\python
 └── animals.csv
 
 
-# SYNTAX - STRUCTURE
+# LINE ENDINGS
+#------------------------------------------------------------------------------
+# WINDOWS:
+Pug\r\n                     # '\r' means the end of line
+Jack Russell Terrier\r\n    # '\n' means the next line
+# UNIX:
+Pug\r
+\n
+Jack Russell Terrier\r
+\n
+
+
+# CHARACHTER ENCODINGS
+#------------------------------------------------------------------------------
+# - Encoding of the byte data
+# - An encoding is a translation from byte data to human readable characters.
+# - A numerical value is assigned to represent a character.
+# - Parsing a file with the incorrect character encoding can lead to failures or misrepresentation of the character.
+#       - For example, if a file was created using the UTF-8 encoding, and you try to parse it using the ASCII encoding,
+#         if there is a character that is outside of those 128 values, then an error will be thrown.
+#
+# COMMON ENCODINGS:
+# - ASCII can only store 128 characters (ASCII is actually a subset of Unicode (UTF-8))
+# - Unicode can contain up to 1,114,112 characters.
+
+
+''' SYNTAX - STRUCTURE '''
 #------------------------------------------------------------------------------
 file = open('path', "mode (read/write/append)")
 print(file.read(number_of_bytes))
 file.close()
 
 
-# The argument of the open function is the path to the file. If the file is in the current working directory of the program, you can specify only its name.
-# A file must be opened before it is edited.
-myfile = open("filename.txt", "w")  # Sending "w" means write mode, for rewriting the contents of a file.
-myfile = open("filename.txt", "r")  # Sending "r" means open in read mode, which is the default.
-myfile = open("filename.txt", "r+") # Read + write
-myfile = open("filename.txt", "a")  # Sending "a" means append mode, for adding new content to the end of the file.
-open("filename.txt", "wb")          # Adding "b" to a mode opens it in binary mode, which is used for non-text files (such as image and sound files).
+''' OPENING & CLOSING '''
+#------------------------------------------------------------------------------
+''' A file must be opened before it is edited. '''
+# SYNTAX:
+myfile = open(argument, mode)   # invoiking 'open()' function
+                                # returns: 'file object'
+#
+''' Make sure you close the file properly '''
+# CLOSING FILE, METHOD 1:
+try:
+    # Further file processing goes here
+finally:
+    myfile.close()
+#
+# CLOSING FILE, METHOD 2:
+with open('dog_breeds.txt', 'r') as myfile: # the file will be closed after 'with' block is finished
+    # Further file processing goes here
+#
+# CLOSING FILE, METHOD 3:
+myfile.close()  # not as reliable as the two before
 
-cont = myfile.read()
-print(myfile.read(16))              # Number of bytes that should be read.
-print(myfile.read())                # With no argument, read returns the rest of the file.
-print(cont)                         # This will print all of the contents of the file "filename.txt".
 
-myfile.close()                      # Close file after work is done.
+''' OPEN MODES '''
+#------------------------------------------------------------------------------
+''' Character:      Meaning:
+    'r':            Open for reading (default)
+    'w':            Open for writing, truncating (overwriting) the file first
+    'rb' or 'wb':	Open in binary mode (read/write using byte data)'''
+
+
+''' FILE OBJECT CATEGORIES '''
+#------------------------------------------------------------------------------
+'''A file object is an object exposing a file-oriented API (with methods such as read() or write()) to an underlying resource.
+CATEGORIES OF FILE OBJECTS:
+    - Text files
+    - Buffered binary files
+    - Raw binary files '''
+#
+# TEXT FILE:
+# - This is the default file object returned by open().
+file = open('dog_breeds.txt')           # open() will return a default TextIOWrapper file object:
+type(file)                              # returns: <class '_io.TextIOWrapper'>
+#
+# BUFFERED BINARY FILE TYPES:
+file = open('dog_breeds.txt', 'rb')     #
+type(file)                              # returns: <class '_io.BufferedReader'>
+#
+file = open('dog_breeds.txt', 'wb')     #
+type(file)                              # returns: <class '_io.BufferedWriter'>
+#
+# RAW FILE TYPES:
+# - generally used as a low-level building-block for binary and text streams.
+file = open('dog_breeds.txt', 'rb', buffering=0)
+type(file)                              # returns: <class '_io.FileIO'>
 
 
 # READING BYTE BY BYTE
@@ -71,7 +139,7 @@ print(file.read(4)) # returns 1234
 print(file.read(4)) # returns 5678
 print(file.read(4)) # returns 90
 print(file.read(4)) # returns 'empty'
-file.close()
+print(myfile.read())                # With no argument, read returns the rest of the file.
 
 
 # READLINES() METHOD
