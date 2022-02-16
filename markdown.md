@@ -8,11 +8,18 @@
 > [Markdown Python course files](https://github.com/programiz/python-course)
 
 
+## Collapsable sections
+<details>
+
+Content goes in here
+
+</details>
+
+
 ## Create empty line & comment:
 ```
 <br/><br/>  <!-- Create empty line & comment it -->
 ```
-
 
 
 ## HTML Supported links:
@@ -77,7 +84,8 @@ ___
 [LICENSE file with relative path](LICENSE.rst)
 
 
-## UL list:
+## Lists
+##### UL list:
 * Item 1
 * Item 2
 * Item 3
@@ -85,7 +93,7 @@ ___
   * Nested Item 2
 
 
-## UL list:
+##### UL list:
 1. Item 1
 1. Item 2
 1. Item 3
@@ -101,7 +109,7 @@ ___
 <br/></br>
 
 ---
-# Github Markdown:
+# Github Flavoured Markdown:
 ---
 ## Bash code block
 <!-- Code Blocks -->
@@ -110,6 +118,7 @@ ___
 
   npm start
 ```
+
 
 ## Javascript code block
 ```javascript
@@ -137,7 +146,7 @@ ___
 * [ ] Task 3
 
 
-## Ignoring Markdown formatting
+## Ignoring Markdown formatting <a name="heading1"/>
 
 You can tell GitHub to ignore (or escape) Markdown formatting by using **\** before the Markdown character.
 
@@ -145,7 +154,9 @@ You can tell GitHub to ignore (or escape) Markdown formatting by using **\** bef
 Let's rename \*our-new-project\* to \*our-old-project\*.
 ```
 
-## Footnotes (only displays inm Github)
+<a name="title"></a>
+
+## Footnotes (only displays inm Github) <a name="title"></a>
 Here is a simple footnote[^1].
 
 A footnote can also have multiple lines[^2].  
