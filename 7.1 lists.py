@@ -5,6 +5,10 @@
 # List items are ordered, changeable, and allow duplicate values.
 # List items are indexed, the first item has index [0], the second item has index [1] etc.
 # When we say that lists are ordered, it means that the items have a defined order, and that order will not change.
+
+# CREATE `NULL` LIST
+mylist = []
+
 # If you add new items to a list, the new items will be placed at the end of the list.
 thislist = ["apple", "banana", "cherry"]    # order [[0],[1],[2]], [[-3],[-2],[-1]]
 thislist = ["apple", "apple", "apple"]      # Items can be the same

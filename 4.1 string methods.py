@@ -62,7 +62,7 @@ print("AN ALL CAPS SENTENCE".lower()) # returns: an all caps sentence
 # REPLACE METHOD
 txt = "Hello, World!"
 print(txt.replace("l", "b")) # Replaces all 'l' to 'b' letters
-print(x.replace("Hello", "Good morning"))
+print(txt.replace("Hello", "Good morning"))
 
 # SPLIT METHOD
 # split string into strings, turns it into a list
