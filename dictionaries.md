@@ -31,9 +31,11 @@ mydictionary  = {key1:value1, key2:value2, key3:value3}
 ## CREATE DISCTIONARIES
 To create a dictionary, we put the key/value pairs separated by a colon `:` inside the curly braces `{}`.
 
+**Example 1**: simple
 ```python
 peopleList = {}                               # Create an empty list
-peopleList = {"name": "Linus", "age": 21}     # Create a list with two values
+peopleList = {"name": "Linus",
+              "age": 21}     # Create a list with two values
 print(peopleList)
 ```
 ```
@@ -49,7 +51,36 @@ print(peopleList)
 - Keys of a dictionary can be any immutable objects like numbers, strings and tuples. However, they cannot be objects that can be modified like lists.
 - Keys must be unique for identification.
 
-##### Allowed `Key` types in dictionaries
+**Example 2**:
+```python
+pairs = {1: "apple",
+    "orange": [2, 3, 4],
+    True: False,
+    None: "True",
+}
+
+print(pairs.get("orange"))
+print(pairs.get(7))
+print(pairs.get(12345, "not in dictionary"))
+```
+```
+> [2, 3, 4]
+> None
+> not in dictionary
+```
+
+**Example 3**:
+```python
+fib = {1: 1, 2: 1, 3: 2, 4: 3}
+
+print(fib.get(4, 0) + fib.get(7, 5))
+```
+```
+> 8
+```
+
+
+## Allowed `Key` types in dictionaries
 
 |Key         | allowed? | comment
 |------------|----------|---------
@@ -105,8 +136,8 @@ print(person1["hobbies"])
 ```
 
 **Check a key in list with get( ) method:**
-Sometimes instead of getting this error, we may just want to know if the key exists or not and decide what to do based on it
-In that case we can use the dictionary's `get()` method:
+Sometimes instead of getting this `KeyError` error, we may just want to know if the key exists or not and decide what to do based on it.
+If the key is not found in the dictionary `get()` returns another specified value instead ('None', by default).
 
 ```python
 person1 = {"name": "Linus", "age": 21}
@@ -127,6 +158,7 @@ We can also pass a second default argument to the `get()` method that will be re
 ```python
 person1 = {"name": "Linus", "age": 21}
 print(person1.get("hobbies", ["dancing", "fishing"]))
+print(person1.get("hobbies", "key not found"))
 ```
 ```
 >> ["dancing", "fishing"]
@@ -191,6 +223,28 @@ for key in person1:
 ```
 
 >**Note:** Starting from Python 3.7, the order of items in a dictionary is preserved. So when we iterate through a dictionary, we get the keys in the order in which they are inserted in the dictionary.
+
+
+---
+
+
+## CHECK IF KEY IS IN DICTIONARY
+To determine whether a `key` is in a `dictionary`, you can use `in` and `not in`, just as you can for a list.
+```python
+nums = {
+    1: "one",
+    2: "two",
+    3: "three",
+}
+print(1 in nums)
+print("three" in nums)
+print(4 not in nums)
+```
+```
+> True
+> False
+> True
+```
 
 
 ---
