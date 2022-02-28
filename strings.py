@@ -30,7 +30,7 @@ print(a[1]) #Get the character at position 1 (remember that the first character 
 for x in "banana":
   print(x)
 
-# STRING LENGTH
+# LEN ( ), STRING LENGTH
 txt = "Hello, World!"
 print(len(txt))   # len() function returns the length of a string:
 
