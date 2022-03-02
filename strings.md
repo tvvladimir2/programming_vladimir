@@ -1,14 +1,41 @@
 # STRINGS
 
-# Strings are also lists
-# Each letter has an index [0], [1], [2] ...
 
-#Strings in python are surrounded by either single quotation marks, or double quotation marks.
-print("Hello")
-# is the same as
-print('Hello')
+---
 
-# Multiline string:
+
+## DESCRIPTION
+
+Strings are also lists.
+
+
+---
+
+
+## CREATE STRINGS
+
+```python
+print("Hello")        # single quotation marks
+print('Hello')        # double quotation marks
+```
+
+
+---
+
+
+## STRUCTURE & SYNTAX
+
+`string_name = list(charachter indexes)`
+`string_name = 'list.index[0], list.index[1], list.index[2], list.index[3]'`
+`string_name = "[-7], [-6], [-5], [-4], [-3], [-2], [-1]"`
+`string_name = "[0], [1], [2], [3], [4], [5], [6]"`
+
+
+---
+
+
+## Multiline string:
+```python
 a = """Lorem ipsum dolor sit amet,
 consectetur adipiscing elit,
 sed do eiusmod tempor incididunt
@@ -18,21 +45,56 @@ a = '''Lorem ipsum dolor sit amet,
 consectetur adipiscing elit,
 sed do eiusmod tempor incididunt
 ut labore et dolore magna aliqua.'''
+```
 
-# STRINGS AS ARRRAYS - INDEXING STRINGS
-# - Like many other popular programming languages, strings in Python are arrays of bytes representing unicode characters.
-# - However, Python does not have a character data type, a single character is simply a string with a length of 1.
-# - Square brackets can be used to access elements of the string.
-a = "Hello, World!"
-print(a[1]) #Get the character at position 1 (remember that the first character has the position 0):
 
-# LOOPING THROUGH A STRING
+---
+
+
+## STRINGS AS ARRRAYS - INDEXING STRINGS
+
+- Like many other popular programming languages, strings in Python are arrays of bytes representing unicode characters.
+- However, Python does not have a character data type, a single character is simply a string with a length of 1.
+- Square brackets can be used to access elements of the string.
+
+```python
+mystring = "Hello, World!"
+print(mystring[1]) #Get the character at position 1 (remember that the first character has the position 0):
+```
+```
+> e
+```
+
+
+---
+
+
+# LOOPING THROUGH A STRING USING FOR( ) LOOP
+
+```python
 for x in "banana":
   print(x)
+```
+```
+b
+a
+n
+a
+n
+a
+```
+
+
+---
+
 
 # LEN ( ), STRING LENGTH
 txt = "Hello, World!"
 print(len(txt))   # len() function returns the length of a string:
+
+
+---
+
 
 # CHECK STRING
 txt = "The best things in life are free!"
@@ -54,7 +116,7 @@ c = a + b       # Merge variable a with variable b into variable c
 c = a + " " + b # To add a space between them, add a " ":
 print(c)
 
-# FORMAT STRINGS
+# FORMAT STRING
 age = 36
 myorder = "I want {} pieces of item {} for {} dollars." # Use placeholders
 myorder = "I want to pay {2} dollars for {0} pieces of item {1}."   # Use index numbers {0} for correct placeholders
