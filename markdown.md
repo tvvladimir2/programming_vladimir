@@ -135,10 +135,12 @@ ___
 
 [On-line table generator](https://www.tablesgenerator.com/markdown_tables#)
 
-| Name     | Email          |
-| -------- | -------------- |
-| John Doe | john@gmail.com |
-| Jane Doe | jane@gmail.com |
+| Name     |  Email           |
+|:--------:|  --------------  |
+| John Doe |  john@gmail.com  |
+| Jane Doe | jane@gmail.com   |
+
+`|:--------:|` centers the contents in the column
 
 
 ---
