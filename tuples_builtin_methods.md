@@ -1,4 +1,10 @@
-# BUILT-IN FUNCTIONS
+# PYTHON BUILT-IN FUNCTIONS
+
+
+---
+
+
+See also: `functions_built_in.md` file with general usages for all types of variables.
 
 | №  |    Function    |                                          Description                                          |
 |----|:--------------:|:---------------------------------------------------------------------------------------------:|
@@ -74,270 +80,30 @@
 ---
 
 
-## 1. ABS( )
-
-The abs() function returns the absolute value of the specified number.
-Absolute value of 3 is 3.
-Absolute value of −3 is also 3.
-Absolute number of 0 is 0.
-The absolute value of a number may be thought of as its distance from zero.
-
-`function_syntax = abs(n)`
-
-| Parameter |     Description    |
-|:---------:|:------------------:|
-| n         | Required. A number |
-
-```python
-print(abs(3))
-print(abs(-3))
-print(abs(0))
-```
-```
-> 3
-> -3
-> 0
-```
-
-
----
-
-
-## 2. ALL( )
-
-The `all()` function returns True if all items in an iterable are true, otherwise it returns False.
-If the iterable object is empty, the `all()` function also returns True.
-
-`all_function = all(iterable)`
-
-| Parameter |                  Description                 |
-|:---------:|----------------------------------------------|
-| iterable  | An iterable object (list, tuple, dictionary) |
-
-**Example**:
-```python
-mydict = {1 : "Apple", 1 : "Orange"}
-print(all(mydict))
-
-mytuple = (0, True, False)
-x = all(mytuple)
-```
-```
-> True
-> False
-```
-
-
----
-
-
-## 3. ANY( )
-
-The `any()` function returns True if any item in an iterable are true, otherwise it returns False.
-If the iterable object is empty, the `any()` function will return False.
-
-`any_function = any(iterable)`
-
-| Parameter |                  Description                 |
-|:---------:|----------------------------------------------|
-| iterable  | An iterable object (list, tuple, dictionary) |
-
-**Example**: Check if any item in a tuple is True:
-```python
-mydict = {0 : "Apple", 1 : "Orange"}
-print(any(mydict))
-
-mytuple = (0, 1, False)
-print(any(mytuple))
-```
-```
-> True
-> True
-```
-
-
----
-
-
-## 18. ENUMERATE( )
-
-The `enumerate()` function takes a collection (e.g. a tuple) and returns it as an enumerate object.
-The `enumerate()` function adds a counter as the key of the enumerate object.
-
-`enumerate_function = enumerate(iterable, start)`
-
-| Parameter |                               Description                              |
-|:---------:|------------------------------------------------------------------------|
-| iterable  | An iterable object                                                     |
-| start     | A Number. Defining the start number of the enumerate object. Default 0 |
-
-**Example**: Convert a tuple into an enumerate object:
-```python
-x = ('apple', 'banana', 'cherry')
-y = enumerate(x)
-
-print(list(y))
-```
-```
-> [(0, 'apple'), (1, 'banana'), (2, 'cherry')]
-```
-
-
----
-
-
 ## 37. LEN( )
 
-The len() function returns the number of items in an object.
-When the object is a string, the `len()` function returns the number of characters in the string.
-
-`len_syntax = len(object) = len(sequence or a collection)`
+Measure the length of a tuple.
 
 ```python
-print(len("Hello"))
-```
-```
-> 5
+thistuple = ("apple", "banana", "cherry")
+print(len(thistuple))   # Shows the lengths of the Tuple, returns 3
 ```
 
 
 ---
 
 
-## 41. MAX( )
+## 65. TYPE( )
 
-The `max()` function returns the item with the highest value, or the item with the highest value in an iterable.
-If the values are strings, an alphabetically comparison is done.
+Show datatype
 
-`function_max = max(n1, n2, n3, ...) = max(iterable)`
-
-|    Parameter                |          Description                                                               |
-|:---------------------------:|------------------------------------------------------------------------------------|
-| n1, n2, n3, ... or iterable | `One or more items to compare` or `An iterable, with one or more items to compare` |
-
-**Example 1**: Return the name with the highest value, ordered alphabetically:
-```python
-print(max("Abb", "Bcc", "Cdd"))
-```
-```
-> Cdd
-```
-
-**Example 2**: Return the item in a tuple with the highest value:
-```python
-print(max(1, 5, 3, 9))
-```
-```
-> 9
+```Python
+<class 'tuple'> # - From Python's perspective, tuples are defined as objects
+                #   with the data type 'tuple'.
+# E.g.:
+mytuple = ("apple", "banana", "cherry")
+print(type(mytuple))
 ```
 
 
 ---
-
-
-## 43. MIN( )
-
-The `min()` function returns the item with the lowest value, or the item with the lowest value in an iterable.
-If the values are strings, an alphabetically comparison is done.
-
-`min_function = min(n1, n2, n3, ...) = min(iterable) `
-
-| Parameter                   | Description                                                                        |
-|:---------------------------:|------------------------------------------------------------------------------------|
-| n1, n2, n3, ... or Iterable | `One or more items to compare` or 'An iterable, with one or more items to compare' |
-
-**Example 1**: Return the name with the lowest value, ordered alphabetically:
-```python
-print(min("Abb", "Bcc", "Cdd"))
-```
-```
-> Abb
-```
-
-
-**Example 2**: Return the item in a tuple with the lowest value:
-```python
-a = (1, 5, 3, 9)
-prin(min(a))
-```
-```
-> 1
-```
-
-
----
-
-
-## 52. RANGE( )
-
-The `range()` function returns a sequence of numbers.
-By default, it starts from 0, increments by 1 and stops before the specified number.
-
-`range_syntax = range(start, stop, step)`
-
-| Parameter | Description                                                                      |
-|:---------:|:--------------------------------------------------------------------------------:|
-| start     | Optional. An integer number specifying at which position to start. Default is 0  |
-| stop      | Required. An integer number specifying at which position to stop (not included). |
-| step      | Optional. An integer number specifying the incrementation. Default is 1          |
-
-```python
-mylist = list(range(10))        # generates a list containing all of the integers, 0 to 9.
-print(mylist)
-mylist = list(range(3, 8))      # generates a list from 3 to 7
-print(mylist)
-mylist = list(range(5, 11, 2))  # third argument determines the interval of the sequence produced, also called the step. # returns 5,7,9
-print(mylist)
-```
-```
-[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-[3, 4, 5, 6, 7]
-[5, 7, 9]
-```
-
-
----
-
-
-## 55. ROUND( )
-
-The `round()` function returns a floating point number that is a rounded version of the specified number, with the specified number of decimals.
-The default number of decimals is 0, meaning that the function will return the nearest integer.
-
-`round_function = round(number, digits)`
-
-| Parameter |                                     Description                                |
-|:---------:|--------------------------------------------------------------------------------|
-| number    | Required. The number to be rounded                                             |
-| digits    | Optional. The number of decimals to use when rounding the number. Default is 0 |
-
-```python
-print(round(5.76543))
-```
-```
-> 5.77
-```
-
-
----
-
-
-## 62. SUM( )
-
-The `sum()` function returns a number, the sum of all items in an iterable.
-
-`function_sum = sum(iterable, start)`
-
-| Parameter |                     Description                     |
-|:---------:|-----------------------------------------------------|
-| iterable  | Required. The sequence to sum                       |
-| start     | Optional. A value that is added to the return value |
-
-```python
-a = (1, 2, 3, 4, 5)     # sums is 15
-x = sum(a, 7)           # sums is 15 + 7 = 22
-print(x)
-```
-```
-> 22
-```

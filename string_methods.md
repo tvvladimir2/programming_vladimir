@@ -198,10 +198,13 @@ print(txt.replace("Hello", "Good morning"))
 Split string into strings, turns it into a list
 "string1" >> list
 
+**Example**: split the string into substrings if it finds instances of the separator ','
 ```python
 txt = "Hello, World!"
-print(a.split(",")) # split() method splits the string into substrings if it finds instances of the separator ','
-#returns ['Hello', ' World!']
+print(txt.split(","))
+```
+```
+> ['Hello', ' World!']
 ```
 
 
