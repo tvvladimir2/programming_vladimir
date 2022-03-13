@@ -15,7 +15,7 @@
 |7 | insert()  | Adds an element at the specified position                                    |
 |8 | pop()	   | Removes the element at the specified position                                |
 |9 | remove()	 | Removes the item with the specified value                                    |
-|10| reverse() | Reverses the order of the list                                              |
+|10| reverse() | Reverses the order of the list                                               |
 |11| sort()	   | Sorts the list                                                               |
 
 
@@ -99,8 +99,14 @@ print(thislist)
 # ----------------------------------------------------------------------------
 # The index method finds the first occurrence of a list item and returns its index.
 # If the item isn't in the list, it raises a ValueError.
+
+```python
 letters = ['p', 'q', 'r', 's', 'p', 'u']
 print(letters.index('r'))   # returns 2
+```
+```
+> 2
+```
 
 
 ---

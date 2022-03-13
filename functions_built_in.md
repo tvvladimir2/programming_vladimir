@@ -186,6 +186,72 @@ print(list(y))
 ---
 
 
+## 21. FILTER( )
+
+
+The filter() function returns an iterator were the items are filtered through a function to test if the item is accepted or not.
+- higher-order functions that operates on lists (or similar objects called iterables)
+- similiar to anonymous functions (lambdas)
+- a function that returns a Boolean
+- the result has to be explicitly converted to a list if you want to print it.
+
+
+` function_filter_syntax = filter(function, iterable) `
+
+
+| Parameter |                     Description                    |
+|:---------:|:--------------------------------------------------:|
+| function  | A Function to be run for each item in the iterable |
+| iterable  | The iterable to be filtered                        |
+
+
+**Example 1**: Filter the array, and return a new array with only the values equal to or above 18:
+
+```python
+ages = [5, 12, 17, 18, 24, 32]
+
+def myFunc(x):
+  if x < 18:
+    return False
+  else:
+    return True
+
+adults = filter(myFunc, ages)
+
+print(adults)
+print(type(adults))
+# print(list(adults))   # returns [18, 24, 32]
+
+for x in adults:
+  print(x)
+
+```
+```
+<filter object at 0x000001DEBF8C8FA0>
+<class 'filter'>
+> 18
+> 24
+> 32
+```
+
+
+**Example 2**: Fill in the blanks to extract all items that are less than 5 from the list.
+
+```python
+nums = [1, 2, 5, 8, 3, 0, 7]
+
+y = list( filter(lambda x: x < 5, nums))
+
+print(y)
+```
+```
+> [1, 2, 3, 0]
+```
+
+
+---
+
+
 ## 37. LEN( )
 
 The len() function returns the number of items in an object.
@@ -198,6 +264,61 @@ print(len("Hello"))
 ```
 ```
 > 5
+```
+
+
+---
+
+
+## 40. MAP( )
+
+The `map()` function executes a specified function for each item in an iterable. The item is sent to the function as a `parameter`.
+The function map takes a function and an iterable as arguments, and returns a new iterable with the function applied to each argument.
+- higher-order functions that operates on lists (or similar objects called iterables)
+- similiar to anonymous functions (lambdas)
+- the result has to be explicitly converted to a list if you want to print it.
+
+
+` function_map_syntax = map(function, iterables) `
+
+
+| Parameter |                                                                                   Description                                                                                  |
+|:---------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| function  | Required. The function to execute for each item                                                                                                                                |
+| iterable  | Required. A sequence, collection or an iterator object. You can send as      many iterables as you like, just make sure the function has one parameter      for each iterable. |
+
+
+**Example 1**: Calculate the length of each word in the tuple:
+
+```python
+def myfunc(a):
+  return len(a)
+
+x = map(myfunc, ('apple', 'banana', 'cherry'))
+
+print(x)
+print(type(x))
+
+#convert the map into a list, for readability:
+print(list(x))
+```
+```
+> <map object at 0x0000025317575460>
+> <class 'map'>
+> [5, 6, 6]
+```
+
+
+**Example 2**: Using `map()` with `Lambda`. Multiply each item in a list by 2.
+
+```python
+nums = [33,45,65,32,44]
+
+a = list(map(lambda x: x*2, nums))
+print(a)
+```
+```
+> [66, 90, 130, 64, 88]
 ```
 
 
