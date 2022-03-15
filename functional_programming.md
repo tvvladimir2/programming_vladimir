@@ -4,6 +4,23 @@
 ---
 
 
+## CHAPTER ORDER
+
+- Functional programming
+- Lambdas (functions_anonymous.md)
+- Map & filter (functions_anonymous.md, functions_built_in.md)
+- Generators (generators.md)
+- Decorators (decorators.md)
+- Recursion
+- Sets
+- Itertools
+
+
+---
+
+
+## DESCRIPTION
+
 Functional programming is a style of programming that (as the name suggests) is based around functions.
 A key part of functional programming is `higher-order functions`. Higher-order functions take other functions as arguments, or return them as results.
 
@@ -70,3 +87,6 @@ Using pure functions has both advantages and disadvantages.
 **Pure functions disadvantages**:
 The main disadvantage of using only pure functions is that they majorly complicate the otherwise simple task of I/O, since this appears to inherently require side effects.
 They can also be more difficult to write in some situations.
+
+
+---
