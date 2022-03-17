@@ -26,3 +26,83 @@
 
 
 ---
+
+
+## 1. ADD( )
+
+The `add()` method adds an element to the set.
+
+If the element already exists, the add() method does not add the element.
+
+
+` set_add_syntax = set.add(elmnt) `
+
+
+| Parameter |               Description               |
+|:---------:|:---------------------------------------:|
+| elmnt     | Required. The element to add to the set |
+
+
+```python
+nums = {1, 2, 3, 4, 5, 6, 7}
+nums.add(-7)
+print(nums)
+```
+```
+> {1, 2, 3, 4, 5, 6, 7, -7}
+```
+
+
+---
+
+
+## 12. POP( )
+
+The pop() method removes a random item from the set.
+
+This method returns the removed item.
+
+
+` set_pop_syntax = set.pop() `    # No parameter values.
+
+
+```python
+nums = {1, 2, 3, 4, 5, 6, 7}
+nums.pop()
+nums.pop()
+print(nums)
+```
+```
+> {3, 4, 5, 6, 7}
+```
+
+
+---
+
+
+## 13. REMOVE( )
+
+The remove() method removes the specified element from the set.
+
+This method is different from the discard() method, because the remove() method will raise an error if the specified item does not exist, and the discard() method will not.
+
+
+` set_syntax = set.remove(item) `
+
+
+| Parameter |                  Description                 |
+|:---------:|:--------------------------------------------:|
+| item      | Required. The item to search for, and remove |
+
+
+```python
+nums = {1, 2, 3, 4, 5, 6, 7}
+nums.remove(1)
+print(nums)
+```
+```
+> {2, 3, 4, 5, 6, 7}
+```
+
+
+---

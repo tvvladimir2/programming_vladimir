@@ -65,3 +65,41 @@ print(thisset)
 
 
 ---
+
+
+## `IN` KEYWORD
+
+**Example 1**: Check if the item is in a set
+
+```python
+num_set = {1, 2, 3, 4, 5}
+print(3 in num_set)
+```
+```
+> True
+```
+
+
+**Example 2**: `IF` & `IN` combination
+```python
+letters = {"a", "b", "c", "d"}
+
+if "e" not in letters:
+  print(1)
+else:
+  print(2)
+```
+```
+> 1
+```
+
+
+---
+
+
+## SETS vs LISTS
+
+Due to the way they're stored, it's faster to check whether an item is part of a set, rather than part of a list.
+
+
+---
