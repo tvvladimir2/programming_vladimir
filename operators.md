@@ -45,7 +45,9 @@ Operator  |  Name           |  Example
 13| `<<=`    | x <<= 3  |            |
 14| `:=`     | x=1, y=2 |            | Walrus operator assigns values to variables within an expression, including variables that do not exist yet.
 
+
 **14. `:=` operator example**
+
 ```python
 num = int(input())
 print(num)
@@ -93,14 +95,17 @@ print(num:=int(input()))
 
 
 ## BITWISE OPERATORS
-№| Operator | Name                 | Description  
--|----------|----------------------|-------------
-1| `&`      | AND                  | Sets each bit to 1 if both bits are 1
-2| `\|`     | OR                   | Sets each bit to 1 if one of two bits is 1
-3| `^`      | XOR                  | Sets each bit to 1 if only one of two bits is 1
-4| `~`      | NOT                  | Inverts all the bits
-5| `<<`     | Zero fill left shift | Shift left by pushing zeros in from the right and let the leftmost bits fall off
-6| `>>`     | Signed right shift   | Shift right by pushing copies of the leftmost bit in from the left, and let the rightmost bits fall off
+
+> See file operators_bitwise.md
+
+№| Operator | Example | Name                       | Description  
+-|----------|---------|----------------------------|-------------
+1| `&`      | a & b   | Bitwise AND                | Sets each bit to 1 if both bits are 1
+2|  |       | a | b   | Bitwise OR                 | Sets each bit to 1 if one of two bits is 1
+3| `^`      | a ^ b   | Bitwise XOR (exclusive OR) | Sets each bit to 1 if only one of two bits is 1
+4| `~`      | ~a      | Bitwise NOT                | Inverts all the bits
+5| `<<`     | a << n  | Bitwise left shift         | Zero fill left shift. Shift left by pushing zeros in from the right and let the leftmost bits fall off
+6| `>>`     | a >> n  | Bitwise right shift        | Signed right shift. Shift right by pushing copies of the leftmost bit in from the left, and let the rightmost bits fall off
 
 
 ---
@@ -123,7 +128,7 @@ Operators                                                                    | M
 `<<`, `>>`                                                                   | Bitwise shift operators
 `&`                                                                          | Bitwise AND
 `^`                                                                          | Bitwise XOR
-`\|`                                                                         | Bitwise OR
+ |                                                                           | Bitwise OR
 `==`, `!=`, `>`, `>=`, `<`, `<=`, `is`, `is not`, `in`, `not in`             | Comparisons, Identity, Membership operators
 `not`                                                                        | Logical NOT
 `and`                                                                        | Logical AND
