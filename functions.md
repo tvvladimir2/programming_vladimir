@@ -69,6 +69,24 @@ print(variable)
 ---
 
 
+## DECLARE A GLOBAL VARIABLE INSIDE A FUNCTION
+
+```python
+c = 0 # global variable
+
+def add():
+    global c
+    c = c + 2 # increment by 2
+    print("Inside add():", c)
+
+add()
+print("In main:", c)
+```
+
+
+---
+
+
 # RECURSION
 
 A function calls itself and repeats its behavior until some condition is met to return a result.
@@ -137,12 +155,15 @@ help(func)             # uses help() function to print the function docstring
 def func(a,b):
   return (a+b, a*b)
 add, multiply = func(3, 2)   # add = a+b; multiply=a*b
+result = func(3, 2)
 print(add)
 print(multiply)
+print(result)
 ```
 ```
 > 5
 > 6
+> (5, 6)
 ```
 
 

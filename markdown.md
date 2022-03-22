@@ -234,11 +234,14 @@ You can also use words, to fit your writing style more closely[^note].
 
 **[UTF-8 Mathematical Operators](https://www.w3schools.com/charsets/ref_utf_math.asp)**
 
-###### Unknown:
+###### Unknown example:
 h<sub>&theta;</sub>(x) = &theta;<sub>o</sub> x + &theta;<sub>1</sub>x
 
-###### Quadratic:
+###### Quadratic example:
 ax<sup>2</sup>+bx+c=0
+
+###### Binary example
+1011012 = (1 × 2<sup>5</sup>) + (0 × 2<sup>4</sup>) + (1 × 2<sup>3</sup>) + (1 × 2<sup>2</sup>) + (0 × 2<sup>1</sup>) + (1 × 2<sup>0</sup>) = 45<sub>10</sub>
 
 
 ---
