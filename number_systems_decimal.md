@@ -1,31 +1,43 @@
-# NUMERAL SYSTEMS
-
-A numeral system (or system of numeration) is a writing system for expressing numbers; that is, a mathematical notation for representing numbers of a given set, using digits or other symbols in a consistent manner.
-
-The same sequence of symbols may represent different numbers in different numeral systems.
-
-Numeral system | Base | Used digits                   | Value |
----------------|------|-------------------------------|-------|
-Binary         | 2    | 0,1                           | 1010  |
-Octal          | 8    | 0,1,2,3,4,5,6,7               | 012   |
-Decimal        | 10   | 0,1,2,3,4,5,6,7,8,9           | 10    |
-Hexidecimal    | 16   | 0,1,2,3,4,5,6,7,8,9,A,B,C,D,F | A     |
-
-
-
+# DECIMAL NUMERAL SYSTEM
 
 
 ---
 
 
-# DECIMAL NUMERAL SYSTEM
+## DESCRIPTION
+
+A Decimal number system is the number system that we use on a daily basis based on the 10 digits.
+Decimal number system is the number system we use every day and uses digits from 0 - 9 i.e. 0, 1, 2, 3, 4, 5, 6, 7, 8, & 9.
+The base number of the decimal number system is 10 as the total number available in this number system is 10.
+
+
+**Example**: Number 75 is the same as 75 to the base of 10
+
+75 = 75<sub>10</sub>
+
+
+**Rules**:
+
+- In the decimal number system, the numbers are from 0 - 9.
+- Once 9 is reached, we make the rightmost number 0 and add 1 to the left which becomes 10.
+- As and when we reach a digit with 9, we always add 1 so that it number increased to the next.
+
+
+**Example**: Each number in the decimal number system has a place value of the power of 10.
+
+(134)<sub>10</sub> = (1 × 10<sup>2</sup>) + (3 × 10<sup>1</sup>) + (4 × 10<sup>0</sup>) = 100 + 30 + 4
+
+---
+
+
+# BASE 10 with DECIMAL POINT
 
 |                      | Base       |        |
 |:--------------------:|:----------:|:------:|
 | Millions             | Hundreds   | 10**8  |
 |                      | Tens       | 10**7  |
 |                      | Ones       | 10**6  |
-| Thaosands            | Hundreds   | 10**5  |
+| Thousands            | Hundreds   | 10**5  |
 |                      | Tens       | 10**4  |
 |                      | Ones       | 10**3  |
 | Ones                 | Hundreds   | 10**2  |
@@ -39,6 +51,11 @@ Hexidecimal    | 16   | 0,1,2,3,4,5,6,7,8,9,A,B,C,D,F | A     |
 |                      | Hundred-   | 10**-5 |
 | Millionths           | Ones       | 10**-6 |
 
+
+---
+
+
+## BIGGEST NUMBERS
 
 | Name                    | Value             |
 |:-----------------------:|:-----------------:|
@@ -112,42 +129,3 @@ Hexidecimal    | 16   | 0,1,2,3,4,5,6,7,8,9,A,B,C,D,F | A     |
 
 
 ---
-
-
-# BINARY SYSTEM
-
-People naturally favor the base-ten numeral system, also known as the decimal system, because it plays nicely with counting on fingers. A `denary number` is a number in the base 10, or decimal, system.
-
-Computers, on the other hand, treat data as a bunch of numbers expressed in the base-two numeral system, more commonly known as the binary system. Such numbers are composed of only two digits, zero and one.
-
-Electronic devices use different voltage levels. By employing only two states, you make the system more reliable and resistant to noise.
-
-
----
-
-
-## BINARY CONVERSION
-
-| Power of base      | 2**7  | 2**6 | 2**5 | 2**4 | 2**3 | 2**2 | 2**1 | 2**0 |       |
-|--------------------|-------|------|------|------|------|------|------|------|-------|
-| Denary number      | 128   | 64   | 32   | 16   | 8    | 4    | 2    | 1    | = 255 |
-
-The "0b" is a prefix to denote that the number is in binary.
-
-|         | prefix | Interpretation | Base | Example |
-|---------|--------|----------------|------|---------|
-| Base 2  | 0b, 0B | Binary         | 2    | 0b1010  |  
-| Base 8  | 0o, 0O | Octal          | 8    | 0o100   |
-| Base 16 | 0x, 0X | Hexidecimal    | 16   | 0xff112 |
-
-
-Max. number = 0b11111111 = 255 = (11111111)<sub>2</sub>
-
-Min. number = 0b00000000 = 0
-
-**Example**: Binary signed 2's complement
-256 = 00000001 00000000
-
-**Example**:
-
-1011012 = (1 × 2<sup>5</sup>) + (0 × 2<sup>4</sup>) + (1 × 2<sup>3</sup>) + (1 × 2<sup>2</sup>) + (0 × 2<sup>1</sup>) + (1 × 2<sup>0</sup>) = 32 + 0 + 8 + 4 + 0 + 1 = 45<sub>10</sub>
