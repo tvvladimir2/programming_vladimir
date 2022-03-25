@@ -19,7 +19,7 @@ Operator  |  Name           |  Example
 -         |  Subtraction    |  x - y
 *         |  Multiplication |  x * y
 /         |  Division       |  x / y
-%         |  Modulus        |  x % y 	# 7 % 2 = 1 (a whole reminder/остаток)
+%         |  Modulus        |  x % y 	# 7 % 2 = 1 (a whole remainder/остаток)
 **        |  Exponentiation |  x ** y 	# 2**3 = 2 to the power of 3, степень
 //        |  Floor division |  x // y  # 7 // 2 = 3 whole number, целое деление
 
