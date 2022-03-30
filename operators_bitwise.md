@@ -138,7 +138,7 @@ print(bin(c))
 ---
 
 
-## 2. `^` BITWISE OPERATOR `XOR`
+## 3. `^` BITWISE OPERATOR `XOR`
 
 Unlike bitwise `AND`, `OR`, and `NOT`, the bitwise `XOR operator (^)` doesn’t have a logical counterpart in Python. However, you can simulate it by building on top of the existing operators:
 
@@ -186,7 +186,7 @@ print(bin(c))
 ---
 
 
-## `~` BITWISE `NOT` operator
+## 4. `~` BITWISE `NOT` operator
 
 NOT operator (~) expects just one argument, making it the only `unary` bitwise operator. It performs `logical negation` on a given number by flipping all of its bits:
 
@@ -240,4 +240,116 @@ That’s a perfect example of a `bitmask`, which you’ll explore in one of the 
 ---
 
 
-##
+## 5. `<<` LEFT SHIFT operator
+
+The bitwise left shift operator `<<` moves the bits of its first operand to the left by the number of places specified in its second operand. It also takes care of inserting enough zero bits to fill the gap that arises on the right edge of the new bit pattern:
+
+![Left shift operator](images/left_shift.gif)
+
+
+**Example**: Shifting a single bit to the left by one place doubles its value.
+
+```python
+a = 39                # 100111
+print(a << 1)
+print(bin(a << 1))
+
+print(a << 2)
+print(bin(a << 2))
+```
+```
+> 78                  # 39 * 2 = 78
+> 0b1001110
+
+> 156                 # 39 * 2 * 2 = 156
+> 0b10011100       
+```
+
+
+| Expression | Binary Value          | Decimal Value    |
+|:----------:|:---------------------:|:----------------:|
+| a          | 100111<sub>2</sub>    | 39<sub>10</sub>  |
+| a << 1     | 1001110<sub>2</sub>   | 78<sub>10</sub>  |
+| a << 2     | 10011100<sub>2</sub>  | 156<sub>10</sub> |
+| a << 3     | 100111000<sub>2</sub> | 312<sub>10</sub> |
+
+
+a << n = a * 2<sup>n</sup>
+
+Used for:
+- improve the speed of certain mathematical operations.
+- move the bits around
+- for creating bitmasks later on
+- used to be a popular optimization technique
+
+
+---
+
+
+## 6. `>>` RIGHT SHIFT operator
+
+The bitwise right shift operator (>>) is analogous to the left one, but instead of moving bits to the left, it pushes them to the right by the specified number of places. The rightmost bits always get dropped:
+
+![right shift operator gif](images/right_shift.gif)
+
+Every time you shift a bit to the right by one position, you halve its underlying value. Moving the same bit by two places to the right produces a quarter of the original value, and so on.
+
+| Expression | Binary Value         | Decimal Value    |
+|:----------:|:--------------------:|:----------------:|
+| a          | 10011101<sub>2</sub> | 157<sub>10</sub> |
+| a >> 1     | 1001110<sub>2</sub>  | 78<sub>10</sub>  |
+| a >> 2     | 100111<sub>2</sub>   | 39<sub>10</sub>  |
+| a >> 3     | 10011<sub>2</sub>    | 19<sub>10</sub>  |
+
+Halving an odd number such as 15710 would produce a fraction. To get rid of it, the right shift operator automatically floors the result. It’s virtually the same as a `floor division` by a power of two:
+
+a >> n = a / (2<sup>n</sup>)
+
+**Example**:
+```python
+print(5 >> 1)  # Bitwise right shift
+print(bin(5 >> 1))
+
+print(-5 >> 1)  # Bitwise right shift
+print(bin(5 >> 1))
+
+print(5 // 2)  # Floor division (integer division)
+print(bin(5 // 2))
+```
+```
+> 2
+> 0b10
+
+> -3
+> -0b11
+
+> 2
+> 0b10
+
+> -3
+> -0b11
+```
+
+
+**Example**: Pushing by more places than there are bits in a number, run out of bits to shift. Once there are no more bits switched on, you’re stuck with a value of zero. Zero divided by anything will always return zero.
+
+```python
+print(2 >> 5)
+print(bin(2 >> 5))
+```
+```
+> 0
+> 0b0
+```
+
+
+**Example**: Shift a negative number. The floor of a small negative fraction is always minus one
+
+```python
+print(-2 >> 5)
+print(bin(-2 >> 5))
+```
+```
+> -1
+> -0b1
+```
