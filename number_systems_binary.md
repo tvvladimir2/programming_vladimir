@@ -33,6 +33,20 @@ print(int(1001011))       # Python sees this as an integer
 
 ---
 
+## CREATE BINARY
+
+```python
+# 1. Interpret binary string to integer.
+x = int('10101010', 2)      # > 170
+
+# 2.
+x = 0b10101010              # > 170, Python automatically makes it it an integer.
+```
+
+
+
+---
+
 
 ## BINARY to DECIMAL
 

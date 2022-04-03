@@ -6,6 +6,7 @@
 
 ## LINKS
 
+[Itertools simple clear examples at GeeksforGeeks.org](https://www.geeksforgeeks.org/python-itertools/?ref=gcse)
 [itertools — Functions creating iterators for efficient looping¶](https://docs.python.org/3/library/itertools.html#itertools.combinations_with_replacement)
 
 
