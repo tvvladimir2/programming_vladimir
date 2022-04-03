@@ -223,13 +223,32 @@ Charachter | Description
 \'         | Single Quote
 \\         | Backslash
 \r 	       | Carriage Return
-\t 	       | Tab
+\t 	       | Tab                
 \b 	       | Backspace
 \f 	       | Form Feed
 \ooo 	     | Octal value
 \xhh 	     | Hex value
 
+**Example**: `Print()`
+```python
+for i in range(5):
+    for y in range(5):
+        print('Hello', end="\t")
+    print(end="\n")
+```
+```
+> Hello   Hello   Hello
+> Hello   Hello   Hello
+> Hello   Hello   Hello
+```
 
+**Example**: Escape ' character
+```python
+a = 'Бабка \'Папка\' ходит \t на \bногах'
+print(a)
+```
+```
+> Бабка 'Папка' ходит      наногах
 ---
 
 

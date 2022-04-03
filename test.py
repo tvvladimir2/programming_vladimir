@@ -1,2 +1,12 @@
-print(-5 >> 1)  # Bitwise right shift
-print(bin(-5 >> 1))
+from itertools import permutations
+
+my_string = 'grisha'
+
+result = permutations(my_string)
+
+print(result)
+print('Number of variations is: ', len(list(result)))
+print(list(result))
+
+# a = 6**6
+# print(a)

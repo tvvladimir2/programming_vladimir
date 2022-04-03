@@ -17,6 +17,11 @@
 - A dictionary is a collection of key/value pairs, data structures used to map arbitrary keys to values.
 - It is similar to associative arrays in other programming languages.
 
+When to use a dictionary:
+- When you need a logical association between a key:value pair.
+- When you need fast lookup for your data, based on a custom key.
+- When your data is being constantly modified. Remember, dictionaries are mutable.
+
 
 ---
 

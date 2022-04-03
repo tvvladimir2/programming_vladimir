@@ -26,6 +26,9 @@ Lambda functions get their name from lambda calculus, which is a model of comput
 y = lambda x: x
 print(y(1))
 ```
+```
+> 1
+```
 
 
 ---

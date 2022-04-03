@@ -16,6 +16,9 @@ A set is a collection which is:
 - unique, do not allow duplicate values
 - heterogeneous, can contain data of any type
 
+When to use sets:
+- Use a set if you need uniqueness for the elements.
+
 
 ---
 

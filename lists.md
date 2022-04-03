@@ -11,6 +11,9 @@
 - List items are indexed, the first item has index [0], the second item has index [1] etc.
 - When we say that lists are ordered, it means that the items have a defined order, and that order will not change.
 
+When to use lists:
+- Use lists if you have a collection of data that does not need random access. Try to choose lists when you need a simple, iterable collection that is modified frequently.
+
 
 ---
 

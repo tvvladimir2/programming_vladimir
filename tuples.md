@@ -16,6 +16,10 @@ Tuples are used to store multiple items in a single variable.
 The only difference between lists and tuples is that lists are mutable (elements of a list can be changed), whereas tuples are immutable (elements of a tuple cannot be changed).
 
 
+When to use tuples:
+- Use tuples when your data cannot change.
+
+
 ---
 
 
