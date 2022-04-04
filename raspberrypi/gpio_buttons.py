@@ -23,27 +23,37 @@ from gpiozero import LED, Button
 # Binary as a string = ' '
 binary_as_string = ' '
 
-button1 = Button(2)
-button2 = Button(3)
+button0 = Button(2)
+button1 = Button(3)
 
-# function
-def func_act0()
+def func_act0():
+    # Your code
+    print('Button0 pressed')
+    z = '0'
+    main_func(z)
+    sleep(1)
 
+def func_act1():
+    # Your code
+    print('Button1 pressed')
+    z = '1'
+    main_func(z)
+    sleep(1)
+    
+def main_func(z):
+    global binary_as_string
+    binary_as_string += z
+    print(binary_as_string)
+    if len(binary_as_string) == 8:
+        print('Output binary: ', binary_as_string)
+        print('Output decimal: ne znayu kak vvesti', )
+        binary_as_string = ''
 
-
-try:
-    button1.when_pressed = go_zero           # Use function name as a callback
-    button2.when_pressed = go_one           # Use function name as a callback
-    pause()
+try:     
+    button0.when_pressed = func_act0
+    button1.when_pressed = func_act1
 finally:
     pass
-
-
-
-
-
-
-
 
 '''
 gpiozero documentation:
