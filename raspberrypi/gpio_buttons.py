@@ -1,18 +1,35 @@
+'''
+Power of two: 128 64 32 16 8 4 2 1
+Required output: e.g. 17
+
+Using 8-bit binary system to analyze input.
+Input: 0
+Input: 0
+Input: 0
+Input: 1
+Input: 0
+Input: 0
+Input: 0
+Input: 1
+
+Output binary: 00010001
+Output decimal: 17
+'''
+
 from signal import pause
 from time import sleep
 from gpiozero import LED, Button
 
+# Binary as a string = ' '
+binary_as_string = ' '
 
+button1 = Button(2)
+button2 = Button(3)
 
 # function
-def go_zero():
-    i = 1
+def func_act0()
 
-def go_one():
-    i = 0
 
-button1 = Button(21)
-button2 = Button(19)
 
 try:
     button1.when_pressed = go_zero           # Use function name as a callback
