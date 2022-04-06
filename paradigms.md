@@ -4,6 +4,15 @@
 ---
 
 
+## CHAPTER ORDER
+
+- Object-oriented programming (oop_class.md)
+- Functional programming (functional_programming.md)
+
+
+---
+
+
 ## PARADIGMS
 
 ![](images/programming_paradigms.jpg)

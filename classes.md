@@ -4,6 +4,20 @@
 ---
 
 
+## CHAPTER ORDER
+
+- Classes (file classes.md)
+- Inheritance
+- Magic methods & operators
+- Object life cycle
+- Data hiding
+- Class & static methods
+- Properties
+
+
+---
+
+
 ## DESCRIPTION
 
 Objects are created using classes, which are actually the focal point of OOP.
@@ -36,16 +50,19 @@ Then the class is used to `create 3 separate objects` of that class.
 ## SYNTAX
 
 ```python
-class Student:
-  # Class variables
+class Student:                  # `Student` instance.
+
+  # Class variables (class attributes). Shared by all instances of the class.
   school_name = 'ABC school'            
 
-  # Constructor
-  def __init__(self, name, age):        # Constructor for initialize instance variables (data members)
-    self.name = name
+  # 'Class constructor' method for instance variables (data members) initialization.
+  # Call __init__ method to create an instance (object) of the class, using the class name as a function.
+  # __init__ method takes two arguments and assigns them to the object's attributes
+  def __init__(self, name, age):        # `Self` is a must, it refers to the instance calling the method.
+    self.name = name                    # `self.attribute` used to set the initial value of an instance's attributes.
     self.age = age
 
-  # Behavior (instance methods)
+  # Behavior (instance methods) add additional functionality. Accesses using 'jessa.show()'.
   def show(self):
       print('Name:', self.name, 'Sex:', self.sex, 'Profession:', self.profession)
 
@@ -57,6 +74,7 @@ class Student:
 
 # Create object of a class
 jessa = Student('Jessa', 14)
+mikey = Student('Mikky', 15)
 
 # Call class method
 Student.change_school('ZYZ School')
@@ -69,9 +87,10 @@ jessa.name = 'Veronika'
 s1.age = 16
 print('Student:', jessa.name, jessa.age)
 
-# Modify class variables
+# Modify class variables (class attributes)
 Student.school_name = 'XYZ School'
 print('School name:', Student.school_name)
+print('School name:', jessa.school_name)
 
 # Call methods
 jessa.show()
@@ -81,7 +100,7 @@ jessa.show()
 ---
 
 
-## `__init__` method
+## __INIT__ method
 
 The `__init__` method is the most important method in a class.
 This is called when an `instance (object)` of the class is created, using the class name as a function.
@@ -101,3 +120,37 @@ class Cat:
 felix = Cat("ginger", 4)
 print(felix.color)
 ```
+
+
+---
+
+
+## ERRORS
+
+|   | Error name     | Example                                                     | Description                                    |
+|---|----------------|-------------------------------------------------------------|------------------------------------------------|
+| 1 | AttributeError | AttributeError: 'Rectangle' object has no attribute 'color' | Caused by trying to access unknown attributes? |
+| 2 |                |                                                             |                                                |
+| 3 |                |                                                             |                                                |
+
+
+---
+
+
+###### 1. AttributeError
+
+```python
+class Rectangle:
+    def __init__(self, width, height):
+        self.width = width
+        self.height = height
+
+rect = Rectangle(7, 8)
+print(rect.color)
+```
+```
+> AttributeError: 'Rectangle' object has no attribute 'color'
+```
+
+
+---
