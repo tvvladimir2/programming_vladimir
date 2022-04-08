@@ -154,3 +154,185 @@ print(rect.color)
 
 
 ---
+
+
+# INHERITANCE (SUPER CLASS)
+
+Inheritance provides a way to share functionality between classes.
+
+**Example**: Classes share attributes, but have different methods or other.
+```python
+# Define a SuperClass
+class Animal:
+    def __init__(self, name, color):
+        self.name = name
+        self.color = color
+
+# Subclass. `Cat` class inherits from a SuperClass `Animal`.
+class Cat(Animal):
+    # `purr` method is exclusive to `Cat` class
+    def purr(self):
+        print("Purr...")
+
+# Subclass. `Dog` class inherits from a SuperClass `Animal`.
+class Dog(Animal):
+    # `bark` method is exclusive to `Dog` class
+    def bark(self):
+        print("Woof!")
+
+# The attributes are shared between `Dog` & `Cat` classes.
+fido = Dog("Fido", "brown")
+
+print(fido.color)
+fido.bark()
+```
+```
+> brown
+> Woof!
+```
+
+
+**Syntax**:
+```python
+# Superclass
+class Parent():
+  def __init__(self, atr1, atr2):
+      self.atr1 = atr1
+      self.atr2 = atr2
+
+# Subclass
+class Child(Parent):
+  def child_func(self):
+      print("Child_func!")
+
+obj = Child(atr1, atr2)
+```
+
+
+**Example**: Method inheritance 1
+```python
+class A:
+  def method(self):
+    print(1)
+
+class B(A):
+  def method(self):
+    print(2)
+
+B().method()    # 2
+A().method()    # 1
+
+b = B()
+a = A()
+
+b.method()      # 2
+a.method()      # 1
+```
+
+
+**Example**: Method inheritance 2
+```python
+class A:
+  def a(self):
+    print(1)
+
+class B(A):
+  def a(self):
+    print(2)
+
+class C(B):
+  def c(self):
+    print(3)
+
+c = C()
+c.a()
+```
+```
+> 2
+```
+
+
+**Example**: Indirect inheritance from a third party. Circular inheritance is not possible.
+```python
+class A:
+    def method(self):
+        print("A method")
+
+class B(A):
+    def second_method(self):
+        print("B method")
+
+class C(B):
+    def third_method(self):
+        print("C method")
+
+c = C()
+c.method()
+c.second_method()
+c.third_method()
+```
+```
+> A method
+> B method
+> C method
+```
+
+
+**Example**: `super` is a useful `inheritance-related function` that refers to the `parent class`.
+```python
+class A:
+    def spam(self):
+        print(1)
+
+class B(A):
+    def spam(self):
+        print(2)
+        super().spam()    # calls the spam() method of the superclass.
+
+B().spam()
+```
+```
+> 2
+> 1
+```
+
+
+---
+
+
+## MAGIC METHODS / DUNDERS
+
+Magic methods are `special methods` which have `double underscores` at the beginning and end of their names.
+They are also known as `dunders`.
+They are used to create functionality that can't be represented as a normal method.
+
+**Example**: Common use of them is `operator overloading`.
+This means defining operators for custom classes that allow operators such as + and * to be used on them.
+An example magic method is __add__ for +.
+```python
+class Vector2D:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+    def __add__(self, other):
+        return Vector2D(self.x + other.x, self.y + other.y)
+
+first = Vector2D(5, 7)
+second = Vector2D(3, 9)
+result = first + second
+print(result.x)
+print(result.y)
+```
+```
+> 8
+> 16
+```
+
+
+---
+
+
+## POLYMORPHISM
+
+Poly (many) + morphism (forms) = Many forms.
+It means that the same function name can be used for different types.

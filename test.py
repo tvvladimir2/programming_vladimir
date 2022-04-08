@@ -1,3 +1,11 @@
+class A:
+    def spam(self):
+        print(1)
 
-x = bytes(input())
-print(x)
+class B(A):
+    def spam(self):
+        print(2)
+        super().spam()
+
+B().spam()
+super().spam()
