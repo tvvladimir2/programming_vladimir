@@ -38,13 +38,13 @@ from timeit import default_timer
 timer = default_timer()
 button = Button(21)
 led_red = LED(25)
-led_orange = LED(8)
+led_yellow = LED(8)
 led_green = LED(7)
 buzzer = Buzzer(15)
 
 
 led_red.off()
-led_orange.off()
+led_yellow.off()
 led_green.off()
 buzzer.off()
 
@@ -55,50 +55,78 @@ timer = True
 def timer_func():
     global timer
     for x in range(5):
-        print('You can press the button in: ', (5-i) )
+        print('You can press the button in: ', (5-x) )
+        buzzer.on()
+        buzzer.beep()
+        buzzer.off()
+        sleep(1)
+    timer = True
+    print('You can press the button')
 
 
 
 def main_func():
-    sleep(5)
-    print('Normal_Mode')
+    global timer
     led_green.on()
-    while mode == True:
-        button.wait_for_press = func_button_on()
-        sleep(3)
-        
-    if mode == False:
-        func_button_on()
-        child_func()   
+    if timer == False:
+        timer_func()
 
 
-def func_button_on():
-    global mode
-    if mode == True:
-        print('ON')
-        mode = False
-    
-    if mode == False:
-        print('OFF')
-        mode = True
-        
-    sleep(1)
-    
+def button_func():
+    global timer
+    print('Cannot trespass')
+    buzzer.value = 0.05
+    buzzer.beep(0.8, 0.8)
+    sleep(3)
+    led_green.off()
+    led_yellow.on()
+    led_yellow.blink(0.5, 0.5)
+    sleep(1.5)
+    led_yellow.off()
+    led_red.on()
+    print('Can trespass')
+    buzzer.beep(0.2, 0.2)
+    sleep(5)
+    led_red.off()
+    led_yellow.on()
+    led_yellow.blink(0.5, 0.5)
+    sleep(1.5)
+    led_yellow.off()
+    buzzer.off()
+    print('Cannot trespass')
+    led_green.on()
+    timer = False
+    main_func()
+
+
 main_func()
 
 
+try:
+    while True:
+        if button.is_pressed:
+                button_func()
 
-'''
-print('Button pressed')
-led_red.on()
-led_red.blink(2,2)
-led_orange.on()
-led_orange.blink(2,2)
-led_green.on()
-led_green.blink(2,2)
-#led_red.off()
-buzzer.on()
-buzzer.beep()
-#buzzer.off()
-sleep(1)
-'''
+
+finally:
+    pass
+
+
+# print('Button pressed')
+# led_red.on()
+# led_red.blink(2,2)
+# led_orange.on()
+# led_orange.blink(2,2)
+# led_green.on()
+# led_green.blink(2,2)
+# #led_red.off()
+# buzzer.on()
+# buzzer.beep()
+# #buzzer.off()
+# sleep(1)
+# led.value = 0  off
+# sleep(1)
+# led.value = 0.5  half brightness
+# sleep(1)
+# led.value = 1   full brightness
+
