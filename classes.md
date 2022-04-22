@@ -125,37 +125,6 @@ print(felix.color)
 ---
 
 
-## ERRORS
-
-|   | Error name     | Example                                                     | Description                                    |
-|---|----------------|-------------------------------------------------------------|------------------------------------------------|
-| 1 | AttributeError | AttributeError: 'Rectangle' object has no attribute 'color' | Caused by trying to access unknown attributes? |
-| 2 |                |                                                             |                                                |
-| 3 |                |                                                             |                                                |
-
-
----
-
-
-###### 1. AttributeError
-
-```python
-class Rectangle:
-    def __init__(self, width, height):
-        self.width = width
-        self.height = height
-
-rect = Rectangle(7, 8)
-print(rect.color)
-```
-```
-> AttributeError: 'Rectangle' object has no attribute 'color'
-```
-
-
----
-
-
 # INHERITANCE (SUPER CLASS)
 
 Inheritance provides a way to share functionality between classes.
@@ -298,41 +267,3 @@ B().spam()
 
 
 ---
-
-
-## MAGIC METHODS / DUNDERS
-
-Magic methods are `special methods` which have `double underscores` at the beginning and end of their names.
-They are also known as `dunders`.
-They are used to create functionality that can't be represented as a normal method.
-
-**Example**: Common use of them is `operator overloading`.
-This means defining operators for custom classes that allow operators such as + and * to be used on them.
-An example magic method is __add__ for +.
-```python
-class Vector2D:
-    def __init__(self, x, y):
-        self.x = x
-        self.y = y
-    def __add__(self, other):
-        return Vector2D(self.x + other.x, self.y + other.y)
-
-first = Vector2D(5, 7)
-second = Vector2D(3, 9)
-result = first + second
-print(result.x)
-print(result.y)
-```
-```
-> 8
-> 16
-```
-
-
----
-
-
-## POLYMORPHISM
-
-Poly (many) + morphism (forms) = Many forms.
-It means that the same function name can be used for different types.
