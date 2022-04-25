@@ -267,3 +267,18 @@ B().spam()
 
 
 ---
+
+
+# OBJECT LIFE-CYCLE
+
+Stages:
+
+- Creation
+  - Definition of the class to which it belongs
+  - Instantiation of an instance, when `__init__` is called. Memory is allocated to store the instance. Just before this occurs, the `__new__` method of the class is called. This is usually overridden only in special cases.
+
+- Manipulation
+  - Other code can then interact with the object, by calling functions on it and accessing its attributes.
+
+- Destruction
+  - When an object is destroyed, the memory allocated to it is freed up, and can be used for other purposes. Destruction of an object occurs when its reference count reaches zero. Reference count is the number of variables and other elements that refer to an object. If nothing is referring to it (it has a reference count of zero) nothing can interact with it, so it can be safely deleted. In some situations, two (or more) objects can be referred to by each other only, and therefore can be deleted as well. The `del` statement reduces the reference count of an object by one, and this often leads to its deletion. The magic method for the `del` statement is `__del__`. The process of deleting objects when they are no longer needed is called garbage collection.
