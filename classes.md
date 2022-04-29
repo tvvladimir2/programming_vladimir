@@ -18,7 +18,53 @@
 ---
 
 
-## DESCRIPTION
+## OBJECT-ORIENTED PYTHON
+
+- Everything is an object in Python, even numbers.
+- Other languages employ primitives (non-object data)
+- An object is a unit of data (having one or more `attributes`), of a particular `class` or `type`, with associated functionality (`methods`).
+
+**Example**: Every entity in Python is an object of a particular type.
+```python
+# my_integer is of type 'int'
+# my_integer is of class 'int'
+my_integer = 5
+my_string = 'hello'
+my_list = ['a', 'b', 'c']
+my_bool = True
+my_none = None
+
+def my_function():
+  print('Hello')
+
+# Take the type of the list and assign it to a variable.
+# Then we checked the type of that object.
+# The type of an object has a type.
+my_type = type(my_list)
+
+print(type(my_integer))
+print(type(my_string))
+print(type(my_list))
+print(type(my_bool))
+print(type(my_none))
+print(type(my_function))
+print(type(my_type))
+```
+```
+>>> <class 'int'>
+>>> <class 'str'>
+>>> <class 'list'>
+>>> <class 'bool'>
+>>> <class 'NoneType'>
+>>> <class 'function'>
+>>> <class 'type'>
+```
+
+
+---
+
+
+## OOP DESCRIPTION
 
 Objects are created using classes, which are actually the focal point of OOP.
 It is a part of `object-oriented programming (OOP) paradigm`.

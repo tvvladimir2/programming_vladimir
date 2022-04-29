@@ -1,33 +1,22 @@
-class C:
-    def __init__(self, age):
-        self.age = age
+# my_integer is of type 'int'
+# my_integer is of class 'int'
+my_integer = 5
+my_string = 'hello'
+my_list = ['a', 'b', 'c']
+my_bool = True
+my_none = None
 
-    def __eq__(self, other):
-        return self.age == other.age
+def my_function():
+  print('Hello')
 
-    def __ne__(self, other):
-        return not self.__eq__(other)
+# Take the type of the list and assign it to a variable. Then we checked the type of that object. The type of an object has a type.
+my_type = type(my_list)
 
-    def __lt__(self, other):
-        return self.age < other.age
 
-    def __le__(self, other):
-        return self.age <= other.age
-
-    def __gt__(self, other):
-        return self.age > other.age
-
-    def __ge__(self, other):
-        return self.age >= other.age
-
-    def __hash__(self):
-        return hash(self.age)
-
-    def __bool__(self):
-        return self.age > 0
-
-alice = C(15)
-bob = C(30)
-rel = 'younger' if alice < bob else 'older'
-print(f'Alice is {rel} than Bob')
-print(hash(alice))
+print(type(my_integer))
+print(type(my_string))
+print(type(my_list))
+print(type(my_bool))
+print(type(my_none))
+print(type(my_function))
+print(type(my_type))
