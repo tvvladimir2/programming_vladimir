@@ -1,23 +1,34 @@
-# Default Markdown:
----
-
-
-### Used Links
-> [Basic writing and formatting syntax (Github - Markdown README files)](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
-
-> [Markdown Python course files](https://github.com/programiz/python-course)
+# DEFAULT MARKDOWN
 
 
 ---
 
 
-# Headings & paragraphs:
+### USED LINKS
+
+[Basic writing and formatting syntax (GitHub - Markdown README files)](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+
+[Markdown Python course files](https://github.com/programiz/python-course)
+
+
+---
+
+
+# HEADINGS & PARAGRAPHS
+
 ## Heading 2
 ### Heading 3
 #### Heading 4
 ##### Heading 5
 ###### Heading 6
+
 This is a paragraph with `highlighted word 1`, `word2`, `word3`
+
+
+---
+
+
+# BOLD, ITALIC, STRIKE-THROUGH, QUOTE
 
 <!-- Italics -->
 *This text* is italic
@@ -39,13 +50,20 @@ __This text__ is italic
 ---
 
 
-<!-- Horizontal Rule -->
-### Horizontal rule:
+### ORIZONTAL RULE
+
+<!-- Horizontal rule 1 -->
 ---
+
+<!-- Horizontal rule 2 -->
 ___
 
 
-### Links:
+---
+
+
+### LINKS
+
 <!-- Links -->
 [`Highlighted link`](http://www.traversymedia.com)
 
@@ -59,7 +77,8 @@ ___
 ---
 
 
-### UL list:
+### UL LIST
+
 * Item 1
 * Item 2
 * Item 3
@@ -67,7 +86,6 @@ ___
   * Nested Item 2
 
 
-### UL list:
 1. Item 1
 1. Item 2
 1. Item 3
@@ -77,14 +95,42 @@ ___
 ---
 
 
-### Inline Code Block:
+### INLINE CODE BLOCK
+
 `<p>This is a paragraph</p>`
 
 
 ---
 
 
-### Images:
+### DIAGRAMS
+
+[Mermaid diagrams](https://mermaid-js.github.io/mermaid/#/)
+
+[Mermaid Live Editor](https://mermaid-js.github.io/mermaid-live-editor/edit#pako:eNpVkMtqw0AMRX9FaJVC_ANeFBo7ySbQQrPzeCE8cmZo5sFYpgTb_95x00KileCcexGasAuascRLomjgXCsPed6ayiQ7iKOhhaJ4nY8s4ILn2wy7zTHAYEKM1l9e7v5ulaCaTqvGIMb6r-WOqt_8u-cZ6uZEUUJsH8n5O8ywb-yHyfXPxCTOqUPTU9lT0VGCilKLW3ScHFmdz57WgEIx7FhhmVfNPY1XUaj8ktUxahLeayshYa65DrxFGiV83nyHpaSR_6XaUv6C-7OWH4tPW9M)
+
+```mermaid
+  graph TD;
+    A[Enter a variable] --> B(Run a function);
+    B --> C[ Even number?];
+    C -- Yes --> D[Yes];
+    D --> E[print 'Even'];
+    C -- No --> F[No];
+    F --> Z[print 'No'];
+    Z --> A;
+```
+
+
+[Plain UML](https://plantuml.com/)
+
+[PyCharm IDE Diagrams](https://www.jetbrains.com/help/pycharm/markdown.html#diagrams)
+
+
+---
+
+
+### IMAGES
+
 ![Markdown Logo](https://markdown-here.com/img/icon256.png)
 <br/></br>
 
@@ -94,12 +140,15 @@ ___
 
 # Github Markdown:
 
+This section is empty.
+
 
 ---
 
 
-### Bash code block
-<!-- Code Blocks -->
+### CODE BLOCKS
+
+<!-- Bash Code Block -->
 ```bash
   npm install
 
@@ -107,10 +156,7 @@ ___
 ```
 
 
----
-
-
-### Javascript code block
+<!-- Javascript Code Block -->
 ```javascript
   function add(num1, num2) {
     return num1 + num2;
@@ -118,10 +164,7 @@ ___
 ```
 
 
----
-
-
-### Python code block
+<!-- Python Code Block -->
 ```python
   def add(num1, num2):
     return num1 + num2
@@ -131,14 +174,14 @@ ___
 ---
 
 
-### Tables
+### TABLES
 
 [On-line table generator](https://www.tablesgenerator.com/markdown_tables#)
 
-| Name     |  Email           |
-|:--------:|  --------------  |
-| John Doe |  john@gmail.com  |
-| Jane Doe | jane@gmail.com   |
+|   Name   | Email          |
+|:--------:|----------------|
+| John Doe | john@gmail.com |
+| Jane Doe | jane@gmail.com |
 
 `|:--------:|` centers the contents in the column
 
@@ -146,7 +189,8 @@ ___
 ---
 
 
-### Task List
+### TASK LIST
+
 * [x] Task 1
 * [x] Task 2
 * [ ] Task 3
@@ -155,7 +199,7 @@ ___
 ---
 
 
-### Ignoring Markdown formatting
+### IGNORE MARKDOWN FORMATTING
 
 You can tell GitHub to ignore (or escape) Markdown formatting by using **\** before the Markdown character.
 
@@ -167,7 +211,9 @@ Let's rename \*our-new-project\* to \*our-old-project\*.
 ---
 
 
-### Footnotes (only displays inm Github)
+### FOOTNOTES
+
+Only displays in Github.
 Here is a simple footnote[^1].
 
 A footnote can also have multiple lines[^2].  
@@ -176,13 +222,16 @@ You can also use words, to fit your writing style more closely[^note].
 
 [^1]: My reference.
 [^2]: Every new line should be prefixed with 2 spaces.  
-  This allows you to have a footnote with multiple lines.
+
+This allows you to have a footnote with multiple lines.
 
 
 ---
 
 
 # HTML SPECIFIC:
+
+
 ---
 
 
@@ -222,6 +271,8 @@ You can also use words, to fit your writing style more closely[^note].
 
 
 # EQUATIONS:
+
+
 ---
 
 ### HTML Subscript (Substitution)(HTML Entities)(HTML <sub> Tag)
@@ -338,7 +389,7 @@ and they are
 ---
 
 
-### Using Image Generators
+### USING IMAGE GENERATORS
 [TeXify](https://github.com/apps/texify)
 
 

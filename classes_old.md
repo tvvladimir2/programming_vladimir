@@ -4,26 +4,16 @@
 ---
 
 
-## LINKS
-
-[O'Reilly - Python Beyond the Basics - Object-Oriented Programming](https://www.oreilly.com/library/view/python-beyond-the/9781771373609/)
-
-
----
-
-
 ## CHAPTER ORDER
 
-- Classes, Instances, Attributes And Methods
-- Defining A Class
-- Instance Methods
-- Instance Attributes
-- Encapsulation
-- `Init` Constructor
-- Class Attributes
-- Working With Class And Instance Data
-- Assignment 1
-- Assignment 1 - Solution
+- Classes (file classes.md)
+- Inheritance
+- Magic methods & operators
+- Object life cycle
+- Data hiding
+- Class & static methods
+- Properties
+
 
 ---
 
@@ -152,10 +142,6 @@ print (this_object.var)
 
 
 **Example**: Simple class and its objects.
-
-- `self` is the object/instance upon which the method is called
-- `self` = felix, rover, stumpy
-
 ```python
 class MyClass:
   def __init__(self, color, legs):
@@ -180,17 +166,12 @@ Then the class is used to `create 3 separate objects` of that class.
 - They are accessed through the instance: `instance.method()`
 - When called through the instance, the instance is automatically passed as 1st argument of the method.
 - Because of this automatic passing of the instance, instance methods are known as "bound" methods, i.e. bound to the instance upon which it is called.
-- An instance of a class knows what class it's from
-- Vars defined in the class are available to the instance
-- A method on an instance passes instance as the first argument to the method (named `self` in the method)
-- Instances have their own data, called instance attributes
-- Variables defined in the class are called `class attributes`
-- When we read an attribute, Python looks for it first in the instance, and then the class
 
-**Example**: Incorrect instance method:
+**Example**:
 
 When we call a method on an instance, the instance gets passed as the implicit first argument to the method automatically.
 
+Incorrect version:
 ```python
 class Joe(object):
   def callme():         # `self` is deleted
@@ -206,8 +187,7 @@ thisjoe.callme()
 ```
 
 
-**Example**: Correct instance method:
-
+Correct version:
 ```python
 class Joe(object):
   def callme(self):         # `self` is present
@@ -230,68 +210,6 @@ print(thisjoe)              # Gives the ID of an instance
 
 
 ---
-
-
-## Instance attributes
-
-- Instance values are stored right in the instance using the instance's attributes.
-- `instance.attribute = value` sets the instance's attributes
-- Instance can access variables defined in the class
-- An instance can also get and set values in itself
-- Because these values change according to what happens to the object, we call these values `state`
-- Instance data takes the form of instance attribute values, set and accessed through `object.attribute` syntax
-
-```python
-import random
-
-class MyClass(object):
-  def do_this_function(self):
-    # Set the value of the attribute `rand_val` in the instance itself
-    self.rand_val = random.randint(1,10)
-
-my_instance = MyClass()
-my_instance.do_this_function()
-print(my_instance.rand_val)
-```
-```
->>> 2
-```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 ## SYNTAX
