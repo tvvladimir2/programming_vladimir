@@ -1,22 +1,27 @@
-# my_integer is of type 'int'
-# my_integer is of class 'int'
-my_integer = 5
-my_string = 'hello'
-my_list = ['a', 'b', 'c']
-my_bool = True
-my_none = None
+import random
 
-def my_function():
-  print('Hello')
+class Animal(object):
+  def __init__(self, name):
+    self.name = name
 
-# Take the type of the list and assign it to a variable. Then we checked the type of that object. The type of an object has a type.
-my_type = type(my_list)
+class Dog(Animal):
 
+  # Now 'Dog' has it's own `__init__`.
+  def __init__(self, name):
+    # `super` is a buil-in function designed to relate a class to it's `super class` (parent class).
+    # `super` says: get the `super` class of `Dog` and pass the `Dog` instance to whatsever method we state here (here's `__init__` now).
+    # We are calling `Animal.__init__` with 'Dog' object
+    # `super` alows to keep things modular.
+    # Allows to separate common functionality from more specific functionality.
+    # We could write instead:
+    # Animal.__init__(name)
+    Animal.__init__(self, name)
+    self.breed = random.choice(['Shiu Tzu', 'Beagle', 'Mutt'])
 
-print(type(my_integer))
-print(type(my_string))
-print(type(my_list))
-print(type(my_bool))
-print(type(my_none))
-print(type(my_function))
-print(type(my_type))
+  def fetch(self, thing):
+    print ('%s goes after the %s' % (self.name, thing))
+
+d = Dog('dogname')
+
+print(d.name)
+print(d.breed)
