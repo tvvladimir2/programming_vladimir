@@ -1,27 +1,35 @@
-import random
+# `abc` module provides a facility for creating abstract classes.
+# These are classes that are not designed to be instantiated but only to be sub classed.
+# We don't create a `GetterSetter` instance. We only inherit from it.
+import abc
 
-class Animal(object):
-  def __init__(self, name):
-    self.name = name
+# We don't create a `GetterSetter` instance. We only inherit from it.
+class GetterSetter(object):
+  # Create an abstract base class is to use a `__metaclass__`.
+  # `__metaclass__` is a class that can define other classes.
+  __metaclass__ = abc.ABCMeta
 
-class Dog(Animal):
+  # Place a decorator to indicate that these methods are abstract methods.
+  @abc.abstractmethod
+  def set_val(self, input):
+    """Set a value in the instance."""
+    return
 
-  # Now 'Dog' has it's own `__init__`.
-  def __init__(self, name):
-    # `super` is a buil-in function designed to relate a class to it's `super class` (parent class).
-    # `super` says: get the `super` class of `Dog` and pass the `Dog` instance to whatsever method we state here (here's `__init__` now).
-    # We are calling `Animal.__init__` with 'Dog' object
-    # `super` alows to keep things modular.
-    # Allows to separate common functionality from more specific functionality.
-    # We could write instead:
-    # Animal.__init__(name)
-    Animal.__init__(self, name)
-    self.breed = random.choice(['Shiu Tzu', 'Beagle', 'Mutt'])
+  @abc.abstractmethod
+  def get_val(self):
+    "Get and return a value from the instance."""
+    return
 
-  def fetch(self, thing):
-    print ('%s goes after the %s' % (self.name, thing))
+# Create a subclass of `GetterSetter`
+class MyClass(GetterSetter):
 
-d = Dog('dogname')
+  # Fullfill the contract for `set_val` method with the Abstract parent class.
+  def set_val(self, input):
+    self.val = input
 
-print(d.name)
-print(d.breed)
+  # Fullfill the contract for `set_val` method with the Abstract parent class.
+  def get_val(self):
+    return self.val
+
+x = MyClass()
+print(x)
