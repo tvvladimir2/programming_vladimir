@@ -1236,10 +1236,73 @@ print(x)
 ---
 
 
-## 0408 Method Overloading - Extending And Providing
+## Inheritance: Inherit, Override/Overload, Extend, Provide
 
+0408 Method Overloading - Extending And Providing
 
+When working in a child class we can choose to implement parent class methods in different ways.
+  - `Inherit`: simply use the parent class defined method
+  - `Override/Overload`: provide child's own version of a method
+  - `Extend`: do work in addition to hat in parent's method
+  - `Provide`: implement abstract method that parent requires
 
+**Example**: Ничего не понял тут, слишком длинный
+```python
+import abc
+
+# Abstract cl ass
+class GetSetParent(object):
+  __masterclass__ = abc.ABCMeta
+  def __init__(self, value):
+    self.val = 0
+  def set_val(self, value):
+    self.val = value
+  def get_val(self):
+    return self.val
+  @abc.abstractmethod
+  def showdoc(self):
+    return
+
+class GetSetInt(GetSetParent):
+  def set_val(self, value):
+    if not isinstance(value, int):
+      value = 0
+    super(GetSetInt, self).set_val(value)
+  def showdoc(self):
+    print('GetSetInt object ({0}), only accepts integer values'.format(id(self)))
+
+class GetSetList(GetSetParent):
+  def __init__(self, value=0):
+    self.vallist = [value]
+  def get_val(self):
+    return self.vallist[-1]
+  def get_vals(self):
+    return self.vallist
+  def set_val(self, value):
+    self.vallist.append(value)
+  def showdoc(self):
+    print('GetSetList object, len {0}, stores history of values set'.format(len(self.vallist)))
+
+x = GetSetInt(3)
+x.set_val(5)
+print(x.get_val())
+x.showdoc()
+
+gsl = GetSetList(5)
+gsl.set_val(10)
+gsl.set_val(20)
+print(gsl.get_val())
+print(gsl.get_vals())
+gsl.showdoc()
+```
+```
+>>> 5
+>>> GetSetInt object (3189681651616), only accepts integer values
+
+>>> 20
+>>> [5, 10, 20]
+>>> GetSetList object, len 3, stores history of values set
+```
 
 
 

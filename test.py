@@ -1,35 +1,46 @@
-# `abc` module provides a facility for creating abstract classes.
-# These are classes that are not designed to be instantiated but only to be sub classed.
-# We don't create a `GetterSetter` instance. We only inherit from it.
 import abc
 
-# We don't create a `GetterSetter` instance. We only inherit from it.
-class GetterSetter(object):
-  # Create an abstract base class is to use a `__metaclass__`.
-  # `__metaclass__` is a class that can define other classes.
-  __metaclass__ = abc.ABCMeta
-
-  # Place a decorator to indicate that these methods are abstract methods.
-  @abc.abstractmethod
-  def set_val(self, input):
-    """Set a value in the instance."""
-    return
-
-  @abc.abstractmethod
-  def get_val(self):
-    "Get and return a value from the instance."""
-    return
-
-# Create a subclass of `GetterSetter`
-class MyClass(GetterSetter):
-
-  # Fullfill the contract for `set_val` method with the Abstract parent class.
-  def set_val(self, input):
-    self.val = input
-
-  # Fullfill the contract for `set_val` method with the Abstract parent class.
+# Abstract cl ass
+class GetSetParent(object):
+  __masterclass__ = abc.ABCMeta
+  def __init__(self, value):
+    self.val = 0
+  def set_val(self, value):
+    self.val = value
   def get_val(self):
     return self.val
+  @abc.abstractmethod
+  def showdoc(self):
+    return
 
-x = MyClass()
-print(x)
+class GetSetInt(GetSetParent):
+  def set_val(self, value):
+    if not isinstance(value, int):
+      value = 0
+    super(GetSetInt, self).set_val(value)
+  def showdoc(self):
+    print('GetSetInt object ({0}), only accepts integer values'.format(id(self)))
+
+class GetSetList(GetSetParent):
+  def __init__(self, value=0):
+    self.vallist = [value]
+  def get_val(self):
+    return self.vallist[-1]
+  def get_vals(self):
+    return self.vallist
+  def set_val(self, value):
+    self.vallist.append(value)
+  def showdoc(self):
+    print('GetSetList object, len{0}, stores history of values set'.format(len(self.vallist)))
+
+x = GetSetInt(3)
+x.set_val(5)
+print(x.get_val())
+x.showdoc()
+
+gsl = GetSetList(5)
+gsl.set_val(10)
+gsl.set_val(20)
+print(gsl.get_val())
+print(gsl.get_vals())
+gsl.showdoc()
