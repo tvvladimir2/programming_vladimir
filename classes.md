@@ -949,6 +949,7 @@ class Dog(Animal):
     # Animal.__init__(name)
     # Instead of:
     # Animal.__init__(self, name)
+    # super().__init__(name)
     super(Dog, self).__init__(name)
     self.breed = random.choice(['Shiu Tzu', 'Beagle', 'Mutt'])
 
@@ -957,6 +958,7 @@ class Dog(Animal):
 
 d = Dog('dogname')
 
+# We call `Dog` attributes to print.
 print(d.name)
 print(d.breed)
 ```
@@ -966,6 +968,341 @@ print(d.breed)
 ```
 
 
+---
+
+
+## Multiple Inheritance And The Lookup Tree
+
+![](images/Multiple_inheritance_diagram.png)
+
+- Any class can inherit multiple classes
+- Python normally uses a "depth-first" order when searching inheriting classes.
+- E.g. picture above: D inherits from B > B inherits from A > D inherits from C (mro: D-B-A-C)
+
+```python
+class A(object):
+  print('Doing this in A')
+
+class B(A):
+  pass
+
+class C(object):
+  def dothis(self):
+    print('Doing this in C')
+
+class D(B, C):
+  pass
+
+d_instance = D()
+d_instance.dothis()
+print(D.mro())
+```
+```
+>>> Doing this in A
+>>> Doing this in C
+>>> [<class '__main__.D'>, <class '__main__.B'>, <class '__main__.A'>, <class '__main__.C'>, <class 'object'>]
+```
+
+**Diamond inheritance pattern**:
+![](images/Multiple_inheritance_diagram_2.png)
+
+- This connection is considered ambiguous.
+- When two classes inherit from the same class, Python eliminates the first mention of that class from the mro (`method resolution order`).
+- mro: D-B-`A`-C-A becomes D-B-C-A
+- The above applies to "new style" classes (inheriting from object)
+
+```python
+class A(object):
+  def dothis(self):
+    print('Doing this in A')
+
+class B(A):
+  pass
+
+class C(A):
+  def dothis(self):
+    print('Doing this in C')
+
+class D(B, C):
+  pass
+
+d_instance = D()
+d_instance.dothis()
+print(D.mro())
+```
+```
+>>> Doing this in C
+>>> [<class '__main__.D'>, <class '__main__.B'>, <class '__main__.C'>, <class '__main__.A'>, <class 'object'>]
+```
+
+
+---
+
+
+## Decorators, Static And Class Methods
+
+- `__init__` is an `Instance method / Bound methods` because the first argument is the instance `self`.
+- `Instance method` is also called `Bound method` because the instance is bound to the method, works with the method.
+- `Instance methods` are useful to set a value or get a value.
+
+
+- A `class method` takes the class (not instance) as argument and works with the class object. They are not bound to the instance.
+- A `static method` requires no argument and does not work with the class or instance (but it still belongs in the class code).
+- A `decorator` is a processor that modifies a function
+- `@classmethod` and `@staticmethod` modify the default binding that `instance methods` provide.
+
+**Example**: Instance method
+```python
+class InstanceCounter(object):
+  count = 0
+
+  def __init__(self, val):
+    self.val = val
+    InstanceCounter.count += 1
+
+  def set_val(self, newval):
+    selv.val = newval
+
+  def get_val(self):
+    return self.val
+
+  # This method is an `Instance method`
+  # `self` is a custom label
+  # def get_count(self):
+  # `self` can be anything else
+  def get_count(PiPiYuPiYaYA):
+    return InstanceCounter.count
+
+a = InstanceCounter(5)
+b = InstanceCounter(13)
+c = InstanceCounter(17)
+
+for i in (a,b,c):
+  print( 'Val of obj: %s' % (i.get_val()) )   # initialized value (5, 13, 17)
+  print( 'Count: %s' % (i.get_count()) )      # always 3 (x3 instances)
+```
+```
+>>> Val of obj: 5
+>>> Count: 3
+>>> Val of obj: 13
+>>> Count: 3
+>>> Val of obj: 17
+>>> Count: 3
+```
+
+Let's change `get_count` into a class method:
+
+**Example**: Class method
+```python
+class InstanceCounter(object):
+  count = 0
+
+  def __init__(self, val):
+    self.val = val
+    InstanceCounter.count += 1
+
+  def set_val(self, newval):
+    selv.val = newval
+
+  def get_val(self):
+    return self.val
+
+  # We need to change `get_count` into a class method, because `count` variable is in the class, not the instances.
+  # Changed `Instance method` to a `Class method`
+  # The method passes the class automatically when called instead of the instance.
+  @classmethod                        # `Method decorator`, a special modifier.
+  def get_count(anyname):             # anyname here
+    return anyname.count              # anyname here
+
+a = InstanceCounter(5)
+b = InstanceCounter(13)
+c = InstanceCounter(17)
+
+for i in (a,b,c):
+  print( 'Val of obj: %s' % (i.get_val()) )   # initialized value (5, 13, 17)
+  print( 'Count: %s' % (i.get_count()) )      # always 3 (x3 instances)
+
+# Same if we call the class variable directly.
+print(InstanceCounter.count)
+print(InstanceCounter.get_count())
+```
+```
+>>> Val of obj: 5
+>>> Count: 3
+>>> Val of obj: 13
+>>> Count: 3
+>>> Val of obj: 17
+>>> Count: 3
+
+>>> 3
+>>> 3
+```
+
+
+**Example**: Static method
+```python
+class InstanceCounter(object):
+  count = 0
+
+  def __init__(self, val):
+    self.val = self.filterprint(val)
+    InstanceCounter.count += 1
+
+  @staticmethod
+  # Make sure that the argument passed to the constructor is an integer.
+  # Decorate `filterpint` method with a static decorator because it does not work with instance or class
+  # `filterpint` is a utility class
+  # It belongs in the `class` code, because it works with the `class` code.
+  # `self` is missing, the value is passed directly, no implicit argument added
+  def filterprint(value):
+    if not isinstance(value, int):
+      return 0
+    else:
+      return value
+
+a = InstanceCounter(5)
+b = InstanceCounter(13)
+c = InstanceCounter('hello')
+
+print(a.val)
+print(b.val)
+print(c.val)
+```
+```
+>>> 5
+>>> 13
+>>> 0
+```
+
+
+---
+
+
+## Abstract Classes
+
+- An `abstract class` is a kind of "model" for other classes to be defined. It is not designed to construct instances, but can be sub classed by regular classes.
+- Abstract classes can define an `interface`, or other methods that must be implemented by it's subclasses.
+- The Python `abc` module enables the creation of abstract base classes.
+- For information, see the `abc` module and related docs.
+
+Why do we need it?
+e.g. The developer gives us the class with given methods and we have to use them.
+
+```python
+# `abc` module provides a facility for creating abstract classes.
+# These are classes that are not designed to be instantiated but only to be sub classed.
+# We don't create a `GetterSetter` instance. We only inherit from it.
+import abc
+
+# We don't create a `GetterSetter` instance. We only inherit from it.
+class GetterSetter(object):
+  # Create an abstract base class is to use a `__metaclass__`.
+  # `__metaclass__` is a class that can define other classes.
+  __metaclass__ = abc.ABCMeta
+
+  # Place a decorator to indicate that these methods are abstract methods.
+  @abc.abstractmethod
+  def set_val(self, input):
+    """Set a value in the instance."""
+    return
+
+  @abc.abstractmethod
+  def get_val(self):
+    "Get and return a value from the instance."""
+    return
+
+# Create a subclass of `GetterSetter`
+class MyClass(GetterSetter):
+
+  # Fullfill the contract for `set_val` method with the Abstract parent class.
+  def set_val(self, input):
+    self.val = input
+
+  # Fullfill the contract for `set_val` method with the Abstract parent class.
+  def get_val(self):
+    return self.val
+
+# Can't instantiate `GetterSetter` abstract class
+# x = GetterSetter()
+
+x = MyClass()
+print(x)
+```
+```
+>>> <__main__.MyClass object at 0x0000025EAFFA8FD0>
+```
+
+
+---
+
+
+## Inheritance: Inherit, Override/Overload, Extend, Provide
+
+0408 Method Overloading - Extending And Providing
+
+When working in a child class we can choose to implement parent class methods in different ways.
+  - `Inherit`: simply use the parent class defined method
+  - `Override/Overload`: provide child's own version of a method
+  - `Extend`: do work in addition to hat in parent's method
+  - `Provide`: implement abstract method that parent requires
+
+**Example**: Ничего не понял тут, слишком длинный
+```python
+import abc
+
+# Abstract cl ass
+class GetSetParent(object):
+  __masterclass__ = abc.ABCMeta
+  def __init__(self, value):
+    self.val = 0
+  def set_val(self, value):
+    self.val = value
+  def get_val(self):
+    return self.val
+  @abc.abstractmethod
+  def showdoc(self):
+    return
+
+class GetSetInt(GetSetParent):
+  def set_val(self, value):
+    if not isinstance(value, int):
+      value = 0
+    super(GetSetInt, self).set_val(value)
+  def showdoc(self):
+    print('GetSetInt object ({0}), only accepts integer values'.format(id(self)))
+
+class GetSetList(GetSetParent):
+  def __init__(self, value=0):
+    self.vallist = [value]
+  def get_val(self):
+    return self.vallist[-1]
+  def get_vals(self):
+    return self.vallist
+  def set_val(self, value):
+    self.vallist.append(value)
+  def showdoc(self):
+    print('GetSetList object, len {0}, stores history of values set'.format(len(self.vallist)))
+
+x = GetSetInt(3)
+x.set_val(5)
+print(x.get_val())
+x.showdoc()
+
+gsl = GetSetList(5)
+gsl.set_val(10)
+gsl.set_val(20)
+print(gsl.get_val())
+print(gsl.get_vals())
+gsl.showdoc()
+```
+```
+>>> 5
+>>> GetSetInt object (3189681651616), only accepts integer values
+
+>>> 20
+>>> [5, 10, 20]
+>>> GetSetList object, len 3, stores history of values set
+```
 
 
 

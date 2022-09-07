@@ -29,7 +29,7 @@ Hexidecimal    | 16   | 0,1,2,3,4,5,6,7,8,9,A,B,C,D,F | A     |
 ```python
 print(75)
 print(bin(75))
-print(oct75))
+print(oct(75))
 print(hex(75))
 ```
 ```

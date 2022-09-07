@@ -1,27 +1,46 @@
-import random
+import abc
 
-class Animal(object):
-  def __init__(self, name):
-    self.name = name
+# Abstract cl ass
+class GetSetParent(object):
+  __masterclass__ = abc.ABCMeta
+  def __init__(self, value):
+    self.val = 0
+  def set_val(self, value):
+    self.val = value
+  def get_val(self):
+    return self.val
+  @abc.abstractmethod
+  def showdoc(self):
+    return
 
-class Dog(Animal):
+class GetSetInt(GetSetParent):
+  def set_val(self, value):
+    if not isinstance(value, int):
+      value = 0
+    super(GetSetInt, self).set_val(value)
+  def showdoc(self):
+    print('GetSetInt object ({0}), only accepts integer values'.format(id(self)))
 
-  # Now 'Dog' has it's own `__init__`.
-  def __init__(self, name):
-    # `super` is a buil-in function designed to relate a class to it's `super class` (parent class).
-    # `super` says: get the `super` class of `Dog` and pass the `Dog` instance to whatsever method we state here (here's `__init__` now).
-    # We are calling `Animal.__init__` with 'Dog' object
-    # `super` alows to keep things modular.
-    # Allows to separate common functionality from more specific functionality.
-    # We could write instead:
-    # Animal.__init__(name)
-    Animal.__init__(self, name)
-    self.breed = random.choice(['Shiu Tzu', 'Beagle', 'Mutt'])
+class GetSetList(GetSetParent):
+  def __init__(self, value=0):
+    self.vallist = [value]
+  def get_val(self):
+    return self.vallist[-1]
+  def get_vals(self):
+    return self.vallist
+  def set_val(self, value):
+    self.vallist.append(value)
+  def showdoc(self):
+    print('GetSetList object, len{0}, stores history of values set'.format(len(self.vallist)))
 
-  def fetch(self, thing):
-    print ('%s goes after the %s' % (self.name, thing))
+x = GetSetInt(3)
+x.set_val(5)
+print(x.get_val())
+x.showdoc()
 
-d = Dog('dogname')
-
-print(d.name)
-print(d.breed)
+gsl = GetSetList(5)
+gsl.set_val(10)
+gsl.set_val(20)
+print(gsl.get_val())
+print(gsl.get_vals())
+gsl.showdoc()
