@@ -131,8 +131,12 @@ ___
 
 ### IMAGES
 
+Absolute path:
 ![Markdown Logo](https://markdown-here.com/img/icon256.png)
 <br/></br>
+
+Relative path:
+![Image](images/datatypes.png)
 
 
 ---

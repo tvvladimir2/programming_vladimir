@@ -1,0 +1,31 @@
+{
+  "name": "",
+  "isOrdered": true,
+  "folders": {
+    "C#": {
+      "name": "C#",
+      "isOrdered": true,
+      "folders": {},
+      "files": {}
+    },
+    "Markdown": {
+      "name": "Markdown",
+      "isOrdered": true,
+      "folders": {},
+      "files": {}
+    },
+    "Python": {
+      "name": "Python",
+      "isOrdered": true,
+      "folders": {},
+      "files": {}
+    },
+    "VisualStudioCode": {
+      "name": "VisualStudioCode",
+      "isOrdered": true,
+      "folders": {},
+      "files": {}
+    }
+  },
+  "files": {}
+}
