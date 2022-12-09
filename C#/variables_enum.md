@@ -218,6 +218,17 @@ Screen currentScreen;
 
 // declare a variable `currentScreen` of the type `Screen` and initialize it
 Screen currentScreen = Screen.MainMenu;
+
+// Make currentScreen equal to something
+currentScreen = Screen.MainMenu;
+
+// using if
+if (currentScreen == Screen.Mainmenu)
+{
+  Console.WriteLine("current screen is MainMenu");  //output: Saturday
+})
+
+
 ```
 
 

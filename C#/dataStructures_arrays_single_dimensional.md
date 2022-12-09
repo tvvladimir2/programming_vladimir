@@ -124,7 +124,12 @@ Console.WriteLine(evenNums[1]);
 > 4
 ```
 
-
+```cs
+string[] cities = { "Mumbai", "London", "New York" };
+string city = "haha";
+city = cities[1];
+Console.WriteLine(city);
+Console.WriteLine(cities[1]);
 ---
 
 
@@ -251,4 +256,25 @@ public class Program
 			arr[i] = arr[i] + 10;   // adds 10 to each index value
 	}
 }
+```
+
+
+---
+
+
+## ARRAY PROPERTy FUNCTIONS
+
+**Array length**
+```cs
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+        string[] cities = { "Mumbai", "London", "New York" };	// our array
+        Console.WriteLine(cities.Length);	// "Length" is a property of the array
+    }
+}
+```
+```
+> 3
 ```
