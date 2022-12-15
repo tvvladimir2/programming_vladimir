@@ -1,0 +1,15 @@
+E:\repos\programming_vladimir\C#\Test2\bin\Debug\net7.0\test2.exe
+E:\repos\programming_vladimir\C#\Test2\bin\Debug\net7.0\test2.deps.json
+E:\repos\programming_vladimir\C#\Test2\bin\Debug\net7.0\test2.runtimeconfig.json
+E:\repos\programming_vladimir\C#\Test2\bin\Debug\net7.0\test2.dll
+E:\repos\programming_vladimir\C#\Test2\bin\Debug\net7.0\test2.pdb
+E:\repos\programming_vladimir\C#\Test2\obj\Debug\net7.0\test2.csproj.AssemblyReference.cache
+E:\repos\programming_vladimir\C#\Test2\obj\Debug\net7.0\test2.GeneratedMSBuildEditorConfig.editorconfig
+E:\repos\programming_vladimir\C#\Test2\obj\Debug\net7.0\test2.AssemblyInfoInputs.cache
+E:\repos\programming_vladimir\C#\Test2\obj\Debug\net7.0\test2.AssemblyInfo.cs
+E:\repos\programming_vladimir\C#\Test2\obj\Debug\net7.0\test2.csproj.CoreCompileInputs.cache
+E:\repos\programming_vladimir\C#\Test2\obj\Debug\net7.0\test2.dll
+E:\repos\programming_vladimir\C#\Test2\obj\Debug\net7.0\refint\test2.dll
+E:\repos\programming_vladimir\C#\Test2\obj\Debug\net7.0\test2.pdb
+E:\repos\programming_vladimir\C#\Test2\obj\Debug\net7.0\test2.genruntimeconfig.cache
+E:\repos\programming_vladimir\C#\Test2\obj\Debug\net7.0\ref\test2.dll

@@ -434,9 +434,11 @@ The default number of decimals is 0, meaning that the function will return the n
 
 ```python
 print(round(5.76543))
+print(round(5.76543, 1))
 ```
 ```
 > 5.77
+> 5.8
 ```
 
 

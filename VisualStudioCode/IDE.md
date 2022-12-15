@@ -52,6 +52,7 @@ VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=ms-dotn
 
 ## b. RUN THE APP
 
+[Main tutorial ](https://www.youtube.com/watch?v=CO4BGZOuUkM)
 [Tutorial: Create a .NET console application using Visual Studio Code](https://learn.microsoft.com/en-us/dotnet/core/tutorials/with-visual-studio-code?pivots=dotnet-7-0)
 
 1. a) Terminal menu >> New terminal >> open folder path (cd or cd..) >> dotnet run
@@ -66,27 +67,41 @@ File menu >> Preferences >> Settings >> Type Run in terminal >> Code runner: Run
 
 ## EXTENSIONS FOR VSC (NECESSARY)
 
-Name: C#
+### For C#
+
+1. Name: C#
 VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp
 My Description: necessary to install
 
-Name: Prettier - Code formatter
+### For Markdown:
+
+1. Name: Prettier - Code formatter
 VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
 My Description: works well
 
-Name: UNOTES - Markdown Notes WYSIWYG
+2. Name: UNOTES - Markdown Notes WYSIWYG
 VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=ryanmcalister.Unotes
 My Description: Toolbar, does it work?
 
-Name: Markdown Shortcuts
+3. Name: Markdown Shortcuts
 Publisher: mdickin
 VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=mdickin.markdown-shortcuts
 My Description: Toolbar, works well
 
-Name: Markdown All in One
+4. Name: Markdown All in One
 Description: All you need to write Markdown (keyboard shortcuts, table of contents, auto preview and more)
 VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one
 My description: not sure it works well
+
+
+For Python:
+
+1. Name: Python
+Id: ms-python.python
+Description: IntelliSense (Pylance), Linting, Debugging (multi-threaded, remote), Jupyter Notebooks, code formatting, refactoring, unit tests, and more.
+Version: 2022.20.1
+Publisher: Microsoft
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=ms-python.python
 
 
 ---
