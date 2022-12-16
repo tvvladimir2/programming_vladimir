@@ -4,7 +4,7 @@
 ---
 
 
-### USED LINKS
+## USED LINKS
 
 [Basic writing and formatting syntax (GitHub - Markdown README files)](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 
@@ -14,7 +14,7 @@
 ---
 
 
-# HEADINGS & PARAGRAPHS
+## HEADINGS & PARAGRAPHS
 
 ## Heading 2
 ### Heading 3
@@ -28,7 +28,7 @@ This is a paragraph with `highlighted word 1`, `word2`, `word3`
 ---
 
 
-# BOLD, ITALIC, STRIKE-THROUGH, QUOTE
+## BOLD, ITALIC, STRIKE-THROUGH, QUOTE
 
 <!-- Italics -->
 *This text* is italic
@@ -50,7 +50,7 @@ __This text__ is italic
 ---
 
 
-### ORIZONTAL RULE
+## ORIZONTAL RULE
 
 <!-- Horizontal rule 1 -->
 ---
@@ -62,7 +62,7 @@ ___
 ---
 
 
-### LINKS
+## LINKS
 
 <!-- Links -->
 [`Highlighted link`](http://www.traversymedia.com)
@@ -77,7 +77,7 @@ ___
 ---
 
 
-### UL LIST
+## UL LIST
 
 * Item 1
 * Item 2
@@ -95,7 +95,7 @@ ___
 ---
 
 
-### INLINE CODE BLOCK
+## INLINE CODE BLOCK
 
 `<p>This is a paragraph</p>`
 
@@ -103,7 +103,7 @@ ___
 ---
 
 
-### DIAGRAMS
+## DIAGRAMS
 
 [Mermaid diagrams](https://mermaid-js.github.io/mermaid/#/)
 
@@ -129,7 +129,7 @@ ___
 ---
 
 
-### IMAGES
+## IMAGES
 
 Absolute path:
 ![Markdown Logo](https://markdown-here.com/img/icon256.png)
@@ -150,7 +150,7 @@ This section is empty.
 ---
 
 
-### CODE BLOCKS
+## CODE BLOCKS
 
 <!-- Bash Code Block -->
 ```bash
@@ -178,7 +178,7 @@ This section is empty.
 ---
 
 
-### TABLES
+## TABLES
 
 [On-line table generator](https://www.tablesgenerator.com/markdown_tables#)
 
@@ -193,7 +193,7 @@ This section is empty.
 ---
 
 
-### TASK LIST
+## TASK LIST
 
 * [x] Task 1
 * [x] Task 2
@@ -203,7 +203,7 @@ This section is empty.
 ---
 
 
-### IGNORE MARKDOWN FORMATTING
+## IGNORE MARKDOWN FORMATTING
 
 You can tell GitHub to ignore (or escape) Markdown formatting by using **\** before the Markdown character.
 
@@ -215,7 +215,7 @@ Let's rename \*our-new-project\* to \*our-old-project\*.
 ---
 
 
-### FOOTNOTES
+## FOOTNOTES
 
 Only displays in Github.
 Here is a simple footnote[^1].
@@ -239,16 +239,61 @@ This allows you to have a footnote with multiple lines.
 ---
 
 
-### Create empty line & comment:
+## Create empty line & comment:
+
+**HTML <(br)/> tag**:
 ```
-<br/><br/>  <!-- Create empty line & comment it -->
+<br />
+<br />
+```
+
+**Create 2 Lines that CAN be selected as text**:
+```
+&nbsp;
+&nbsp;
+```
+
+**Using a backlash**:
+```
+\
+\
+```
+
+**Create 2 Lines that CANNOT be selected as text**:
+```
+&NewLine;
+&NewLine;
+```
+
+**Backticks with a space inside followed by two spaces**:
+```
+`(space)`(space)(space)
+`(space)`(space)(space)
+```
+
+```
+` `  
+` `
+```
+
+**Use whitespace**:
+Visual studio code >> 
+
+```
+text
+   
+   
+   
+   
+   
+text.
 ```
 
 
 ---
 
 
-### HTML Supported links:
+## HTML Supported links:
 <p align="center">
     <a href="https://github.com/mathLab/EZyRB/blob/master/LICENSE.rst" target="_blank">
         <img alt="Software License" src="https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square">
@@ -265,7 +310,7 @@ This allows you to have a footnote with multiple lines.
 ---
 
 
-### SVG links:
+## SVG links:
 [![PyPI version](https://badge.fury.io/py/unix-ar.svg )](https://pypi.python.org/pypi/unix_ar/)
 [![Build Status](https://travis-ci.com/getninjas/unix_ar.svg?branch=master)](https://travis-ci.org/getninjas/unix_ar)
 [![Read The Docs](https://readthedocs.org/projects/unix_ar/badge/?version=latest)](https://unix_ar.readthedocs.io/en/latest/?badge=latest)
@@ -279,7 +324,7 @@ This allows you to have a footnote with multiple lines.
 
 ---
 
-### HTML Subscript (Substitution)(HTML Entities)(HTML <sub> Tag)
+## HTML Subscript (Substitution)(HTML Entities)(HTML <sub> Tag)
 
 **[HTML ampersand entity codes](https://www.w3schools.com/html/html_entities.asp)**
 
@@ -302,19 +347,19 @@ ax<sup>2</sup>+bx+c=0
 ---
 
 
-### Latex
+## Latex
 
 
 ---
 
 
-### Jupyter
+## Jupyter
 
 
 ---
 
 
-### MathML
+## MathML
 Link: [Display Math Notation with HTML Substitution](https://www.webassign.net/manual/instructor_guide/c_i_displaying_math_notation_with_html_substitution.htm)
 
 ###### Quadratic:
@@ -393,18 +438,18 @@ and they are
 ---
 
 
-### USING IMAGE GENERATORS
+## USING IMAGE GENERATORS
 [TeXify](https://github.com/apps/texify)
 
 
 ---
 
 
-### URL ENCODER
+## URL ENCODER
 [www.urlencoder.org](https://www.urlencoder.org/)
 
 
 ---
 
 
-### JAVASCRIPT
+## JAVASCRIPT

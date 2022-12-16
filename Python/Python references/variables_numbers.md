@@ -204,6 +204,3 @@ If all this is starting to make your head spin, don’t worry! Unless you’re w
 ---
 
 
-## BUILT-IN FUNCTIONS
-
-

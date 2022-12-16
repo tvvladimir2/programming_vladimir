@@ -1,20 +1,51 @@
 # VARIABLES
 
+haha
+   
+   
+   
+kuku.
 
 ---
 
 
-# INTRODUCTION
+## DATA TYPES: CATEGORIES
+
+Variables can store data of different types, and different types can do different things.
+Python has the following data types built-in by default, in these categories:
+
+
+Categories      |  data types
+----------------|-------------------------------
+Text Type:      | str
+Numeric Types:  | int, float, complex
+Sequence Types: | list, tuple, range
+Mapping Type: 	| dict
+Set Types: 	    | set, frozenset
+Boolean Type: 	| bool
+Binary Types: 	| bytes, bytearray, memoryview
+
+
+**Example**: Find variable data type:
+```python
+x = 5
+print(type(x)) # Get data type
+```
+
+
+![](images/Datatypes-in-python.jpg)
+
+
+---
+
+
+## LEGAL VARIABLE NAMES
+
 - A variable name must start with a letter or the underscore character
 - A variable name cannot start with a number
 - A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )
 - Variable names are case-sensitive (age, Age and AGE are three different variables)
 
-
----
-
-
-## Legal varible names:
 ```python
 myvar = "John"
 my_var = "John"
@@ -31,38 +62,8 @@ my_variable_name = "John"   # Each word is separated by an underscore character:
 ---
 
 
-## DATA TYPES
+## ASSIGNMENT STATEMENT
 
-Variables can store data of different types, and different types can do different things.
-
-
----
-
-
-###### 1. CATEGORIES
-Python has the following data types built-in by default, in these categories:
-
-Categories      |  data types
-----------------|-------------------------------
-Text Type:      | str
-Numeric Types:  | int, float, complex
-Sequence Types: | list, tuple, range
-Mapping Type: 	| dict
-Set Types: 	    | set, frozenset
-Boolean Type: 	| bool
-Binary Types: 	| bytes, bytearray, memoryview
-
-**Example**: Find variable data type:
-```python
-x = 5
-print(type(x)) # Get data type
-```
-
-
----
-
-
-###### 2. ASSIGNMENT STATEMENT
 In Python, the data type is set when you assign a value to a variable:
 
 Assignment                                   | Data type
@@ -86,7 +87,8 @@ x = memoryview(bytes(5)) 	                   | memoryview
 ---
 
 
-###### 3. SPECIFICATION
+## SPECIFICATION / CASTING
+
 Specify the data type:
 
 Specification                                | Data type
@@ -107,11 +109,8 @@ x = bytearray(5) 	                           | bytearray
 x = memoryview(bytes(5)) 	                   | memoryview
 
 
----
+**Specify a type on to a variable**:
 
-
-## CASTING
-Specify a type on to a variable:
 ```python
 x = int(1)   # x will be 1
 ```
@@ -121,6 +120,7 @@ x = int(1)   # x will be 1
 
 
 ## ASSIGN MULTIPLE VARIABLES
+
 ```python
 x, y, z = "Orange", "Banana", "Cherry"  # multiple variables in one line
 x = y = z = "Orange"                    # same value to multiple variables
@@ -131,6 +131,7 @@ x = y = z = "Orange"                    # same value to multiple variables
 
 
 ## UNPACK VARIABLES
+
 ```python
 fruits = ["apple", "banana", "cherry"]
 x, y, z = fruits
@@ -141,7 +142,8 @@ x, y, z = fruits
 
 
 ## DELETE VARIABLES
-```
+
+```python
 x = 5
 my_list = ["a", "b", "c"]
 del x               # deletes the variable
@@ -154,6 +156,7 @@ del my_list[3:5]    # deletes items in the list
 
 
 ## GLOBAL VARIABLES
+
 - Variables that are created outside of a function (as in all of the examples above) are known as global variables.
 - Global variables can be used by everyone, both inside of functions and outside.
 
@@ -176,10 +179,12 @@ If you create a variable with the same name inside a function, this variable wil
 
 
 ## MUTABLE vs IMMUTABLE objects
+
  - Immutable objects can not be  modified
  - This is helpful, because you know the value
  - Make objects immutable if you need to seal it
  - Make mutable objects if you need to constantly modify it
+
 
 **Example**: mutable object
 ```python
@@ -190,6 +195,7 @@ print(mutable_obj)
 ```
 >> `['a', 'x', 'c']`
 ```
+
 
 **Example**: immutable object
 ```python
@@ -211,3 +217,6 @@ str       | charachter string                    | yes        | x = '12B'
 set       | unordered set of distinct objects    |            |
 frozenset | immutable form of set class          | yes        | x = ([1, 2, 3])
 dict      | associative mapping (aka dictionary) |            |
+
+
+---

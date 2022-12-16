@@ -1,12 +1,6 @@
-# Define a function
-def shout(word):
-  """
-  This function prints a word with an
-  exclamation mark following it.
-  """
-  # Above is a doctring comment, it must be the first line in a fucntion. Can not use simple comments.
-  print(word + "!")
-  print(shout.__doc__) # will print the Docstring
-
-# Call a function 'shout'
-shout("spam")
+print(round(2.3))
+print(round(2.7))
+print(round(3.5))
+print(round(4.5))
+print(round(3.14159, 3))
+print(round(2.71828, 2))
