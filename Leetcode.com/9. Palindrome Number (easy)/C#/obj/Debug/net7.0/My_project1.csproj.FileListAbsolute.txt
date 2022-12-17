@@ -43,3 +43,11 @@ C:\Users\tvvla\Documents\GitHub\programming_vladimir\C#\Test\obj\Debug\net7.0\re
 C:\Users\tvvla\Documents\GitHub\programming_vladimir\C#\Test\obj\Debug\net7.0\My_project1.pdb
 C:\Users\tvvla\Documents\GitHub\programming_vladimir\C#\Test\obj\Debug\net7.0\My_project1.genruntimeconfig.cache
 C:\Users\tvvla\Documents\GitHub\programming_vladimir\C#\Test\obj\Debug\net7.0\ref\My_project1.dll
+C:\repositories\programming_vladimir\Leetcode.com\9. Palindrome Number (easy)\C#\obj\Debug\net7.0\My_project1.csproj.AssemblyReference.cache
+C:\repositories\programming_vladimir\Leetcode.com\9. Palindrome Number (easy)\C#\obj\Debug\net7.0\My_project1.GeneratedMSBuildEditorConfig.editorconfig
+C:\repositories\programming_vladimir\Leetcode.com\9. Palindrome Number (easy)\C#\obj\Debug\net7.0\My_project1.AssemblyInfoInputs.cache
+C:\repositories\programming_vladimir\Leetcode.com\9. Palindrome Number (easy)\C#\obj\Debug\net7.0\My_project1.AssemblyInfo.cs
+C:\repositories\programming_vladimir\Leetcode.com\9. Palindrome Number (easy)\C#\obj\Debug\net7.0\My_project1.csproj.CoreCompileInputs.cache
+C:\repositories\programming_vladimir\Leetcode.com\9. Palindrome Number (easy)\C#\obj\Debug\net7.0\My_project1.dll
+C:\repositories\programming_vladimir\Leetcode.com\9. Palindrome Number (easy)\C#\obj\Debug\net7.0\refint\My_project1.dll
+C:\repositories\programming_vladimir\Leetcode.com\9. Palindrome Number (easy)\C#\obj\Debug\net7.0\My_project1.pdb

@@ -1,6 +1,21 @@
 ﻿// 9. Palindrome Number (easy)
 
+
+public class Solution
+{
+    public bool IsPalindrome(int x1, int x2, int x3)
+    {
+        int x1 = 121;
+        int x2 = -121;
+        int x3 = 10;
+    }
+}
+
+
+
 /*
+PROBLEM DESCRIPTION
+-------------------
 Given an integer `x`, return `true` if `x` is a **palindrome**, and `false` otherwise.
 
 
@@ -37,18 +52,6 @@ Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
 Could you solve it without converting the integer to a string?
 ```
 */
-
-public class Solution
-{
-    public bool IsPalindrome(int x1, int x2, int x3)
-    {
-        int x1 = 121
-        int x2 = -121
-        int x3 = 10
-    }
-}
-
-
 
 
 

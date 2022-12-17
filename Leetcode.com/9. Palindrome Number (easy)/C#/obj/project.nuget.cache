@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PU0jdbUz4l7eQEBtpTxZ47/iV1eaVo8ZHx4baexYvOCfxtyCkM7rivPS0M8Jl1JGGGo6CVwwxLTUy1ECNAKHzQ==",
+  "dgSpecHash": "a+p59NlB9U/f2+TfKd7f/rXf06QvBRlhCH2+liW3+H5GKSuSodSk1p+6zgFuteVhHiW06WC22g98NxS+BN9BRg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\tvvla\\Documents\\GitHub\\programming_vladimir\\C#\\Test\\My_project1.csproj",
+  "projectFilePath": "C:\\repositories\\programming_vladimir\\Leetcode.com\\9. Palindrome Number (easy)\\C#\\My_project1.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

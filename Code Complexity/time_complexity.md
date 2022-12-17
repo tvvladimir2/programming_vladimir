@@ -10,8 +10,6 @@
 
 [Yourtube video](https://www.youtube.com/watch?v=D6xkbGLQesk) (studied completely)
 
-[Big O complexity at Brilliant.org](https://brilliant.org/courses/computer-science-algorithms/the-speed-of-algorithms/#more-big-o) (not started)
-
 
 ---
 
@@ -167,3 +165,6 @@ and do it potentially 'n' times for each number in the array
 worst case time complexity is big 'O' of n squared >> `O(n**2)`
 
 time complexity in the worst scenario is big 'O' of n >> T: O(n) (linear algorithm to solve the problem)
+
+
+---

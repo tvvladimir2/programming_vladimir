@@ -1,8 +1,13 @@
-﻿internal class Program
+﻿```cs static void NewMethod()
 {
-    private static void Main(string[] args)
-    {
-        string[] cities = { "Mumbai", "London", "New York" };
-        Console.WriteLine(cities.Length);
+    Console.WriteLine("Type of dbl is {0}", dbl.GetType());
+}
+
+if (condition1) {
+   if (condition2) {
+      if (condition3)
+        {
+            NewMethod();
+        }
     }
 }

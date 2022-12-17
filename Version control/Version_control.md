@@ -9,6 +9,8 @@
 "Git" is a Version Control System (VCS).
 You commit your changes to your repository.
 
+![](images/version_control_example.png)
+
 
 ---
 
