@@ -326,4 +326,41 @@ print(do_twice(add, a, b))
 ```
 
 
+
+---
+
+
+
+## FUNCTION ANNOTATION
+
+Python 3 extends the feature by allowing you to attach metadata to functions describing their parameters and return values.
+
+
+The `->` int just tells that `f()` returns an integer (but it doesn't force the function to return an integer). It is called a return annotation, and can be accessed as `f.__annotations__['return']`.
+
+**Return function annotation**:
+```python
+def f(x) -> int:
+    return int(x)
+    
+f.__annotations__['return']
+```
+
+
+`: float` tells people who read the program (and some third-party libraries/programs, e. g. pylint) that `x` should be a `float`. It is accessed as `f.__annotations__['x']`, and doesn't have any meaning by itself.
+
+**Parameter annotation**:
+```python
+def f(x: float) -> int:
+    return int(x)
+
+f.__annotations__['x']
+```
+
+**Links**:
+[8.7. Function definitions¶](https://docs.python.org/3/reference/compound_stmts.html#function-definitions)
+[PEP 3107 – Function Annotations](https://peps.python.org/pep-3107/)
+
+
+
 ---

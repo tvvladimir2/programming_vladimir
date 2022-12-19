@@ -20,7 +20,9 @@ print('Hello')        # double quotation marks
 ```
 
 
+
 ---
+
 
 
 ## STRUCTURE & SYNTAX
@@ -31,10 +33,13 @@ print('Hello')        # double quotation marks
 `string_name = "[0], [1], [2], [3], [4], [5], [6]"`
 
 
+
 ---
 
 
-## Multiline string:
+
+## MULTILINE STRING
+
 ```python
 a = """Lorem ipsum dolor sit amet,
 consectetur adipiscing elit,
@@ -66,7 +71,9 @@ print(mystring[1]) #Get the character at position 1 (remember that the first cha
 ```
 
 
+
 ---
+
 
 
 ## LOOPING THROUGH A STRING USING FOR( ) LOOP
@@ -85,7 +92,9 @@ a
 ```
 
 
+
 ---
+
 
 
 ## LEN ( ), STRING LENGTH
@@ -97,6 +106,7 @@ print(len(txt))   # len() function returns the length of a string:
 
 
 ---
+
 
 
 ## `IN` / `NOT IN`
@@ -117,7 +127,9 @@ No, 'expensive' is NOT present.
 ```
 
 
+
 ---
+
 
 
 ## STRING SLICING
@@ -141,7 +153,9 @@ print(txt[-5:-2:3]) # Use negative indexes to start the slice from the end
 ```
 
 
+
 ---
+
 
 
 ## CONCENRATE STRINGS
@@ -158,7 +172,9 @@ print(c)
 ```
 
 
+
 ---
+
 
 
 ## FORMAT STRING
@@ -211,6 +227,11 @@ print(a)
 ```
 
 
+
+---
+
+
+
 ## ESCAPE CHARACHTERS
 
 ```python
@@ -249,12 +270,21 @@ print(a)
 ```
 ```
 > Бабка 'Папка' ходит      наногах
+```
+
+
+
 ---
 
 
+
 ## MAX ITEM IN A LIST
-# string is also a list, we use a list method
-# outputs the max number in a list
-# alphabet: "a" is min, "z" is max
+
+string is also a list, we use a list method
+outputs the max number in a list
+alphabet: "a" is min, "z" is max
+
+```python
 msg = "Hello"
 print(msg.max()) # returns "o"
+```

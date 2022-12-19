@@ -1,10 +1,5 @@
 # VARIABLES
 
-haha
-   
-   
-   
-kuku.
 
 ---
 
@@ -175,7 +170,22 @@ print(x)
 If you create a variable with the same name inside a function, this variable will be local, and can only be used inside the function.
 
 
+```python
+c = 0 # global variable
+
+def add():
+    global c
+    c = c + 2 # increment by 2
+    print("Inside add():", c)
+
+add()
+print("In main:", c)
+```
+
+
+
 ---
+
 
 
 ## MUTABLE vs IMMUTABLE objects

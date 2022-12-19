@@ -1,3 +1,1 @@
-str = "testing for loops"
-for x in str:
-    print(x)
+print(s[-1])
