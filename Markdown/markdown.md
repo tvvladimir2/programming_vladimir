@@ -10,8 +10,12 @@
 
 [Markdown Python course files](https://github.com/programiz/python-course)
 
+[On-line table generator](https://www.tablesgenerator.com/markdown_tables#)
+
+
 
 ---
+
 
 
 ## HEADINGS & PARAGRAPHS
@@ -25,7 +29,9 @@
 This is a paragraph with `highlighted word 1`, `word2`, `word3`
 
 
+
 ---
+
 
 
 ## BOLD, ITALIC, STRIKE-THROUGH, QUOTE
