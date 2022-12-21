@@ -67,34 +67,34 @@ File menu >> Preferences >> Settings >> Type Run in terminal >> Code runner: Run
 
 ## EXTENSIONS FOR VSC (NECESSARY)
 
-### For C#
+**For C#**:
 
 1. Name: C#
 VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp
 My Description: necessary to install
 
-### For Markdown:
+**For Markdown**:
 
 1. Name: Prettier - Code formatter
 VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
 My Description: works well
 
-2. Name: UNOTES - Markdown Notes WYSIWYG
+1. Name: UNOTES - Markdown Notes WYSIWYG
 VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=ryanmcalister.Unotes
 My Description: Toolbar, does it work?
 
-3. Name: Markdown Shortcuts
+1. Name: Markdown Shortcuts
 Publisher: mdickin
 VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=mdickin.markdown-shortcuts
 My Description: Toolbar, works well
 
-4. Name: Markdown All in One
+1. Name: Markdown All in One
 Description: All you need to write Markdown (keyboard shortcuts, table of contents, auto preview and more)
 VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one
 My description: not sure it works well
 
 
-For Python:
+**For Python**:
 
 1. Name: Python
 Id: ms-python.python
@@ -102,6 +102,15 @@ Description: IntelliSense (Pylance), Linting, Debugging (multi-threaded, remote)
 Version: 2022.20.1
 Publisher: Microsoft
 VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=ms-python.python
+
+
+**For general development**:
+Name: Todo Tree
+Id: Gruntfuggly.todo-tree
+Description: Show TODO, FIXME, etc. comment tags in a tree view
+Version: 0.0.220
+Publisher: Gruntfuggly
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree
 
 
 ---
