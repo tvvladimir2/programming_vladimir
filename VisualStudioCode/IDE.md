@@ -105,12 +105,26 @@ VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=ms-pyth
 
 
 **For general development**:
-Name: Todo Tree
+Name: Todo Tree (что то дерево слева не появилось)
 Id: Gruntfuggly.todo-tree
 Description: Show TODO, FIXME, etc. comment tags in a tree view
 Version: 0.0.220
 Publisher: Gruntfuggly
 VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree
+
+Name: Hide Comments
+Id: eliostruyf.vscode-hide-comments
+Description: VSCode extension for people that do not like to see comments in the code. It allows you to hide/show comments in the code.
+Version: 1.6.0
+Publisher: Elio Struyf
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=eliostruyf.vscode-hide-comments
+
+Name: Better Comments
+Id: aaron-bond.better-comments
+Description: Improve your code commenting by annotating with alert, informational, TODOs, and more!
+Version: 3.0.2
+Publisher: Aaron Bond
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments
 
 
 ---
