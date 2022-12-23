@@ -30,19 +30,19 @@ Sets are written with curly brackets.
 ```python
 # 1. Simple
 my_set = {"apple", "banana", "cherry"}
-print('1.', my_set)
+print('1. ', my_set)
 
 # 2. int, string, float, complex, list, bool,
 my_set_types = {20, 'Vladimir', 12.34, (2 + 3j), True}
-print('2.', my_set_types)
+print('2. ', my_set_types)
 
 # 3. Use `set()` constructor from a Tuple
 my_set_tuple = set(("apple", "banana", "cherry")) # note the double round-brackets
-print('3.', my_set_tuple)
+print('3. ', my_set_tuple)
 
 # 4. Use `set()` constructor from a List
 my_set_list = set(["apple", "banana", "cherry"]) # note the double round-brackets
-print('4.', my_set_list)
+print('4. ', my_set_list)
 ```
 ```
 > 1. {'cherry', 'apple', 'banana'}
@@ -52,10 +52,14 @@ print('4.', my_set_list)
 ```
 
 
+
 ---
 
 
+
 ## DUPLICATE ITEMS IGNORED
+
+Word `apple` is written twice and thus it is ignored the second time.
 
 ```python
 thisset = {"apple", "banana", "cherry", "apple"}
@@ -63,11 +67,13 @@ thisset = {"apple", "banana", "cherry", "apple"}
 print(thisset)
 ```
 ```
-{'cherry', 'apple', 'banana'}
+{'apple', 'cherry', 'banana'}
 ```
 
 
+
 ---
+
 
 
 ## `IN` KEYWORD
@@ -97,7 +103,9 @@ else:
 ```
 
 
+
 ---
+
 
 
 ## SETS vs LISTS
@@ -105,4 +113,19 @@ else:
 Due to the way they're stored, it's faster to check whether an item is part of a set, rather than part of a list.
 
 
+
 ---
+
+
+
+## ACCESS ELEMENTS IN A LIST
+
+**Acces first letter of the first item**:
+```python
+strs = ["flower","flow","flight"]
+prefix = ""
+print(strs[0][0])
+```
+```
+> f
+```

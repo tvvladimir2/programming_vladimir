@@ -1,6 +1,2 @@
-print(round(2.3))
-print(round(2.7))
-print(round(3.5))
-print(round(4.5))
-print(round(3.14159, 3))
-print(round(2.71828, 2))
+for i in "coop":
+    print(i)
