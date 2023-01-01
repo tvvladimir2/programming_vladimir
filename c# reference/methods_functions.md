@@ -368,3 +368,26 @@ namespace MyApplication
 > Int: 13
 > Double: 10.559999999999999
 ```
+
+
+
+---
+
+
+
+## ESCAPE A METHOD / CONDITION A METHOD
+
+
+```cs
+void OurMethod(int a, int b)
+{
+    if (x == true){ return; }    // ignore this method if `x == true`
+
+    y = a + b;
+    return y;
+}
+```
+
+
+
+---

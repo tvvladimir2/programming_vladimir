@@ -9,8 +9,7 @@ namespace MySweetProgram
         static void Main(string[] args)
         {
             User myUser = new User();  // Instantiate a class
-            myUser.DoSomething();    // Invoke a method on a class
-            myUser.DoSomethingElse(5);    // Invoke a method on a class
+            myUser.doSomething();    // Invoke a method on a class
             Console.WriteLine(myUser.myString);
         }
     }
