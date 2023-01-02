@@ -1,3 +1,4 @@
+// The class itself
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,17 +10,18 @@ namespace MySweetProgram
         public string myString = "Bruce Willis";
 
         // This line is hit when we instantiate this class from another script
-        // e.g.
-        // Program myProgram = new Program();
+        // e.g. User myUser = new User();
         // This Constructor is created by C# automatically
         public User()   // default Constructor: class member
         {
 
         }
 
-        public void DoSomething()
+        // This line is hit when we call `myUser.doSomething();`
+        // `void` means there's no return
+        public void DoSomething()   // 'public' shows this method to other scripts.
         {
-            Console.WriteLine("doing something" + "in doSomething method");
+            Console.WriteLine("doing something " + "in doSomething method");
         }
 
         // `private` methods are only used within the script itself
@@ -29,7 +31,11 @@ namespace MySweetProgram
             {
                 Console.WriteLine("Method DoSomethingElse: " + "this is the " + (i+1) + "th time we print it");
             }
-            // do soemthing else
+        }
+
+        public int ReturnSomething(int x)
+        {
+            return x*x;
         }
     }
 }

@@ -91,6 +91,7 @@ class Student
 ### 2. CLASS MEMBER: PROPERTIES
 
 A property encapsulates a private field using setter and getter to assign and retrieve underlying field value.
+They act like gateways to fields.
 
 
 Example: **Property**
@@ -243,10 +244,12 @@ namespace MySweetProgram
             // Working with fields
             Console.WriteLine(myUser.myString); // Print a default value of myString field
             myUser.myString = "Madonna Mia";    // Assign a new value to myString field
+            Console.WriteLine(myUser.myString); // Print a default value of myString field
 
             // Working with methods
             myUser.DoSomething();       // Invoke a method on a class
             myUser.DoSomethingElse(5);  // Pass a parameter `5` in.
+            Console.WriteLine(myUser.ReturnSomething(5));   // Pass in a parameter and get a return
         }
     }
 }
@@ -261,7 +264,7 @@ namespace MySweetProgram
 {
     class User
     {
-        string myString = "Bruce Willis";
+        public string myString = "Bruce Willis";
 
         // This line is hit when we instantiate this class from another script
         // e.g. User myUser = new User();
@@ -272,30 +275,49 @@ namespace MySweetProgram
         }
 
         // This line is hit when we call `myUser.doSomething();`
-        public void DoSomething()   // Shows this method to other scripts
+        // `void` means there's no return
+        public void DoSomething()   // 'public' shows this method to other scripts.
         {
             Console.WriteLine("doing something " + "in doSomething method");
         }
 
         // `private` methods are only used within the script itself
-        private void DoSomethingElse(int times)  // ìnt times`: Take an argument in to a parameter variable
+        public void DoSomethingElse(int times)  // ìnt times`: Take an argument in to a parameter variable
         {
             for (int i = 0; i < times; i++)
             {
                 Console.WriteLine("Method DoSomethingElse: " + "this is the " + (i+1) + "th time we print it");
             }
-            // do soemthing else
+        }
+
+        public int ReturnSomething(int x)
+        {
+            return x*x;
         }
     }
 }
 ```
 ```
+> Bruce Willis
+> Madonna Mia
+
 > doing something in doSomething method
+
+> Method DoSomethingElse: this is the 1th time we print it
+> Method DoSomethingElse: this is the 2th time we print it
+> Method DoSomethingElse: this is the 3th time we print it
+> Method DoSomethingElse: this is the 4th time we print it
+> Method DoSomethingElse: this is the 5th time we print it
+
+> 25
 ```
 
 
 
 ---
 
-Stopped at
-[](https://www.youtube.com/watch?v=xgLKJFdQ1zU&list=PL_c9BZzLwBRIXCJGLd4UzqH34uCclOFwC&index=64)
+
+
+## INCAPSULATION
+
+![](images/encapsulation.png)
