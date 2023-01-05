@@ -9,16 +9,25 @@ namespace MySweetProgram
     {
         static void Main(string[] args)
         {
-            Student myStudent = new Student();  // Instantiate a class
+            List<string> firstNames = new List<string>(){"Caleb", "Janna", "Vladimir"};
+            List<string> lastNames = new List<string>(){"Evdokimov", "Rtveliashvili", "Tazev"};   
 
-            // myStudent.FirstName = "Madonna";    // Error: `FirstName`is read only because it does not have `set`
-            Console.WriteLine(myStudent.FirstName); // Print a default value of myString field
+            // Create a list and add these objects
+            List<Student> students = new List<Student>();
 
-            Console.WriteLine(myStudent.LastName);
-            myStudent.LastName = "Evdokimova";
-            Console.WriteLine(myStudent.LastName);
+            for(int i = 0; i < firstNames.Count; i++)    // (initializer; condition; iterator)
+            {
+                Student student = new Student();
+                student.FirstName = firstNames[i];
+                student.LastName = lastNames[i];
+                students.Add(student);
+            }
 
-            Console.WriteLine(myStudent.FullName);
+            // Loop through the list of objects
+            foreach(Student i in students)
+            {
+                Console.WriteLine(i.FullName);
+            }
         }
     }
 }
