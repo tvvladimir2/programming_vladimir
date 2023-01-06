@@ -1,4 +1,16 @@
-﻿// We create an object of a class (another script) within this script
+# TAKING CUSTOM TYPES/CLASSES AS ARGUMENTS
+
+
+---
+
+
+## DESCRIPTION
+
+This is a concept of a reference type. Every time we pass an object inside a method, they can be edited.
+
+Example: **Use a an obect as an argument (object from  list)**
+```cs
+// We create an object of a class (another script) within this script
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,8 +34,10 @@ namespace MySweetProgram
                 students.Add(student);
             }
 
-            // take the first object from `students` list and pass it to the method `takeStudent`
+            // 
             takeStudents2(students[0]);
+
+            // take the first object from `students` list and pass it to the method `takeStudent`
             takeStudents(students[0]);
             // do the same directly
             Console.WriteLine(students[0].FullName);
@@ -38,9 +52,54 @@ namespace MySweetProgram
 
         public static void takeStudents2(Student student)
         {
-            student = new Student();
+            student = new Student();    // This object exists only inside this method
             student.FirstName = "Pupi";
             Console.WriteLine(student.FullName);
         }
     }
 }
+```
+```
+> Pupi Tazeva
+> Caleb
+> Cassandra Evdokimov
+> Cassandra Evdokimov
+```
+
+
+
+```cs
+// Class itself
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace MySweetProgram
+{
+    class Student
+    {
+        private string _firstName = "MARGARITTA";    // `Margaritta` is a default value
+        private string _lastName = "Tazeva";
+
+        public string FirstName
+        {
+            get{return _firstName;}
+            set{_firstName = value;}
+        }
+
+        public string LastName
+        {
+            get{return _lastName;}
+            set{_lastName = value;}
+        }
+
+        public string FullName
+        {
+            get
+            {
+                return FirstName + " " + LastName;
+            }
+        }
+    }
+}
+```
