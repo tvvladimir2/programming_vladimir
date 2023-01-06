@@ -1,0 +1,75 @@
+C:\Users\tvvla\Documents\GitHub\programming_vladimir\C#\My_project1\bin\Debug\net7.0\My_project1.exe
+C:\Users\tvvla\Documents\GitHub\programming_vladimir\C#\My_project1\bin\Debug\net7.0\My_project1.deps.json
+C:\Users\tvvla\Documents\GitHub\programming_vladimir\C#\My_project1\bin\Debug\net7.0\My_project1.runtimeconfig.json
+C:\Users\tvvla\Documents\GitHub\programming_vladimir\C#\My_project1\bin\Debug\net7.0\My_project1.dll
+C:\Users\tvvla\Documents\GitHub\programming_vladimir\C#\My_project1\bin\Debug\net7.0\My_project1.pdb
+C:\Users\tvvla\Documents\GitHub\programming_vladimir\C#\My_project1\obj\Debug\net7.0\My_project1.csproj.AssemblyReference.cache
+C:\Users\tvvla\Documents\GitHub\programming_vladimir\C#\My_project1\obj\Debug\net7.0\My_project1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tvvla\Documents\GitHub\programming_vladimir\C#\My_project1\obj\Debug\net7.0\My_project1.AssemblyInfoInputs.cache
+C:\Users\tvvla\Documents\GitHub\programming_vladimir\C#\My_project1\obj\Debug\net7.0\My_project1.AssemblyInfo.cs
+C:\Users\tvvla\Documents\GitHub\programming_vladimir\C#\My_project1\obj\Debug\net7.0\My_project1.csproj.CoreCompileInputs.cache
+C:\Users\tvvla\Documents\GitHub\programming_vladimir\C#\My_project1\obj\Debug\net7.0\My_project1.dll
+C:\Users\tvvla\Documents\GitHub\programming_vladimir\C#\My_project1\obj\Debug\net7.0\refint\My_project1.dll
+C:\Users\tvvla\Documents\GitHub\programming_vladimir\C#\My_project1\obj\Debug\net7.0\My_project1.pdb
+C:\Users\tvvla\Documents\GitHub\programming_vladimir\C#\My_project1\obj\Debug\net7.0\My_project1.genruntimeconfig.cache
+C:\Users\tvvla\Documents\GitHub\programming_vladimir\C#\My_project1\obj\Debug\net7.0\ref\My_project1.dll
+C:\Users\tvvla\Documents\GitHub\programming_vladimir\C#\Empty_project\bin\Debug\net7.0\My_project1.exe
+C:\Users\tvvla\Documents\GitHub\programming_vladimir\C#\Empty_project\bin\Debug\net7.0\My_project1.deps.json
+C:\Users\tvvla\Documents\GitHub\programming_vladimir\C#\Empty_project\bin\Debug\net7.0\My_project1.runtimeconfig.json
+C:\Users\tvvla\Documents\GitHub\programming_vladimir\C#\Empty_project\bin\Debug\net7.0\My_project1.dll
+C:\Users\tvvla\Documents\GitHub\programming_vladimir\C#\Empty_project\bin\Debug\net7.0\My_project1.pdb
+C:\Users\tvvla\Documents\GitHub\programming_vladimir\C#\Empty_project\obj\Debug\net7.0\My_project1.csproj.AssemblyReference.cache
+C:\Users\tvvla\Documents\GitHub\programming_vladimir\C#\Empty_project\obj\Debug\net7.0\My_project1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tvvla\Documents\GitHub\programming_vladimir\C#\Empty_project\obj\Debug\net7.0\My_project1.AssemblyInfoInputs.cache
+C:\Users\tvvla\Documents\GitHub\programming_vladimir\C#\Empty_project\obj\Debug\net7.0\My_project1.AssemblyInfo.cs
+C:\Users\tvvla\Documents\GitHub\programming_vladimir\C#\Empty_project\obj\Debug\net7.0\My_project1.csproj.CoreCompileInputs.cache
+C:\Users\tvvla\Documents\GitHub\programming_vladimir\C#\Empty_project\obj\Debug\net7.0\My_project1.dll
+C:\Users\tvvla\Documents\GitHub\programming_vladimir\C#\Empty_project\obj\Debug\net7.0\refint\My_project1.dll
+C:\Users\tvvla\Documents\GitHub\programming_vladimir\C#\Empty_project\obj\Debug\net7.0\My_project1.pdb
+C:\Users\tvvla\Documents\GitHub\programming_vladimir\C#\Empty_project\obj\Debug\net7.0\My_project1.genruntimeconfig.cache
+C:\Users\tvvla\Documents\GitHub\programming_vladimir\C#\Empty_project\obj\Debug\net7.0\ref\My_project1.dll
+C:\Users\tvvla\Documents\GitHub\programming_vladimir\C#\Test\bin\Debug\net7.0\My_project1.exe
+C:\Users\tvvla\Documents\GitHub\programming_vladimir\C#\Test\bin\Debug\net7.0\My_project1.deps.json
+C:\Users\tvvla\Documents\GitHub\programming_vladimir\C#\Test\bin\Debug\net7.0\My_project1.runtimeconfig.json
+C:\Users\tvvla\Documents\GitHub\programming_vladimir\C#\Test\bin\Debug\net7.0\My_project1.dll
+C:\Users\tvvla\Documents\GitHub\programming_vladimir\C#\Test\bin\Debug\net7.0\My_project1.pdb
+C:\Users\tvvla\Documents\GitHub\programming_vladimir\C#\Test\obj\Debug\net7.0\My_project1.csproj.AssemblyReference.cache
+C:\Users\tvvla\Documents\GitHub\programming_vladimir\C#\Test\obj\Debug\net7.0\My_project1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tvvla\Documents\GitHub\programming_vladimir\C#\Test\obj\Debug\net7.0\My_project1.AssemblyInfoInputs.cache
+C:\Users\tvvla\Documents\GitHub\programming_vladimir\C#\Test\obj\Debug\net7.0\My_project1.AssemblyInfo.cs
+C:\Users\tvvla\Documents\GitHub\programming_vladimir\C#\Test\obj\Debug\net7.0\My_project1.csproj.CoreCompileInputs.cache
+C:\Users\tvvla\Documents\GitHub\programming_vladimir\C#\Test\obj\Debug\net7.0\My_project1.dll
+C:\Users\tvvla\Documents\GitHub\programming_vladimir\C#\Test\obj\Debug\net7.0\refint\My_project1.dll
+C:\Users\tvvla\Documents\GitHub\programming_vladimir\C#\Test\obj\Debug\net7.0\My_project1.pdb
+C:\Users\tvvla\Documents\GitHub\programming_vladimir\C#\Test\obj\Debug\net7.0\My_project1.genruntimeconfig.cache
+C:\Users\tvvla\Documents\GitHub\programming_vladimir\C#\Test\obj\Debug\net7.0\ref\My_project1.dll
+C:\repositories\programming_vladimir\c# reference\Test\bin\Debug\net7.0\My_project1.exe
+C:\repositories\programming_vladimir\c# reference\Test\bin\Debug\net7.0\My_project1.deps.json
+C:\repositories\programming_vladimir\c# reference\Test\bin\Debug\net7.0\My_project1.runtimeconfig.json
+C:\repositories\programming_vladimir\c# reference\Test\bin\Debug\net7.0\My_project1.dll
+C:\repositories\programming_vladimir\c# reference\Test\bin\Debug\net7.0\My_project1.pdb
+C:\repositories\programming_vladimir\c# reference\Test\obj\Debug\net7.0\My_project1.csproj.AssemblyReference.cache
+C:\repositories\programming_vladimir\c# reference\Test\obj\Debug\net7.0\My_project1.GeneratedMSBuildEditorConfig.editorconfig
+C:\repositories\programming_vladimir\c# reference\Test\obj\Debug\net7.0\My_project1.AssemblyInfoInputs.cache
+C:\repositories\programming_vladimir\c# reference\Test\obj\Debug\net7.0\My_project1.AssemblyInfo.cs
+C:\repositories\programming_vladimir\c# reference\Test\obj\Debug\net7.0\My_project1.csproj.CoreCompileInputs.cache
+C:\repositories\programming_vladimir\c# reference\Test\obj\Debug\net7.0\My_project1.dll
+C:\repositories\programming_vladimir\c# reference\Test\obj\Debug\net7.0\refint\My_project1.dll
+C:\repositories\programming_vladimir\c# reference\Test\obj\Debug\net7.0\My_project1.pdb
+C:\repositories\programming_vladimir\c# reference\Test\obj\Debug\net7.0\My_project1.genruntimeconfig.cache
+C:\repositories\programming_vladimir\c# reference\Test\obj\Debug\net7.0\ref\My_project1.dll
+C:\repositories\programming_vladimir\c# reference\classes_inheritance\bin\Debug\net7.0\My_project1.exe
+C:\repositories\programming_vladimir\c# reference\classes_inheritance\bin\Debug\net7.0\My_project1.deps.json
+C:\repositories\programming_vladimir\c# reference\classes_inheritance\bin\Debug\net7.0\My_project1.runtimeconfig.json
+C:\repositories\programming_vladimir\c# reference\classes_inheritance\bin\Debug\net7.0\My_project1.dll
+C:\repositories\programming_vladimir\c# reference\classes_inheritance\bin\Debug\net7.0\My_project1.pdb
+C:\repositories\programming_vladimir\c# reference\classes_inheritance\obj\Debug\net7.0\My_project1.csproj.AssemblyReference.cache
+C:\repositories\programming_vladimir\c# reference\classes_inheritance\obj\Debug\net7.0\My_project1.GeneratedMSBuildEditorConfig.editorconfig
+C:\repositories\programming_vladimir\c# reference\classes_inheritance\obj\Debug\net7.0\My_project1.AssemblyInfoInputs.cache
+C:\repositories\programming_vladimir\c# reference\classes_inheritance\obj\Debug\net7.0\My_project1.AssemblyInfo.cs
+C:\repositories\programming_vladimir\c# reference\classes_inheritance\obj\Debug\net7.0\My_project1.csproj.CoreCompileInputs.cache
+C:\repositories\programming_vladimir\c# reference\classes_inheritance\obj\Debug\net7.0\My_project1.dll
+C:\repositories\programming_vladimir\c# reference\classes_inheritance\obj\Debug\net7.0\refint\My_project1.dll
+C:\repositories\programming_vladimir\c# reference\classes_inheritance\obj\Debug\net7.0\My_project1.pdb
+C:\repositories\programming_vladimir\c# reference\classes_inheritance\obj\Debug\net7.0\My_project1.genruntimeconfig.cache
+C:\repositories\programming_vladimir\c# reference\classes_inheritance\obj\Debug\net7.0\ref\My_project1.dll

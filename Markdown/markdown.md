@@ -144,6 +144,12 @@ Absolute path:
 Relative path:
 ![Image](images/datatypes.png)
 
+Starting with / returns to the root directory and starts there
+
+Starting with ../ moves one directory backward and starts there
+
+Starting with ../../ moves two directories backward and starts there (and so on...)
+
 
 ---
 
