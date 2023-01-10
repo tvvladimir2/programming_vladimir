@@ -1,16 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
-namespace MySweetProgram
+﻿public class StopWatch
 {
-    class Test
+    public static int NoOfInstances = 0;
+    
+    // instance constructor
+    public StopWatch()  // runs everytime we create an instance
     {
-        static void Main(string[] args)
-        {
-            User myUser = new User();  // Instantiate a class
-            myUser.doSomething();    // Invoke a method on a class
-            Console.WriteLine(myUser.myString);
-        }
+        StopWatch.NoOfInstances++;  // increments the field
+        Console.WriteLine("done");
     }
 }

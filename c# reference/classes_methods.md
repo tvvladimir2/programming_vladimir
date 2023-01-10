@@ -30,22 +30,3 @@ class Student
 
 
 ---
-
-
-
-## STATIC METHODS
-
-**Syntax**:
-```
-Class User:
-    - object1   // instances of User class)
-    - object2
-    - object3
-
-
-User object1 = new User();     // Instantiate an object - create an instance
-object1.ClassMethod();         // `ClassMethod()` is on `object1` only
-
-User.findInList();             // The method is on the class itself
-```
-

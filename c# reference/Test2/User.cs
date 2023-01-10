@@ -1,25 +1,26 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-
-namespace MySweetProgram
+public class StopWatch
 {
-    class User
+    // static constructor
+    static StopWatch()
     {
-        public string myString = "Bruce Willis";
-
-        // This line is hit when we instantiate this class from another script
-        // e.g.
-        // Program myProgram = new Program();
-        // This Constructor is created by C# automatically
-        public User()   // default Constructor: class member
-        {
-
-        }
-
-        public void doSomething()
-        {
-            Console.WriteLine("doing something" + "in doSomething method");
-        }
+        Console.WriteLine("Static constructor called");
     }
+
+    // instance constructor
+    public StopWatch()
+    {
+        Console.WriteLine("Instance constructor called");
+    }
+
+    // static method
+    public static void DisplayInfo()
+    {
+        Console.WriteLine("DisplayInfo called");
+    }
+
+    // instance method
+    public void Start() { }
+
+    // instance method
+    public void Stop() {  }
 }

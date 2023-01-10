@@ -7,7 +7,8 @@ In C#, an object of a class can be created using the `new` keyword and assign th
 
 Example: **Create an Object of a Class**
 ```cs
-Student mystudent = new Student();
+// <Type> <Identifier/ object variable name> = <keyword new> <Class name / Custom type>
+Student myStudent = new Student();  
 ```
 
 
@@ -17,11 +18,11 @@ You can now access public members of a class using the `object.MemberName` notat
 Example: **Access Members of a Class**
 ```cs
 // <Type> <object variable name> = new <Class name / Custom type>
-Student mystudent = new Student();  // Instantiate a class: Create an object of a class
+Student myStudent = new Student();  // Instantiate a class: Create an object of a class
 mystudent.FirstName = "Steve";  // Create a field class member
 mystudent.LastName = "Jobs";
 
-mystudent.GetFullName();    // e.g. Class function that can return fields
+myStudent.GetFullName();    // e.g. Class function that can return fields
 ```
 
 
@@ -29,13 +30,13 @@ You can create multiple objects of a class with different values of properties a
 
 Example: **Create Multiple Objects of a Class**
 ```cs
-Student mystudent1 = new Student();
-mystudent1.FirstName = "Steve";
-mystudent1.LastName = "Jobs";
+Student myStudent1 = new Student();
+myStudent1.FirstName = "Steve";
+myStudent1.LastName = "Jobs";
 
-Student mystudent2 = new Student();
-mystudent2.FirstName = "Bill";
-mystudent2.LastName = "Gates";
+Student myStudent2 = new Student();
+myStudent2.FirstName = "Bill";
+myStudent2.LastName = "Gates";
 ```
 
 

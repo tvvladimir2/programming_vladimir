@@ -56,7 +56,19 @@ class Program
 ```
 
 
+
 ---
+
+
+
+## `MAIN` METHOD
+
+See `methods_main.md`
+
+
+
+---
+
 
 
 ## CALL A METHOD
@@ -293,6 +305,7 @@ namespace MyApplication
 ---
 
 
+
 ## NAMED ARGUMENTS
 
 It is also possible to send arguments with the key: value syntax.
@@ -323,7 +336,9 @@ namespace MyApplication
 ```
 
 
+
 ---
+
 
 
 ## METHOD OVERLOADING
