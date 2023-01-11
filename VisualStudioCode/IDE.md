@@ -93,6 +93,13 @@ Description: All you need to write Markdown (keyboard shortcuts, table of conten
 VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one
 My description: not sure it works well
 
+1. Name: C# XML Documentation Comments
+Id: k--kato.docomment
+Description: Generate C# XML documentation comments for ///
+Version: 0.1.32
+Publisher: Keisuke Kato
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=k--kato.docomment
+
 
 **For Python**:
 
@@ -127,11 +134,40 @@ Publisher: Aaron Bond
 VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments
 
 
+**For Unity**:
+Name: Unity Tools
+Id: Tobiah.unity-tools
+Description: Various tools to help with Unity development
+Version: 1.2.12
+Publisher: Avin Zarlez
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=Tobiah.unity-tools
+
+Name: Unity Code Snippets
+Id: kleber-swf.unity-code-snippets
+Description: All snippets you need for Unity3D development
+Version: 1.3.0
+Publisher: Kleber Silva
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=kleber-swf.unity-code-snippets
+
 ---
+
 
 
 ## EXTERNAL EXTENSIONS
 
 https://git-scm.com/downloads
 https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-7.0.100-windows-x64-installer
+
+
+
+---
+
+
+
+## CONFIGURE VISUAL STUDIO CODE FOR UNITY
+
+[Set up Visual Studio Code with Unity and INTELLISENSE WORKING 2022](https://www.youtube.com/watch?v=ihVAKiJdd40)
+
+Install .NET Framework 4.8 Developer Pack
+[](https://dotnet.microsoft.com/en-us/download/dotnet-framework)
 

@@ -90,11 +90,11 @@ if (condition1) {
 
 ## 2. INVERSION METHOD
 
-Flip consitions! Use conditional statements (like if/else or switch/case) to handle different scenarios without nesting code blocks. This allows you to easily control the flow of your program without adding unnecessary complexity. Creates `create a more streamlined and efficient structure`.
+Flip conditions! Use conditional statements (like if/else or switch/case) to handle different scenarios without nesting code blocks. This allows you to easily control the flow of your program without adding unnecessary complexity. Creates `create a more streamlined and efficient structure`.
 
 In this example, the nested code block is inverted by using the logical `OR` operator `||` to combine the three conditional statements. This allows us to avoid nesting code blocks and create a more concise and efficient structure.
 
-**Original code**:
+Example1: **Original code**:
 ```cs
 if (condition1) {
   if (condition2) {
@@ -104,8 +104,6 @@ if (condition1) {
   }
 }
 ```
-
-
 **Inverted code**:
 ```cs
 if (!condition1 || !condition2 || !condition3) {
@@ -114,6 +112,36 @@ if (!condition1 || !condition2 || !condition3) {
 
 // Do something
 ```
+
+
+Example2: **Oroginal code**
+```cs
+if (grid[x,y].isAlive)
+{
+  // Cell is alive
+  if (grid[x,y].numNeighbours == 2 || grid[x,y].numNeighbours == 3)
+  {
+    grid[x,y].SetAlive(true);
+  }
+  else
+  {
+    grid[x,y].SetAlive(false);
+  }
+}
+```
+// We shortened our code by 3 lines
+**New code: reverse logic**
+```cs
+if (grid[x,y].isAlive)
+{
+  // Cell is alive
+  if (grid[x,y].numNeighbours != 2 && grid[x,y].numNeighbours != 3)
+  {
+      grid[x,y].SetAlive(false);
+  }
+}
+```
+
 
 
 ---
