@@ -143,7 +143,7 @@ internal class Program
 
 ## TOGGLE VALUE / CHANGE TO OPPOSITE VALUE
 
-
+Example: **Change field member to opposite value**
 ```cs
 internal class Program
 {
@@ -157,5 +157,12 @@ internal class Program
 ```
 ```
 > False
+```
+
+
+Example: **Call a function with opposite value**
+```cs
+bool isAdult = true;
+DoSomethingMethod(!isAdult); // True = not True; or False = not False
 ```
 
