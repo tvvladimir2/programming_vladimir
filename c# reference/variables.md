@@ -38,7 +38,54 @@ In C#, there are different types of variables (defined with different keywords),
 
 C# mainly categorized data types in two types: Value types and Reference types. Value types include simple types (such as int, float, bool, and char), enum types, struct types, and Nullable value types. Reference types include class types, interface types, delegate types, and array types. Learn about value types and reference types in detail in the next chapter. 
 
+
 ![Image](images/datatypes.png)
+
+
+Mermaid Graph: **C# Data Types**
+```mermaid
+graph TD
+    A[C# Data types] -->B(Value Types)
+    A -->C(Reference Types)
+
+    B -->D(Simple Types)
+    B -->E(Enum Types)
+    B -->F(Struct Types)
+    B -->G(Nullable Types)
+
+    D -->H1(Boolean)
+    H1 -->h1(bool)
+    D -->H2(Decimal)
+    H2 -->h2(decimal)
+    D -->H3(Floating)
+    H3 -->h3(float, double)
+    D -->H4(Integral)
+    H4 -->h4(sbyte, byte, short, ushort, int, uint, long, ulong)
+
+    C -->I(Class Types)
+    C -->J(Interface Types)
+    C -->K(Array Types)
+    C -->L(Delegate Types)
+
+    I -->M(Object)
+    I -->N(String)
+    I -->O(Class)
+
+    O -->o1(System.Collections.Generic)
+    O -->o2(System.Collections.Concurrent)
+    O -->o3(System.Collections)
+
+    o1 -->p1(Dictionary`<`TKey,TValue>)
+    o1 -->p2(List`<`T>)
+    o1 -->p3(Queue`<`T>)
+    o1 -->p4(SortedList`<`TKey,TValue>)
+    o1 -->p5(Stack`<`T>)
+
+    o3 -->q1(ArrayList)
+    o3 -->q2(Hashtable)
+    o3 -->q3(Queue)
+    o3 -->q4(Stack)
+```
 
 
 ---
@@ -48,6 +95,7 @@ C# mainly categorized data types in two types: Value types and Reference types. 
 
 C# includes some predefined value types and reference types. The following table lists predefined data types: 
 
+Table: **Value Types**
 |# | Type     | Description                                                  | Range                                                           | Suffix |
 |--|:--------:|:------------------------------------------------------------:|:---------------------------------------------------------------:|:------:|
 |1 | byte     | 8-bit unsigned integer                                       | 0 to 255                                                        |        |
@@ -66,6 +114,15 @@ C# includes some predefined value types and reference types. The following table
 |14| object   | Base type of all other types.                                |                                                                 |        |
 |15| string   | A sequence of Unicode characters                             |                                                                 |        |
 |16| DateTime | Represents date and time                                     | 0:00:00am 1/1/01  to  11:59:59pm 12/31/9999                     |        |
+
+
+Table: **Reference types**
+| C# type keyword |   .NET type   |
+|:---------------:|:-------------:|
+| object          | System.Object |
+| string          | System.String |
+| dynamic         | System.Object |
+
 
 Each data type (except string and object) includes value range. The compiler will give an error if the value goes out of datatype's permitted range. For example, int data type's range is -2,147,483,648 to 2,147,483,647. So if you assign a value which is not in this range, then the compiler would give an error.
 
