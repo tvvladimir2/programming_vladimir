@@ -11,7 +11,9 @@ The `do while` loop is the same as while loop except that it executes the code b
 The do-while loop starts with the `do` keyword followed by a code block and a boolean expression with the `while` keyword. The `do while` loop stops execution exits when a boolean condition evaluates to false. Because the `while(condition)` specified at the end of the block, it certainly executes the code block at least once.
 
 
+
 ---
+
 
 
 ## SYNTAX
@@ -26,7 +28,9 @@ do
 ```
 
 
+
 ---
+
 
 
 ## EXAMPLE
@@ -52,7 +56,9 @@ do
 ```
 
 
+
 ---
+
 
 
 ## EXIT `DO WHILE` LOOP
@@ -82,7 +88,9 @@ do
 ```
 
 
+
 ---
+
 
 
 ## NESTED `DO WHILE` LOOP

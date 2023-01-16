@@ -28,3 +28,18 @@ C:\Users\tvvla\Documents\GitHub\programming_vladimir\C#\Empty_project\obj\Debug\
 C:\Users\tvvla\Documents\GitHub\programming_vladimir\C#\Empty_project\obj\Debug\net7.0\My_project1.pdb
 C:\Users\tvvla\Documents\GitHub\programming_vladimir\C#\Empty_project\obj\Debug\net7.0\My_project1.genruntimeconfig.cache
 C:\Users\tvvla\Documents\GitHub\programming_vladimir\C#\Empty_project\obj\Debug\net7.0\ref\My_project1.dll
+E:\repos\programming_vladimir\c# reference\Empty_project\bin\Debug\net7.0\My_project1.exe
+E:\repos\programming_vladimir\c# reference\Empty_project\bin\Debug\net7.0\My_project1.deps.json
+E:\repos\programming_vladimir\c# reference\Empty_project\bin\Debug\net7.0\My_project1.runtimeconfig.json
+E:\repos\programming_vladimir\c# reference\Empty_project\bin\Debug\net7.0\My_project1.dll
+E:\repos\programming_vladimir\c# reference\Empty_project\bin\Debug\net7.0\My_project1.pdb
+E:\repos\programming_vladimir\c# reference\Empty_project\obj\Debug\net7.0\My_project1.csproj.AssemblyReference.cache
+E:\repos\programming_vladimir\c# reference\Empty_project\obj\Debug\net7.0\My_project1.GeneratedMSBuildEditorConfig.editorconfig
+E:\repos\programming_vladimir\c# reference\Empty_project\obj\Debug\net7.0\My_project1.AssemblyInfoInputs.cache
+E:\repos\programming_vladimir\c# reference\Empty_project\obj\Debug\net7.0\My_project1.AssemblyInfo.cs
+E:\repos\programming_vladimir\c# reference\Empty_project\obj\Debug\net7.0\My_project1.csproj.CoreCompileInputs.cache
+E:\repos\programming_vladimir\c# reference\Empty_project\obj\Debug\net7.0\My_project1.dll
+E:\repos\programming_vladimir\c# reference\Empty_project\obj\Debug\net7.0\refint\My_project1.dll
+E:\repos\programming_vladimir\c# reference\Empty_project\obj\Debug\net7.0\My_project1.pdb
+E:\repos\programming_vladimir\c# reference\Empty_project\obj\Debug\net7.0\My_project1.genruntimeconfig.cache
+E:\repos\programming_vladimir\c# reference\Empty_project\obj\Debug\net7.0\ref\My_project1.dll

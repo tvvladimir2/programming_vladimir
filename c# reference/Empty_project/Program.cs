@@ -1,18 +1,20 @@
-﻿// Every C# statement ends with a semicolon ;.
-
-using System;   // using System means that we can use classes from the System namespace.
-
-namespace HelloWorld    //namespace is used to organize your code, and it is a container for classes and other namespaces.
+﻿using System;
+using System.Collections;
+class Program
 {
-    class Program   /* class is a container for data and methods, which brings functionality to your program.
-                    Every line of code that runs in C# must be inside a class.
-                    In our example, we named the class Program. */
+    public static void Main()
     {
-        static void Main(string[] args) // Main method. Any code inside its curly brackets {} will be executed.
-        {
-            Console.WriteLine("Hello World!");  /*  Console is a class of the System namespace,
-                                                    which has a WriteLine() method that is used to output/print text.
-                                                    In our example it will output "Hello World!". */
-        }
-    }   // The curly braces {} marks the beginning and the end of a block of code.
+        // create a dictionary 
+        Dictionary<string, string> student = new Dictionary<string, string>();
+
+        // add items to dictionary
+        student.Add("Name", "Susan");
+        student.Add("Faculty", "History");
+
+        // access the value having key "Name"
+        Console.WriteLine(student["Name"]);
+
+        // access the value having key "Faculty"
+        Console.WriteLine(student["Faculty"]);
+    }
 }

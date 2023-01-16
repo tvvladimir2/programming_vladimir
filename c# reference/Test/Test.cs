@@ -1,26 +1,18 @@
-﻿public class Test
+﻿using System;
+using System.Collections;
+
+class Test
 {
-    // static constructor
-    static Test()
+    public static void Main()
     {
-        Console.WriteLine("Static constructor called");
+        // create a dictionary 
+        Dictionary<string, string> mySongs = new Dictionary<string, string>();
+
+        // add items to dictionary
+        mySongs.Add("Queen", "Break Free");
+        mySongs.Add("Free", "All right now");
+        mySongs.Add("Pink Floyd", "The Wall");
+
+        Console.WriteLine(mySongs);
     }
-
-    // instance constructor
-    public Test()
-    {
-        Console.WriteLine("Instance constructor called");
-    }
-
-    // static method
-    public static void DisplayInfo()
-    {
-        Console.WriteLine("DisplayInfo called");
-    }
-
-    // instance method
-    public void Start() { }
-
-    // instance method
-    public void Stop() {  }
 }
