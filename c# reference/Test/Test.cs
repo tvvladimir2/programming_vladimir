@@ -1,18 +1,15 @@
 ﻿using System;
-using System.Collections;
+using System.Collections.Generic;
 
-class Test
+public class Program
 {
-    public static void Main()
-    {
-        // create a dictionary 
-        Dictionary<string, string> mySongs = new Dictionary<string, string>();
+	public static void Main()
+	{	
+		int firstInteger = 1;
+        int secondInteger = 2;
+        float resultFloat;
 
-        // add items to dictionary
-        mySongs.Add("Queen", "Break Free");
-        mySongs.Add("Free", "All right now");
-        mySongs.Add("Pink Floyd", "The Wall");
-
-        Console.WriteLine(mySongs);
-    }
+        resultFloat = firstInteger / secondInteger;
+        Console.WriteLine(resultFloat);
+	}
 }

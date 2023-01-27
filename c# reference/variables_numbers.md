@@ -9,13 +9,9 @@
 [Numbers in C#](https://www.tutorialsteacher.com/csharp/numbers)
 
 
----
-
-
-## NUMBERS IN C#
-
 
 ---
+
 
 
 ## NUMBERS IN C#
@@ -32,10 +28,12 @@ The following figure illustrates numeric types in C#.
 ![Image](images/variables_numbers.png)
 
 
+
 ---
 
 
-## INTERGER TYPES
+
+## INTEGRAL NUMERIC TYPES (INTERGER NUMBERS)
 
 `Integer type` numbers are whole numbers without decimal points. It can be negative or positive numbers.
 `Integer type` numbers are positive or negative whole numbers without decimal points.
@@ -55,7 +53,9 @@ C# includes four data types for integer numbers: byte, short, int, and long.
 | 10 | nuint        | Depends on platform (computed at runtime)               | Unsigned 32-bit or 64-bit integer | System.UIntPtr |
 
 
+
 ---
+
 
 
 ## FLOATING-POINT TYPES
@@ -67,6 +67,7 @@ C# includes four data types for integer numbers: byte, short, int, and long.
 | 9  | float        | ±1.5 x 10−45 to ±3.4 x 1038    | ~6-9 digits   | 4 bytes  | System.Single  |
 | 10 | double       | ±5.0 × 10−324 to ±1.7 × 10308  | ~15-17 digits | 8 bytes  | System.Double  |
 | 11 | decimal      | ±1.0 x 10-28 to ±7.9228 x 1028 | 28-29 digits  | 16 bytes | System.Decimal |
+
 
 
 ---

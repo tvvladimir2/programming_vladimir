@@ -19,11 +19,12 @@
 ## SYNTAX
 
 ```cs
-Dictionary<TKey, TValue> dictionary = new Dictionary<TKey, TValue>();
+Dictionary<TKey, TValue> dictionaryName = new Dictionary<TKey, TValue>();
 ```
 
-| TKey   | The type of the keys in the dictionary.   |
+|        | Description                               |
 |--------|-------------------------------------------|
+| TKey   | The type of the keys in the dictionary.   |
 | TValue | The type of the values in the dictionary. |
 
 
@@ -72,8 +73,9 @@ Charechteristics:
 - Assembly: System.Collections.dll
 
 
-| TKey   | The type of the keys in the dictionary.   |
+|        | Description                               |
 |--------|-------------------------------------------|
+| TKey   | The type of the keys in the dictionary.   |
 | TValue | The type of the values in the dictionary. |
 
 
@@ -121,7 +123,7 @@ Dictionary<dataType1, dataType2> dictionaryName = new Dictionary<dataType1, data
 ```
 
 
-Example: **Create a C# dictionary with 3 items and print 3rd item**
+Example: **Create a C# dictionary with 3 items and print item with Tkey `3`**
 ```cs
 using System;
 using System.Collections;
@@ -198,9 +200,12 @@ In the above example, we have accessed the values of the dictionary using their 
 
 ## ITERATE THROUGH DICTIONARY
 
-In C#, we can also loop through each element of the dictionary using a foreach loop. For example,
+In C#, we can also loop through each element of the dictionary using a `foreach` loop. For example,
 
+Example: **Iterate through a dictionary using `foreach` loop**
 ```cs
+// We loop through car using a foreach loop.
+// Here, the Key and Value property returns a collection containing keys and values in the dictionary.
 using System;
 using System.Collections;
 class Program
@@ -225,11 +230,68 @@ class Program
 ```
 > Model : Hyundai
 > Price : 36K
+``` 
+
+
+Example: **Iterate through a list using `for` loop**
+```cs
+// To get KeyValuePair<TKey,TValue> at a specified index in a sequence, we use the ElementAt() method.
+// Thus for every entry in the for loop, at the specified index, we can perform any required operation:
+using System;
+using System.Collections.Generic;
+
+public class Program
+{
+	public static void Main()
+	{	
+		var monthsInYear = new Dictionary<int, string>
+		{
+			{1, "January" },
+			{2, "February" },
+			{3, "March" },
+		};
+
+		for (int index = 0; index < monthsInYear.Count; index++)
+			{
+				KeyValuePair<int, string> month = monthsInYear.ElementAt(index);
+				Console.WriteLine($"{month.Key}: {month.Value}");
+			}
+	}
+}
+```
+```
+1: January
+2: February
+3: March
 ```
 
-In the above example, we have looped through car using a foreach loop.
 
-Here, the Key and Value property returns a collection containing keys and values in the dictionary. 
+Example: **Iterate through a list using `ParallelEnumerable.ForAll()` Method**
+```cs
+using System;
+using System.Collections.Generic;
+
+public class Program
+{
+	public static void Main()
+	{	
+		var monthsInYear = new Dictionary<int, string>
+		{
+			{1, "January" },
+			{2, "February" },
+			{3, "March" },
+		};
+
+		monthsInYear.AsParallel()
+			.ForAll(month => Console.WriteLine($"{month.Key} : {month.Value}"));
+	}
+}
+```
+```
+> 3 : March
+> 2 : February
+> 1 : January 
+```
 
 
 

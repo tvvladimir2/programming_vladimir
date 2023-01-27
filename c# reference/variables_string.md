@@ -9,7 +9,9 @@
 [](https://www.tutorialsteacher.com/articles/difference-between-string-and-string-in-csharp)
 
 
+
 ---
+
 
 
 ## DESCRIPTION
@@ -21,7 +23,9 @@ The following are string literals.
 The maximum size of a String object in memory is 2GB or about 1 billion characters. However, practically it will be less depending upon CPU and memory of the computer.
 
 
+
 ---
+
 
 
 ## DECLARE A STRING VARIABLE
@@ -50,12 +54,15 @@ Console.WriteLine(str2.GetType().FullName); // System.String
 ```
 
 
+
 ---
+
 
 
 ## STRING IS A COLLECTION OR AN ARRAY OF CHARACHTERS
 
 In C#, a string is a collection or an array of characters. So, string can be created using a char array or accessed like a char array.
+
 
 ```cs
 char[] chars = {'H','e','l','l','o'};
@@ -78,6 +85,7 @@ foreach (char c in str1)
 > o
 ```
 
+
 ```cs
 string word = "String";
 
@@ -99,14 +107,17 @@ foreach (char c in word)
 ```
 
 
+
 ---
+
 
 
 ## SPECIAL CHARACHTERS
 
 Because a string is surrounded with double quotes, it cannot include " in a string.
 
-**Give a compile-time error**:
+
+Example: **Give a compile-time error**:
 ```cs
 string text = "This is a "string" in C#.";
 ```
@@ -114,8 +125,10 @@ string text = "This is a "string" in C#.";
 > The build failed. Fix the build errors and run again.
 ```
 
+
 Use backslash \ before double quotes and some special characters such as \,\n,\r,\t, etc. to include it in a string. 
 
+Example: **Using special charachters**
 ```cs
 string text = "This is a \"string\" in C#.";
 string str = "xyzdef\\rabc";
@@ -132,14 +145,17 @@ Console.WriteLine(path);
 ```
 
 
+
 ---
+
 
 
 ## VERBATIM STRINGS
 
 It is tedious to prefix \ to include every special characters. Verbatim string in C# allows a special characters and line brakes. Verbatim string can be created by prefixing @ symbol before double quotes. 
 
-**ESCAPE SEQUENCE**:
+
+Example: **ESCAPE SEQUENCE**:
 ```cs
 string str = @"xyzdef\rabc";
 string path = @"\\mypc\shared\project";
@@ -155,7 +171,8 @@ Console.WriteLine(email);
 > test@test.com
 ```
 
-**DOUBLE QUOTES IN VERBATIM STRING**:
+
+Example: **DOUBLE QUOTES IN VERBATIM STRING**:
 ```cs
 using System;
 
@@ -173,11 +190,14 @@ Console.WriteLine(text4);
 ```
 
 
+
 ---
+
 
 
 ## MULTI-LINE STRING
 
+Example: **Multi-line strings**
 ```cs
 string str1 = "this is a \n" + 
         "multi line \n" + 
@@ -201,13 +221,17 @@ Console.WriteLine(str2);
 ```
 
 
+
 ---
 
 
-## STRING CONCENTATION
+
+## STRING CONCATENATION - ADDITION METHOD 1
 
 Multiple strings can be concatenated with `+` operator.
 
+
+Example: **Adding strings**
 ```cs
 string name = "Mr." + "James " + "Bond" + ", Code: 007";
 
@@ -230,15 +254,18 @@ Console.WriteLine(agent);
 > Mr.James Bond, Code: 007
 ```
 
+
 A String is immutable in C#. It means it is read-only and cannot be changed once created in the memory. Each time you concatenate strings, .NET CLR will create a new memory location for the concatenated string. So, it is recommended to use StringBuilder instead of string if you concatenate more than five strings.
 
 [C# - StringBuilder](https://www.tutorialsteacher.com/csharp/csharp-stringbuilder)
 
 
+
 ---
 
 
-## STRING INTERPOLATION
+
+## STRING INTERPOLATION - ADDITION METHOD 2
 
 String interpolation is a better way of concatenating strings. We use + sign to concatenate string variables with static strings.
 
@@ -259,7 +286,107 @@ Console.WriteLine(fullName);
 ```
 
 
+
 ---
 
 
-## 
+
+## ITERATE OVER STRING CHARACHTERS
+
+```cs
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        const string value = "abc";
+        // Version 1: use foreach-loop.
+        foreach (char c in value)
+        {
+            Console.WriteLine(c);
+            Console.WriteLine(c.GetType());
+        }
+    }
+}
+```
+```
+> a
+> System.Char
+> b
+> System.Char
+> c
+> System.Char
+```
+
+
+Example: **Iterate over String charachters using `For` loop**
+```cs
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        const string value = "abc";
+
+        // Loop over string in reverse.
+        for (int i = 0; i < value.Length; i++)
+        {
+            Console.WriteLine(value[i]);
+            Console.WriteLine(value[i].GetType());
+        }
+
+        Console.WriteLine("");
+
+        // Loop over string in reverse.
+        for (int i = value.Length - 1; i >= 0; i--)
+        {
+            Console.WriteLine("REVERSE: {0}", value[i]);
+        }
+    }
+}
+```
+```
+> a
+> System.Char
+> b
+> System.Char
+> c
+> System.Char
+> 
+> REVERSE: c
+> REVERSE: b
+> REVERSE: a
+```
+
+
+
+---
+
+
+
+## INT TO STRING
+
+```cs
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int intValue1 = 123;
+        int intValue2 = -123;
+
+        string stringValue1 = intValue1.ToString();
+        string stringValue2 = intValue2.ToString();
+
+        Console.WriteLine(intValue1);
+        Console.WriteLine(intValue2);
+    }
+}
+```
+```
+> 123
+> -123
+```

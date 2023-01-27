@@ -111,7 +111,7 @@ Array elements can be accessed using an index. An index is a number associated w
 The following example add/update and retrieve array elements using indexes. 
 
 ```cs
-int[] evenNums = new int[5];
+int[] evenNums = new int[5];	// 5 is the number of elements in an array
 evenNums[0] = 2;    // Index [0] is iqual to 2
 evenNums[1] = 4;
 //evenNums[6] = 12;  //Throws run-time exception IndexOutOfRangeException
@@ -262,7 +262,7 @@ public class Program
 ---
 
 
-## ARRAY PROPERTy FUNCTIONS
+## ARRAY PROPERTY FUNCTIONS
 
 **Array length**
 ```cs

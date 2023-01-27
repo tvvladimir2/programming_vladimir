@@ -15,7 +15,9 @@ Methods are used to perform certain actions, and they are also known as `functio
 Why use methods? To reuse code: define the code once, and use it many times.
 
 
+
 ---
+
 
 
 ## SYNTAX
@@ -35,7 +37,9 @@ void functionName(parameter1, parameter2)
 ```
 
 
+
 ---
+
 
 
 ## CREATE A METHOD
@@ -99,7 +103,9 @@ static void Main(string[] args)
 ```
 
 
+
 ---
+
 
 
 ## PARAMETERS & ARGUMENTS
@@ -143,7 +149,9 @@ namespace MyApplication
 ```
 
 
+
 ---
+
 
 
 ## MULTIPLE PARAMETERS
@@ -180,7 +188,9 @@ namespace MyApplication
 ```
 
 
+
 ---
+
 
 
 ## DEFAULT PARAMETER VALUE
@@ -218,14 +228,16 @@ namespace MyApplication
 ```
 
 
+
 ---
 
 
-## RETURN VALUE
+
+## PASS & RETURN VALUE
 
 If you want the method to return a value, you can use a primitive data type (such as `int` or `double`) instead of `void`, and use the `return` keyword inside the method:
 
-**Return 1 parameter**:
+**Pass 1 argument, Return 1 parameter**:
 ```cs
 using System;
 
@@ -250,7 +262,7 @@ namespace MyApplication
 ```
 
 
-**Return a sum of two parameters**:
+**Pass two parameters, Return one parameter**:
 ```cs
 using System;
 
@@ -300,6 +312,40 @@ namespace MyApplication
 ```
 > 8
 ```
+
+
+
+---
+
+
+
+## RETURN VALUE ONLY
+
+Example: **Return value only**
+```cs
+using System;
+using System.Collections.Generic;
+
+public class Program
+{
+  public static void Main()
+	{	
+		int c = NumberOfClosedButtons();
+        Console.WriteLine(c);
+	}
+
+  static private int NumberOfClosedButtons()
+  {
+      int a = 4;
+      int b = 6;
+      return (a + b);
+  }
+}
+```
+```
+> 10
+```
+
 
 
 ---

@@ -4,6 +4,16 @@
 ---
 
 
+## LINKS
+
+[]()
+
+
+
+---
+
+
+
 ## DESCRIPTION
 
 Here, you will learn how to execute a statement or code block multiple times using the for loop, structure of the for loop, nested for loops, and how to exit from the for loop.
@@ -22,7 +32,9 @@ The `for` loop contains the following three optional sections, separated by a se
 - The iterator defines the incremental or decremental of the loop variable.
 
 
+
 ---
+
 
 
 ## SYNTAX
@@ -35,7 +47,9 @@ for (initializer; condition; iterator)
 ```
 
 
+
 ---
+
 
 
 ## EXAMPLES
@@ -95,7 +109,9 @@ The below figure illustrates the execution steps of the `for` loop.
 ![for-loop.png](images/for-loop.png)
 
 
+
 ---
+
 
 
 ## INFINITE `FOR LOOP`
@@ -114,7 +130,9 @@ for ( ; ; )
 ```
 
 
+
 ---
+
 
 
 ## CONTROL VARIABLE
@@ -140,7 +158,9 @@ for (double d = 1.01D; d < 1.10; d+= 0.01D)
 ```
 
 
+
 ---
+
 
 
 ## REVERSE `FOR LOOP`
@@ -165,7 +185,9 @@ for(int i = 10; i > 0; i--)
 ```
 
 
+
 ---
+
 
 
 ## EXIT THE `FOR LOOP`
@@ -190,7 +212,38 @@ for (int i = 0; i < 10; i++)
 ```
 
 
+
 ---
+
+
+
+## SKIP THE REMAINDER OF THE OPERATION
+
+You can also skip the remainder of the operation by using the `continue` keyword.
+
+```cs
+
+
+```cs
+for (int i = 0; i < 5; i++)
+{
+    if( i == 3 )    // will skip i = 3
+        continue;
+
+    Console.WriteLine("Value of i: {0}", i);
+}
+```
+```
+Value of i: 0
+Value of i: 1
+Value of i: 2
+Value of i: 4
+```
+
+
+
+---
+
 
 
 ## MULTIPLE EXPRESSIONS
@@ -213,7 +266,9 @@ for (int i = 0, j = 0; i+j < 5; i++, j++)
 A `for` loop can also contain statements as an initializer and iterator.
 
 
+
 ---
+
 
 
 ## INITIALIZER & ITERATOR STATEMENTS
@@ -241,7 +296,9 @@ for (Console.WriteLine($"Initializer: i={i}, j={j}");
 ```
 
 
+
 ---
+
 
 
 ## NESTER `FOR LOOP`

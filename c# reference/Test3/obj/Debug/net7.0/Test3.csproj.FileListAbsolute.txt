@@ -1,0 +1,15 @@
+C:\repositories\programming_vladimir\c# reference\Test3\obj\Debug\net7.0\Test3.csproj.AssemblyReference.cache
+C:\repositories\programming_vladimir\c# reference\Test3\obj\Debug\net7.0\Test3.GeneratedMSBuildEditorConfig.editorconfig
+C:\repositories\programming_vladimir\c# reference\Test3\obj\Debug\net7.0\Test3.AssemblyInfoInputs.cache
+C:\repositories\programming_vladimir\c# reference\Test3\obj\Debug\net7.0\Test3.AssemblyInfo.cs
+C:\repositories\programming_vladimir\c# reference\Test3\obj\Debug\net7.0\Test3.csproj.CoreCompileInputs.cache
+C:\repositories\programming_vladimir\c# reference\Test3\bin\Debug\net7.0\Test3.exe
+C:\repositories\programming_vladimir\c# reference\Test3\bin\Debug\net7.0\Test3.deps.json
+C:\repositories\programming_vladimir\c# reference\Test3\bin\Debug\net7.0\Test3.runtimeconfig.json
+C:\repositories\programming_vladimir\c# reference\Test3\bin\Debug\net7.0\Test3.dll
+C:\repositories\programming_vladimir\c# reference\Test3\bin\Debug\net7.0\Test3.pdb
+C:\repositories\programming_vladimir\c# reference\Test3\obj\Debug\net7.0\Test3.dll
+C:\repositories\programming_vladimir\c# reference\Test3\obj\Debug\net7.0\refint\Test3.dll
+C:\repositories\programming_vladimir\c# reference\Test3\obj\Debug\net7.0\Test3.pdb
+C:\repositories\programming_vladimir\c# reference\Test3\obj\Debug\net7.0\Test3.genruntimeconfig.cache
+C:\repositories\programming_vladimir\c# reference\Test3\obj\Debug\net7.0\ref\Test3.dll

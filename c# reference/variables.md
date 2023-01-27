@@ -41,10 +41,13 @@ C# mainly categorized data types in two types: Value types and Reference types. 
 
 ![Image](images/datatypes.png)
 
-
 Mermaid Graph: **C# Data Types**
 ```mermaid
-graph TD
+%%{init: {
+    'theme': 'neutral',
+    "flowchart" : { "curve" : "basis" }
+    } }%%
+graph TB
     A[C# Data types] -->B(Value Types)
     A -->C(Reference Types)
 
@@ -55,12 +58,27 @@ graph TD
 
     D -->H1(Boolean)
     H1 -->h1(bool)
-    D -->H2(Decimal)
-    H2 -->h2(decimal)
+    D -->H2(Char)
+    H2 -->h2(char)
     D -->H3(Floating)
     H3 -->h3(float, double)
     D -->H4(Integral)
-    H4 -->h4(sbyte, byte, short, ushort, int, uint, long, ulong)
+
+    H4 -->h4(Integer Types)
+    H4 -->h5(Floating Point Types)
+
+    h4 -->h4.1(byte 8bit)
+    h4 -->h4.2(short 16bit)
+    h4 -->h4.3(int 32bit)
+    h4 -->h4.4(long 64bit)
+    h4.1 -->h4.1.1(sbyte)
+    h4.2 -->h4.2.1(ushort)
+    h4.3 -->h4.3.1(uint)
+    h4.4 -->h4.4.1(ulong)
+
+    h5 -->h5.1(float 32bit)
+    h5 -->h5.2(double 64bit)
+    h5 -->h5.3(decimal 128bit)
 
     C -->I(Class Types)
     C -->J(Interface Types)

@@ -19,7 +19,7 @@ Comments can be used to explain C# code, and to make it more readable. It can al
 ---
 
 
-## EXAMPLES
+## SINGLE-LINE COMMENTS
 
 ```cs
 using System;   // we can use classes from the System namespace.
@@ -30,18 +30,10 @@ namespace HelloWorld
     {
       static void Main(string[] args)
       {
-        // Single-line comments start with two forward slashes (//).
-        // Any text between // and the end of the line is ignored by C# (will not be executed).
-        // THIS IS A COMMENT:
+        // THIS IS A COMMENT: Single-line comments start with two forward slashes (//).
         Console.WriteLine("Hello World!");
-
+      // Any text between // and the end of the line is ignored by C# (will not be executed).
         Console.WriteLine("Hello World!");  // Single-line comments at the end of a line of code
-
-        // Multi-line comments start with /* and ends with */.
-        // Any text between /* and */ will be ignored by C#.
-        /* The code below will print the words Hello World
-        to the screen, and it is amazing */
-        Console.WriteLine("Hello World!");
       }
   }
 }
@@ -49,5 +41,106 @@ namespace HelloWorld
 ```
 > Hello World!
 > Hello World!
+```
+
+
+
+---
+
+
+
+## MULTI-LINE COMMENTS
+
+```cs
+using System;   // we can use classes from the System namespace.
+
+namespace HelloWorld    
+{
+  class Program   
+    {
+      static void Main(string[] args)
+      {
+        /* This is a multi-line comments.
+        All text is ignored in between.
+        You can write as much as you want. */
+        Console.WriteLine("Hello World!");
+      }
+  }
+}
+```
+```
 > Hello World!
+```
+
+
+
+---
+
+
+
+## XML DOCUMENTATION COMMENTS: CLASS
+
+[Documentation comments](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/xmldoc/)
+
+```cs
+/// <summary>
+///  This is a hello world program. This is an XML comment.
+/// </summary>
+
+using System;
+
+namespace HelloWorld
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			Console.WriteLine("Hello World!");
+		}
+	}
+}
+```
+
+The XML documentation (.xml file) generated will contain:
+
+```xml
+<?xml version="1.0"?>
+<doc>
+	<assembly>
+		<name>HelloWorld</name>
+	</assembly>
+	<members>
+	</members>
+</doc>
+```
+
+
+
+## XML DOCUMENTATION COMMENTS: METHOD
+
+```cs
+using System;
+
+namespace HelloWorld
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			CalledMethod(5, 6)
+		}
+
+    private int CalledMethod(int x, int y)
+    {
+      /// <summary>
+      /// 
+      /// </summary>
+      /// <param name="a"></param>
+      /// <param name="b"></param>
+      /// <returns></returns>
+      Console.WriteLine("Hello World!");
+      return x + y;
+    }
+	}
+}
 ```

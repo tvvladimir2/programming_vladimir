@@ -45,6 +45,43 @@ class Student
 
 
 
+## CREATE MANY CLASSES IN ONE SCRIPT
+
+```cs
+using System;
+using System.Collections.Generic;
+
+// First class
+public class Program
+{
+	public static void Main()
+	{
+		var students = new List<Student>() { 
+                new Student(){ Id = 1, Name="Bill"},
+                new Student(){ Id = 2, Name="Steve"},
+                new Student(){ Id = 3, Name="Ram"},
+                new Student(){ Id = 4, Name="Abdul"}
+            };
+	
+		Console.WriteLine("No of elelemts: " + students.Count);
+	}
+}
+
+// Second class
+class Student{
+	public int Id { get; set; }
+	public string Name { get; set; }
+}
+```
+```
+> No of elelemts: 4
+```
+
+
+---
+
+
+
 ## CLASS MEMEBERS
 
 A class can contain one or more `class members`:

@@ -113,17 +113,41 @@ ___
 
 [Mermaid diagrams](https://mermaid-js.github.io/mermaid/#/)
 
+[Mermaid styling](https://mermaid.js.org/syntax/flowchart.html#styling-and-classes)
+
+[Mermaid themes](https://mermaid.js.org/config/theming.html#customizing-themes-with-themevariables)
+
 [Mermaid Live Editor](https://mermaid-js.github.io/mermaid-live-editor/edit#pako:eNpVkMtqw0AMRX9FaJVC_ANeFBo7ySbQQrPzeCE8cmZo5sFYpgTb_95x00KileCcexGasAuascRLomjgXCsPed6ayiQ7iKOhhaJ4nY8s4ILn2wy7zTHAYEKM1l9e7v5ulaCaTqvGIMb6r-WOqt_8u-cZ6uZEUUJsH8n5O8ywb-yHyfXPxCTOqUPTU9lT0VGCilKLW3ScHFmdz57WgEIx7FhhmVfNPY1XUaj8ktUxahLeayshYa65DrxFGiV83nyHpaSR_6XaUv6C-7OWH4tPW9M)
 
+
+Styling options: 
+
+**Themes**: default, neutral, dark, forest, base
+
+**Curve**: basis, bump, linear, monotoneX, monotoneY, natural, step, stepAfter,
+
+**Flowchart Orientation**
+- TB - top to bottom
+- TD - top-down/ same as top to bottom
+- BT - bottom to top
+- RL - right to left
+- LR - left to right
+
+
+Example: **Flowchart**
 ```mermaid
-  graph TD;
-    A[Enter a variable] --> B(Run a function);
-    B --> C[ Even number?];
-    C -- Yes --> D[Yes];
-    D --> E[print 'Even'];
-    C -- No --> F[No];
-    F --> Z[print 'No'];
-    Z --> A;
+%%{init: {
+  'theme': 'forest',
+  "flowchart" : { "curve" : "linear" }
+  } }%%
+graph TD;
+  A[Enter a variable] --> B(Run a function);
+  B --> C[ Even number?];
+  C -- Yes --> D[Yes];
+  D --> E[print 'Even'];
+  C -- No --> F[No];
+  F --> Z[print 'No'];
+  Z --> A;
 ```
 
 
