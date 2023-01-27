@@ -390,3 +390,46 @@ class Program
 > 123
 > -123
 ```
+
+
+
+---
+
+
+
+## ACCESS STRING `CHAR`s
+
+Example: **First string `char`**
+```cs
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        string myString = "Hello";
+        Console.WriteLine(myString[0]);
+    }
+}
+```
+```
+> H
+```
+
+
+Example: **Access last string char**
+```cs
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        string myString = "-1294";
+        Console.WriteLine(myString[myString.Length - 1]);
+    }
+}
+```
+```
+> 4
+```

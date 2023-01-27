@@ -57,6 +57,7 @@ class Program
     static void Main()
     {
         char charVariable = 'H';    // Initialize and Declare Declare a `char`
+        // char charVariable = "H"; // shall not work because of double quotations
     }
 }
 ```
