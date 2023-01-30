@@ -84,7 +84,7 @@ namespace HelloWorld
 
 ```cs
 /// <summary>
-///  This is a hello world program. This is an XML comment.
+///  This is a summary about a class. XML is generated for IDEs.
 /// </summary>
 
 using System;
@@ -116,7 +116,7 @@ The XML documentation (.xml file) generated will contain:
 
 
 
-## XML DOCUMENTATION COMMENTS: METHOD
+## XML DOCUMENTATION COMMENTS: `METHOD`
 
 ```cs
 using System;
@@ -133,11 +133,11 @@ namespace HelloWorld
     private int CalledMethod(int x, int y)
     {
       /// <summary>
-      /// 
+      /// This is a summary about the method
       /// </summary>
-      /// <param name="a"></param>
-      /// <param name="b"></param>
-      /// <returns></returns>
+      /// <param name="a">A summary about parameter a</param>
+      /// <param name="b">A summary about parameter b</param>
+      /// <returns>A summary about return</returns>
       Console.WriteLine("Hello World!");
       return x + y;
     }

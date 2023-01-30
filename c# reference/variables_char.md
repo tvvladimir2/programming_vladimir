@@ -126,3 +126,28 @@ Console.WriteLine("zero is " + (int)charVariable);
 
 > zero is 48
 ```
+
+
+
+---
+
+
+
+## CONVERT `INT` TO `CHAR`
+
+```cs
+using System;
+
+class Program
+{
+	public static void Main()
+	{	
+		int myInteger = 65;
+        char myChar = Convert.ToChar(myInteger);
+        Console.WriteLine(myChar);
+	}
+}
+```
+```
+> A
+```

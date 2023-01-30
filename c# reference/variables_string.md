@@ -293,6 +293,7 @@ Console.WriteLine(fullName);
 
 ## ITERATE OVER STRING CHARACHTERS
 
+Example: **Iterate using `foreach` loop**
 ```cs
 using System;
 
@@ -366,7 +367,7 @@ class Program
 
 
 
-## INT TO STRING
+## `INT` TO `STRING`
 
 ```cs
 using System;
@@ -375,14 +376,11 @@ class Program
 {
     static void Main()
     {
-        int intValue1 = 123;
-        int intValue2 = -123;
+        string[] myArray = { "Miami", "Berlin", "Hamburg"};
 
-        string stringValue1 = intValue1.ToString();
-        string stringValue2 = intValue2.ToString();
-
-        Console.WriteLine(intValue1);
-        Console.WriteLine(intValue2);
+        string myString = string.Join(" ", myArray);
+        
+        Console.WriteLine("myString");
     }
 }
 ```
@@ -390,6 +388,15 @@ class Program
 > 123
 > -123
 ```
+
+
+
+---
+
+
+
+## CONVERT `ARRAY` TO `STRING`
+
 
 
 
@@ -432,4 +439,42 @@ class Program
 ```
 ```
 > 4
+```
+
+
+
+---
+
+
+
+## ITERATE USING `WHILE` LOOP
+
+Example: **Deletes all zeros at the end**
+```cs
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        string stringVariable = "-1294000";
+
+        Console.WriteLine("only first" + stringVariable);
+
+        while (true)
+        {
+            char myZero = '0';
+
+            if (stringVariable[stringVariable.Length - 1] == myZero)
+            {
+                stringVariable = stringVariable.Remove(stringVariable.Length - 1);
+                Console.WriteLine(stringVariable);
+            }
+            else
+            {
+                break;
+            }
+        }
+    }
+}
 ```

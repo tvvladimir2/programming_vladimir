@@ -73,7 +73,17 @@
 
 
 
-### 2. AddRange(IEnumerable<T>)
+## 1. Add(T)
+
+
+
+
+
+---
+
+
+
+## 2. AddRange(IEnumerable<T>)
 
 Use the `AddRange()` method to add all the elements from an array or another collection to List.
 
@@ -143,7 +153,7 @@ public class Program
 
 
 
-### 7. Clear()
+## 7. Clear()
 
 ```cs
 using System;
@@ -173,7 +183,7 @@ public class Program
 
 
 
-### 8. Contains(T)
+## 8. Contains(T)
 
 Use the `Contains()` method to determine whether an element is in the `List<T>` or not.
 
@@ -204,7 +214,7 @@ public class Program
 
 
 
-### 33. Insert(Int32, T)
+## 33. Insert(Int32, T)
 
  Use the `Insert()` method inserts an element into the `List<T>` collection at the specified index.
 
@@ -240,7 +250,7 @@ public class Program
 
 
 
-### 39. Remove(T)
+## 39. Remove(T)
 
 Use the `Remove()` method to remove the `first occurrence of the specified element` in the `List<T>` collection. If no element at the specified index, then the `ArgumentOutOfRangeException` will be thrown.
 
@@ -274,7 +284,7 @@ public class Program
 
 
 
-### 41. RemoveAt(Int32)
+## 41. RemoveAt(Int32)
 
 Use the `RemoveAt()` method to remove an element from the specified index. If no element at the specified index, then the `ArgumentOutOfRangeException` will be thrown.
 

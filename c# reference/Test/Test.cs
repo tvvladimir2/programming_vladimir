@@ -1,15 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 
-public class Program
+public class Test
 {
-	public static void Main()
-	{	
-		int firstInteger = 1;
-        int secondInteger = 2;
-        float resultFloat;
+	void Main()
+	{
+		int myInteger = 65;
 
-        resultFloat = firstInteger / secondInteger;
-        Console.WriteLine(resultFloat);
+        int h0 = Math.Floor(myInteger - (myInteger % 10));
+
+        Console.Writeline(h0);
 	}
 }

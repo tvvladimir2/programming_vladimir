@@ -1,0 +1,15 @@
+C:\repositories\programming_vladimir\c# reference\Test4\obj\Debug\net7.0\Test4.csproj.AssemblyReference.cache
+C:\repositories\programming_vladimir\c# reference\Test4\obj\Debug\net7.0\Test4.GeneratedMSBuildEditorConfig.editorconfig
+C:\repositories\programming_vladimir\c# reference\Test4\obj\Debug\net7.0\Test4.AssemblyInfoInputs.cache
+C:\repositories\programming_vladimir\c# reference\Test4\obj\Debug\net7.0\Test4.AssemblyInfo.cs
+C:\repositories\programming_vladimir\c# reference\Test4\obj\Debug\net7.0\Test4.csproj.CoreCompileInputs.cache
+C:\repositories\programming_vladimir\c# reference\Test4\bin\Debug\net7.0\Test4.exe
+C:\repositories\programming_vladimir\c# reference\Test4\bin\Debug\net7.0\Test4.deps.json
+C:\repositories\programming_vladimir\c# reference\Test4\bin\Debug\net7.0\Test4.runtimeconfig.json
+C:\repositories\programming_vladimir\c# reference\Test4\bin\Debug\net7.0\Test4.dll
+C:\repositories\programming_vladimir\c# reference\Test4\bin\Debug\net7.0\Test4.pdb
+C:\repositories\programming_vladimir\c# reference\Test4\obj\Debug\net7.0\Test4.dll
+C:\repositories\programming_vladimir\c# reference\Test4\obj\Debug\net7.0\refint\Test4.dll
+C:\repositories\programming_vladimir\c# reference\Test4\obj\Debug\net7.0\Test4.pdb
+C:\repositories\programming_vladimir\c# reference\Test4\obj\Debug\net7.0\Test4.genruntimeconfig.cache
+C:\repositories\programming_vladimir\c# reference\Test4\obj\Debug\net7.0\ref\Test4.dll
